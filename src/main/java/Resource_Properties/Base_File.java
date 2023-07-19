@@ -15,7 +15,7 @@ public class Base_File
    
    public WebDriver initializeBrowser() throws IOException
    {
-   FileInputStream fis = new FileInputStream("C:\\Users\\jyoti_xfiqe3z\\eclipse-workspace\\Client\\src\\main\\java\\Resource_Properties\\data.properties");
+   FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Resource_Properties\\data.properties");
    pro = new Properties();
    pro.load(fis);
    String browserName = pro.getProperty("browser");

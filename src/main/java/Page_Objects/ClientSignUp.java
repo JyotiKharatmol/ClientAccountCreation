@@ -36,17 +36,17 @@ public class ClientSignUp extends Abstract_Component {
 	@FindBy(css="input[name='emailId']")
 	WebElement email;
 	
-	public WebElement Email()
-	{
-	return email;            
-	}
-	
 	@FindBy(xpath="//p/div/div/div[1]/div/div[5]/div/div/div[4]/div/p")
 	WebElement emailIdExistsError;
 
 	public WebElement emailIdExistsError()
 	{
 		return emailIdExistsError;
+	}
+	
+	public WebElement Email()
+	{
+		return email;
 	}
 	
 	@FindBy(xpath="//div/div/div/div[5]/div/div/input")
@@ -89,13 +89,13 @@ public class ClientSignUp extends Abstract_Component {
 	return state;
 	}
 	
-	@FindBy(xpath="//ul[@role='listbox']/li[2]")
-	WebElement alaska;
+	@FindBy(xpath="//ul/li[11]")
+	WebElement georgia;
 	
-	public WebElement Alaska()
+	public WebElement Georgia()
 	{
-	waitForElementToBeClickable(alaska);
-	return alaska;
+	waitForElementToBeClickable(georgia);
+	return georgia;
 	}
 	
 	@FindBy(css="input[name='zip']")
