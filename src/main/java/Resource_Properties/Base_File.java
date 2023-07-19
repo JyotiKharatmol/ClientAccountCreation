@@ -8,6 +8,8 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Base_File 
 {
    public WebDriver driver;
@@ -15,7 +17,7 @@ public class Base_File
    
    public WebDriver initializeBrowser() throws IOException
    {
-   FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Resource_Properties\\data.properties");
+   FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/Resource_Properties/data.properties");
    pro = new Properties();
    pro.load(fis);
    String browserName = pro.getProperty("browser");
@@ -23,7 +25,7 @@ public class Base_File
    
    if(browserName.equalsIgnoreCase("chrome"))
    {
-	   System.setProperty("webdriver.chrome.driver", "C:\\Users\\jyoti_xfiqe3z\\Desktop\\Personal\\Selenium Java\\Browser Driver\\chromedriver_win32\\chromedriver.exe");
+	  WebDriverManager.chromedriver().setup();
 	   driver = new ChromeDriver();
 	   
    }
