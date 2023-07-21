@@ -22,11 +22,13 @@ public class Base_File
    pro.load(fis);
    String browserName = pro.getProperty("browser");
    
+
    
    if(browserName.equalsIgnoreCase("chrome"))
    {
-	  WebDriverManager.chromedriver().browserVersion("114.0.5735.91").setup();
+	   System.setProperty("webdriver.chrome.driver", "C:\\Users\\jyoti_xfiqe3z\\Desktop\\Personal\\Selenium Java\\Browser Driver\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 	   driver = new ChromeDriver();
+
 	   
    }
    
