@@ -26,7 +26,7 @@ public class Base_File
    
    if(browserName.equalsIgnoreCase("chrome"))
    {
-	   System.setProperty("webdriver.chrome.driver", "C:\\Users\\jyoti_xfiqe3z\\Desktop\\Personal\\Selenium Java\\Browser Driver\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+	   WebDriverManager.chromedriver().setup();
 	   driver = new ChromeDriver();
 
 	   
