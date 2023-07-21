@@ -25,7 +25,7 @@ public class Base_File
    
    if(browserName.equalsIgnoreCase("chrome"))
    {
-	  WebDriverManager.chromedriver().setup();
+	  WebDriverManager.chromedriver().browserVersion("114.0.5735.91").setup();
 	   driver = new ChromeDriver();
 	   
    }
