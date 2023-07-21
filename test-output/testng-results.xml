@@ -2,20 +2,20 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-21T22:57:52 IST" name="Default suite" finished-at="2023-07-21T22:58:30 IST" duration-ms="38534">
+  <suite started-at="2023-07-21T23:57:00 IST" name="Default suite" finished-at="2023-07-21T23:57:31 IST" duration-ms="31844">
     <groups>
     </groups>
-    <test started-at="2023-07-21T22:57:52 IST" name="Default test" finished-at="2023-07-21T22:58:30 IST" duration-ms="38534">
+    <test started-at="2023-07-21T23:57:00 IST" name="Default test" finished-at="2023-07-21T23:57:31 IST" duration-ms="31844">
       <class name="Client.ClientAccountCreation">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountCreation@543588e6]" started-at="2023-07-21T22:57:52 IST" name="initialize" finished-at="2023-07-21T22:58:15 IST" duration-ms="22828" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountCreation@543588e6]" started-at="2023-07-21T23:57:00 IST" name="initialize" finished-at="2023-07-21T23:57:15 IST" duration-ms="15475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="AccountCreationWith_FreeClassPack()[pri:0, instance:Client.ClientAccountCreation@543588e6]" started-at="2023-07-21T22:58:15 IST" name="AccountCreationWith_FreeClassPack" finished-at="2023-07-21T22:58:30 IST" duration-ms="15171" status="PASS">
+        <test-method signature="AccountCreationWith_FreeClassPack()[pri:0, instance:Client.ClientAccountCreation@543588e6]" started-at="2023-07-21T23:57:15 IST" name="AccountCreationWith_FreeClassPack" finished-at="2023-07-21T23:57:31 IST" duration-ms="15946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AccountCreationWith_FreeClassPack -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountCreation@543588e6]" started-at="2023-07-21T22:58:30 IST" name="tearDown" finished-at="2023-07-21T22:58:30 IST" duration-ms="438" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountCreation@543588e6]" started-at="2023-07-21T23:57:31 IST" name="tearDown" finished-at="2023-07-21T23:57:31 IST" duration-ms="361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
