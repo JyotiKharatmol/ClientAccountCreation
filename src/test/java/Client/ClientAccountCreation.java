@@ -16,7 +16,7 @@ public class ClientAccountCreation extends Base_File {
 		driver = initializeBrowser();
 		driver.get(pro.getProperty("url"));
 	}
-
+/*
 	@Test
 	public void AccountCreationWith_FreeClassPack() {
 
@@ -147,8 +147,8 @@ public class ClientAccountCreation extends Base_File {
 		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),
 				"Congratulations! Your account has been created.");
 	}
-	
-	/*@Test
+	*/
+	@Test
 	public void AccountCreationWithSkipPackage() {
 		ClientSignUp a = new ClientSignUp(driver);
 		a.FirstName().sendKeys("Maria");
@@ -185,7 +185,7 @@ public class ClientAccountCreation extends Base_File {
 		a.Confirm().click();
 		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),
 				"Congratulations! Your account has been created.");
-	}*/
+	}
 	
 	@AfterMethod()
 	public void tearDown()

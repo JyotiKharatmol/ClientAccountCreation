@@ -7,6 +7,8 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base_File 
@@ -24,9 +26,12 @@ public class Base_File
 
    
    if(browserName.equalsIgnoreCase("chrome"))
-   {
+   { 
+	   ChromeOptions options = new ChromeOptions();
+	   options.setHeadless(true);
+	   
 	   WebDriverManager.chromedriver().setup();
-	   driver = new ChromeDriver();	   
+	   driver = new ChromeDriver(options);	   
    }
    
  
