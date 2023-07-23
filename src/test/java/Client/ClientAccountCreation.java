@@ -9,16 +9,19 @@ import Resource_Properties.Base_File;
 import Page_Objects.ClientSignUp;
 import java.util.Random;
 
-public class ClientAccountCreation extends Base_File {
+public class ClientAccountCreation extends Base_File 
+{
 
 	@BeforeMethod()
-	public void initialize() throws IOException {
+	public void initialize() throws IOException 
+	{
 		driver = initializeBrowser();
 		driver.get(pro.getProperty("url"));
 	}
 
 	@Test
-	public void AccountCreationWith_FreeClassPack() {
+	public void AccountCreationWith_FreeClassPack() 
+	{
 
 		ClientSignUp a = new ClientSignUp(driver);
 		a.FirstName().sendKeys("Robert");
@@ -59,7 +62,8 @@ public class ClientAccountCreation extends Base_File {
 	}
 	
 	@Test
-	public void AccountCreationWith_PurchaseClassPack() {
+	public void AccountCreationWith_PurchaseClassPack() 
+	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.FirstName().sendKeys("Micheal");
 		a.LastName().sendKeys("Smith");
@@ -73,11 +77,11 @@ public class ClientAccountCreation extends Base_File {
 		a.Zip().sendKeys("30303");
 		a.State().click();
 		a.Georgia().click();
-		a.eFirstName().sendKeys("Robert");
+		a.eFirstName().sendKeys("Patricia");
 		a.eLastName().sendKeys("Smith");
-		a.eEmail().sendKeys("robert@gmail.com");
+		a.eEmail().sendKeys("patricia.smith@gmail.com");
 		a.ePhoneNo().sendKeys("3453453412");
-		a.eRelationship().sendKeys("Brother");
+		a.eRelationship().sendKeys("Sister");
 		a.Password().sendKeys("Password@3");
 		a.ConfirmPassword().sendKeys("Password@3");
 		a.SaveAndContinue1().click();
@@ -104,10 +108,11 @@ public class ClientAccountCreation extends Base_File {
 
 
 	@Test
-	public void AccountCreationWithMembershipPurchase() {
+	public void AccountCreationWith_PurchaseMembership()
+	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.FirstName().sendKeys("Joseph");
-		a.LastName().sendKeys("Williams");
+		a.LastName().sendKeys("William");
 		Random ab = new Random();
 		int randomInt = ab.nextInt(1000);
 		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
@@ -119,8 +124,8 @@ public class ClientAccountCreation extends Base_File {
 		a.State().click();
 		a.Georgia().click();
 		a.eFirstName().sendKeys("Micheal");
-		a.eLastName().sendKeys("Williams");
-		a.eEmail().sendKeys("robert@gmail.com");
+		a.eLastName().sendKeys("William");
+		a.eEmail().sendKeys("micheal.william@gmail.com");
 		a.ePhoneNo().sendKeys("3453453412");
 		a.eRelationship().sendKeys("Brother");
 		a.Password().sendKeys("Password@3");
@@ -148,8 +153,9 @@ public class ClientAccountCreation extends Base_File {
 				"Congratulations! Your account has been created.");
 	}
 	
-	/*@Test
-	public void AccountCreationWithSkipPackage() {
+	@Test
+	public void AccountCreationWith_NoPackage() 
+	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.FirstName().sendKeys("Maria");
 		a.LastName().sendKeys("Rodriguez");
@@ -165,14 +171,14 @@ public class ClientAccountCreation extends Base_File {
 		a.Zip().sendKeys("30303");
 		a.eFirstName().sendKeys("Johnson");
 		a.eLastName().sendKeys("Rodriguez");
-		a.eEmail().sendKeys("johnson@gmail.com");
+		a.eEmail().sendKeys("johnson.rodriguez@gmail.com");
 		a.ePhoneNo().sendKeys("5838932917");
 		a.eRelationship().sendKeys("Brother");
 		a.Password().sendKeys("Password@3");
 		a.ConfirmPassword().sendKeys("Password@3");
 		a.SaveAndContinue1().click();
 		a.skipPurchasePackageLater().click();
-		a.Term1Checkbox().click();
+		a.skipPackage_Term1Checkbox().click();
 		a.Term2Checkbox().click();
 		a.DefaultCheckbox().click();
 		a.TypeFullName().sendKeys("Maria Rodriguez");
@@ -185,7 +191,7 @@ public class ClientAccountCreation extends Base_File {
 		a.Confirm().click();
 		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),
 				"Congratulations! Your account has been created.");
-	}*/
+	}
 	
 	@AfterMethod()
 	public void tearDown()

@@ -212,12 +212,20 @@ public class ClientSignUp extends Abstract_Component {
 	{
 		return saveAndContinue2;
 	}
+	@FindBy(css="div[class='MuiAlert-message']")
+	WebElement skipPackageAlertMessage;
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[1]/label/span[1]/span[1]")
 	WebElement term1Checkbox;
 	
 	public WebElement Term1Checkbox()
 	{
+		waitForElementToBeClickable(term1Checkbox);
+		return term1Checkbox;
+	}
+	public WebElement skipPackage_Term1Checkbox()
+	{
+		waitForInvisibilityOfWebElement(skipPackageAlertMessage);
 		waitForElementToBeClickable(term1Checkbox);
 		return term1Checkbox;
 	}

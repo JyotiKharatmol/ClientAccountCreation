@@ -5,7 +5,10 @@
     <classes>
       <class name="Client.ClientAccountCreation">
         <methods>
-          <include name="AccountCreationWithSkipPackage"/>
+          <include name="AccountCreationWith_FreeClassPack"/>
+          <include name="AccountCreationWith_PurchaseClassPack"/>
+          <include name="AccountCreationWith_PurchaseMembership"/>
+          <include name="AccountCreationWith_NoPackage"/>
           <include name="tearDown"/>
           <include name="initialize"/>
         </methods>
