@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-22T21:49:39 IST" name="Suite" finished-at="2023-07-22T21:52:00 IST" duration-ms="141419">
+  <suite started-at="2023-07-26T06:30:50 IST" name="Default suite" finished-at="2023-07-26T06:31:19 IST" duration-ms="29074">
     <groups>
     </groups>
-    <test started-at="2023-07-22T21:49:39 IST" name="Test" finished-at="2023-07-22T21:52:00 IST" duration-ms="141419">
+    <test started-at="2023-07-26T06:30:50 IST" name="Default test" finished-at="2023-07-26T06:31:19 IST" duration-ms="29074">
       <class name="Client.ClientAccountCreation">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:49:39 IST" name="initialize" finished-at="2023-07-22T21:49:52 IST" duration-ms="13500" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountCreation@f5acb9d]" started-at="2023-07-26T06:30:50 IST" name="initialize" finished-at="2023-07-26T06:31:03 IST" duration-ms="12729" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="AccountCreationWith_FreeClassPack()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:49:52 IST" name="AccountCreationWith_FreeClassPack" finished-at="2023-07-22T21:50:08 IST" duration-ms="15655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AccountCreationWith_FreeClassPack -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:50:08 IST" name="tearDown" finished-at="2023-07-22T21:50:08 IST" duration-ms="314" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:50:08 IST" name="initialize" finished-at="2023-07-22T21:50:19 IST" duration-ms="11196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="AccountCreationWith_NoPackage()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:50:19 IST" name="AccountCreationWith_NoPackage" finished-at="2023-07-22T21:50:59 IST" duration-ms="39107" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AccountCreationWith_NoPackage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:50:59 IST" name="tearDown" finished-at="2023-07-22T21:50:59 IST" duration-ms="220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:50:59 IST" name="initialize" finished-at="2023-07-22T21:51:11 IST" duration-ms="11914" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="AccountCreationWith_PurchaseClassPack()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:51:11 IST" name="AccountCreationWith_PurchaseClassPack" finished-at="2023-07-22T21:51:28 IST" duration-ms="17676" status="PASS">
+        <test-method signature="AccountCreationWith_PurchaseClassPack()[pri:0, instance:Client.ClientAccountCreation@f5acb9d]" started-at="2023-07-26T06:31:03 IST" name="AccountCreationWith_PurchaseClassPack" finished-at="2023-07-26T06:31:19 IST" duration-ms="16221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AccountCreationWith_PurchaseClassPack -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:51:28 IST" name="tearDown" finished-at="2023-07-22T21:51:29 IST" duration-ms="240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:51:29 IST" name="initialize" finished-at="2023-07-22T21:51:41 IST" duration-ms="12714" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="AccountCreationWith_PurchaseMembership()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:51:41 IST" name="AccountCreationWith_PurchaseMembership" finished-at="2023-07-22T21:52:00 IST" duration-ms="18456" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AccountCreationWith_PurchaseMembership -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountCreation@66d3eec0]" started-at="2023-07-22T21:52:00 IST" name="tearDown" finished-at="2023-07-22T21:52:00 IST" duration-ms="350" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountCreation@f5acb9d]" started-at="2023-07-26T06:31:19 IST" name="tearDown" finished-at="2023-07-26T06:31:19 IST" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Client.ClientAccountCreation -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,11 +1,13 @@
 package Resource_Properties;
-
 import java.time.Duration;
 import java.util.Properties;
 import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base_File 
@@ -24,7 +26,13 @@ public class Base_File
    
    if(browserName.equalsIgnoreCase("chrome"))
    { 
-	  driver = WebDriverManager.chromedriver().create();
+	  ChromeOptions options = new ChromeOptions();
+	  
+	  options.addArguments("--headless");
+	  
+	  WebDriverManager.chromedriver().setup();
+	  
+	  driver = new ChromeDriver(options);
 	   
    }
    

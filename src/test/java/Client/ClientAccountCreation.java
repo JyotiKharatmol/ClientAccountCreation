@@ -1,5 +1,4 @@
 package Client;
-
 import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -20,14 +19,14 @@ public class ClientAccountCreation extends Base_File
 	}
 
 	@Test
-	public void AccountCreationWith_FreeClassPack() 
+	public void AccountCreationWith_FreeClassPack() throws InterruptedException 
 	{
 
 		ClientSignUp a = new ClientSignUp(driver);
 		a.FirstName().sendKeys("Robert");
-		a.LastName().sendKeys("Smith");
+		a.LastName().sendKeys("Smith");	
 		Random ab = new Random();
-		int randomInt = ab.nextInt(1000);
+		int randomInt = ab.nextInt(100);
 		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
 		a.PhoneNo().sendKeys("5345382834");
 		a.DOB().sendKeys("09091995");
@@ -59,6 +58,7 @@ public class ClientAccountCreation extends Base_File
 		a.Confirm().click();
 		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),
 				"Congratulations! Your account has been created.");
+				
 	}
 	
 	@Test
@@ -198,5 +198,6 @@ public class ClientAccountCreation extends Base_File
 	{
 		driver.close();
 	}
+	
 		
 }

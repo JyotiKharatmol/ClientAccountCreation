@@ -3,7 +3,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import Abstract.Abstract_Component;
 
 public class ClientSignUp extends Abstract_Component {
@@ -36,17 +35,17 @@ public class ClientSignUp extends Abstract_Component {
 	@FindBy(css="input[name='emailId']")
 	WebElement email;
 	
+	public WebElement Email()
+	{
+		return email;
+	}
+	
 	@FindBy(xpath="//p/div/div/div[1]/div/div[5]/div/div/div[4]/div/p")
 	WebElement emailIdExistsError;
 
 	public WebElement emailIdExistsError()
 	{
 		return emailIdExistsError;
-	}
-	
-	public WebElement Email()
-	{
-		return email;
 	}
 	
 	@FindBy(xpath="//div/div/div/div[5]/div/div/input")
