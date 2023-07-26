@@ -28,7 +28,7 @@ public class Base_File
    { 
 	  ChromeOptions options = new ChromeOptions();
 	  
-	  options.addArguments("--headless");
+	  options.addArguments("--headless=new");
 	  
 	  WebDriverManager.chromedriver().setup();
 	  
