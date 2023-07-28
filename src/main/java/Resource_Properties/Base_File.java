@@ -28,11 +28,11 @@ public class Base_File
    { 
 	  ChromeOptions options = new ChromeOptions();
 	  
-	 options.setBinary("/usr/bin/chromium-browser");
+	  options.setBinary("/usr/bin/chromium-browser");
 	  
 	  options.addArguments("--remote-allow-origins=*","--no-sandbox","start-maximized","--headless","--disable-dev-shm-usage");
 	  
-	  WebDriverManager.chromedriver().setup();
+	  WebDriverManager.chromedriver().driverVersion("115.0.5790.102").setup();
 	  
 	  driver = new ChromeDriver(options);
 	   
