@@ -28,11 +28,11 @@ public class Base_File
    { 
 	  ChromeOptions options = new ChromeOptions();
 	  
-	 // options.setBinary("/usr/bin/google-chrome");
+	  options.setBinary("/usr/bin/google-chrome");
 	  
 	  options.addArguments("--no-sandbox","--headless","--disable-dev-shm-usage");
 	  
-	  WebDriverManager.chromedriver().driverVersion("115.0.5790.110").setup();
+	  WebDriverManager.chromedriver().setup();
 	  
 	  driver = new ChromeDriver(options);
 	   
