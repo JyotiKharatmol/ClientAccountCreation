@@ -28,9 +28,9 @@ public class Base_File
    { 
 	  ChromeOptions options = new ChromeOptions();
 	  
-	  options.setBinary("/usr/bin/google-chrome");
+	 options.setBinary("/usr/bin/chromium-browser");
 	  
-	  options.addArguments("--no-sandbox","--headless","--disable-dev-shm-usage");
+	  options.addArguments("--remote-allow-origins=*","--no-sandbox","start-maximized","--headless","--disable-dev-shm-usage");
 	  
 	  WebDriverManager.chromedriver().setup();
 	  
