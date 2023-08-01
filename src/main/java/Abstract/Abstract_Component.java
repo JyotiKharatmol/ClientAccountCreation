@@ -43,13 +43,20 @@ public class Abstract_Component
 	{
 		return login;
 	}
+	
+	
+	public void waitForVisibilityOfElement(WebElement a)
+	{
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(30));
+		w.until(ExpectedConditions.visibilityOf(a));
+	}
 
 	public void waitForElementToBeClickable(WebElement a) 
 	{
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(30));
 		w.until(ExpectedConditions.elementToBeClickable(a));
 	}
-
+	
 	public void waitForAttributeOfElementToBe(WebElement a) 
 	{
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(20));

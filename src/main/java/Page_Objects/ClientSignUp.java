@@ -16,6 +16,40 @@ public class ClientSignUp extends Abstract_Component {
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(xpath="//span/a[1]")
+	WebElement doYouHaveACustomerAccount;
+	
+	public WebElement DoYouHaveAcustomerAccount()
+	{
+		return doYouHaveACustomerAccount;
+	}
+	
+	@FindBy(xpath="//p/div/div[4]/div/div[2]/div")
+	WebElement sessionOnCalendar;
+	
+	public WebElement SessionOnCalendar()
+	{
+		waitForElementToBeClickable(sessionOnCalendar);
+		return sessionOnCalendar;
+	}
+	
+	@FindBy(xpath="//span[text()='SIGN UP']")
+	WebElement sessionSignUp;
+	
+	public WebElement sessionSignUp()
+	{
+		waitForElementToBeClickable(sessionSignUp);
+		return sessionSignUp;
+	}
+	
+	@FindBy(xpath="//form/div/div[3]/div/div/a")
+	WebElement dontHaveAnAccountClientSignUp;
+	
+	public WebElement dontHaveAnAccountClientSignUp()
+	{
+		return dontHaveAnAccountClientSignUp;
+	}
+	
 	@FindBy(css="input[name='firstName']")
 	WebElement firstName;
 	
@@ -62,6 +96,46 @@ public class ClientSignUp extends Abstract_Component {
 	public WebElement DOB()
 	{
 	return dob;
+	}
+	
+	@FindBy(css="div[id='mui-component-select-gender']")
+	WebElement selectGender;
+	
+	public WebElement selectGender()
+	{
+		return selectGender;
+	}
+	
+	@FindBy(xpath="//div[@id='menu-gender']/div/ul/li[1]")
+	WebElement male;
+	
+	public WebElement Male()
+	{
+		return male;
+	}
+	
+	@FindBy(xpath="//div[@id='menu-gender']/div/ul/li[2]")
+	WebElement female;
+	
+	public WebElement Female()
+	{
+		return female;
+	}
+	
+	@FindBy(xpath="//div[@id='menu-gender']/div/ul/li[3]")
+	WebElement genderVariant;
+	
+	public WebElement GenderVariant()
+	{
+		return genderVariant;
+	}
+	
+	@FindBy(xpath="//div[@id='menu-gender']/div/ul/li[4]")
+	WebElement preferNotToDisclose;
+	
+	public WebElement PreferNotDisclose()
+	{
+		return preferNotToDisclose;
 	}
 	
 	@FindBy(css="input[name='address1']")
@@ -188,13 +262,33 @@ public class ClientSignUp extends Abstract_Component {
 		return $classPack;	
 	}
 	
-	@FindBy(xpath="//p/div/div/div/div/div[10]/div/div/ul/li/div")
-	WebElement membershipPack;
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div")
+	WebElement xSessionsMemPack;
 	
-	public WebElement memPack()
+	public WebElement xSessionsMemPack()
 	{
-		return membershipPack;
+		waitForElementToBeClickable(xSessionsMemPack);
+		return xSessionsMemPack;
 	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div")
+	WebElement unlimitedMemPack;
+	
+	public WebElement unlimitedMemPack()
+	{
+		waitForElementToBeClickable(unlimitedMemPack);
+		return unlimitedMemPack;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div")
+	WebElement freeFirstMonthMemPack;
+	
+	public WebElement freeFirstMonthMemPack()
+	{
+		waitForElementToBeClickable(freeFirstMonthMemPack);
+		return freeFirstMonthMemPack;
+	}
+	
 	
 	@FindBy(css="div[align='center'] a")
 	WebElement skipPurchasePackageLater;
@@ -307,6 +401,14 @@ public class ClientSignUp extends Abstract_Component {
 		return saveAndContinue4;
 	}
 	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div/div[4]/div/div/div/div[3]/span[2]")
+	WebElement $0grantTotal;
+	
+	public WebElement $0grantTotal()
+	{
+		return $0grantTotal;
+	}
+	
 	@FindBy(xpath="//p/div/div/div[3]/div/div/div[9]/div/div/div[2]/div/label/span[1]/span[1]")
 	WebElement sameAsClientDetails;
 	
@@ -372,4 +474,72 @@ public class ClientSignUp extends Abstract_Component {
 		return accountCreationSuccessfulMessage;
 	}
 	
+	@FindBy(xpath="//span[text()='Login']")
+	WebElement login;
+	
+	public WebElement Login()
+	{
+		waitForElementToBeClickable(login);
+		return login;
+	}
+	
+	@FindBy(css="input[name='emailId']")
+	WebElement clientUsername;
+
+	public WebElement clientUsername()
+	{
+		return clientUsername;
+	}
+	
+	@FindBy(css="input[name='password']")
+	WebElement clientPassword;
+	
+	public WebElement clientPassword()
+	{
+		return clientPassword;
+	}
+	
+	@FindBy(xpath="//span[text()='LOGIN']")
+	WebElement clientLogin;
+	
+	public WebElement clientLogin()
+	{
+		return clientLogin;
+	}
+	
+	@FindBy(xpath="//span[text()='PURCHASE PACKAGE']")
+	WebElement purchasePackageButton;
+	
+	@FindBy(tagName="h1")
+	WebElement dontHaveAPackageMessage;
+	
+	public WebElement dontHaveAPackageMessage()
+	{
+		waitForVisibilityOfElement(purchasePackageButton);
+		return dontHaveAPackageMessage;
+	}
+	
+	@FindBy(xpath="//span[text()='SIGN UP']")
+	WebElement clientAccountSessionSignUp;
+	
+	public WebElement clientAccountSessionSignUp()
+	{
+		waitForElementToBeClickable(clientAccountSessionSignUp);
+		return clientAccountSessionSignUp;
+	}
+	
+	
+	@FindBy(xpath="//p/div/div[4]/div/div[2]/div/div/div[5]")
+	WebElement greenCheckMark;
+	
+	public WebElement greenCheckMark()
+	{
+		waitForVisibilityOfElement(greenCheckMark);
+		return greenCheckMark;
+	}
+	
 }
+
+
+
+
