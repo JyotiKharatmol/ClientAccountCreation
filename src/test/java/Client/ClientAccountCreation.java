@@ -115,7 +115,8 @@ public class ClientAccountCreation extends Base_File
 		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
 		a.clientPassword().sendKeys("Password@3");
 		a.clientLogin().click();
-		Assert.assertTrue(a.greenCheckMark().isDisplayed());
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
 		
 	}
 	
@@ -170,7 +171,8 @@ public class ClientAccountCreation extends Base_File
 		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
 		a.clientPassword().sendKeys("Password@3");
 		a.clientLogin().click();
-		Assert.assertTrue(a.greenCheckMark().isDisplayed());
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
 	}
 	
 	@Test(priority=4)
@@ -225,7 +227,8 @@ public class ClientAccountCreation extends Base_File
 		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
 		a.clientPassword().sendKeys("Password@3");
 		a.clientLogin().click();
-		Assert.assertTrue(a.greenCheckMark().isDisplayed());
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
 	}
 	
 	@Test(priority=5)
@@ -280,7 +283,8 @@ public class ClientAccountCreation extends Base_File
 		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
 		a.clientPassword().sendKeys("Password@3");
 		a.clientLogin().click();
-		Assert.assertTrue(a.greenCheckMark().isDisplayed());
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
 	}
 	
 	
@@ -337,7 +341,8 @@ public class ClientAccountCreation extends Base_File
 		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
 		a.clientPassword().sendKeys("Password@3");
 		a.clientLogin().click();
-		Assert.assertTrue(a.greenCheckMark().isDisplayed());
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
 	}
 	
 	
@@ -394,7 +399,8 @@ public class ClientAccountCreation extends Base_File
 		a.clientUsername().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
 		a.clientPassword().sendKeys("Password@3");
 		a.clientLogin().click();
-		Assert.assertTrue(a.greenCheckMark().isDisplayed());
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
 	}	
 	
 	

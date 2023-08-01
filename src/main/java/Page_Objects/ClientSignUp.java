@@ -507,11 +507,11 @@ public class ClientSignUp extends Abstract_Component {
 		return clientLogin;
 	}
 	
-	@FindBy(xpath="//span[text()='PURCHASE PACKAGE']")
-	WebElement purchasePackageButton;
-	
 	@FindBy(tagName="h1")
 	WebElement dontHaveAPackageMessage;
+	
+	@FindBy(xpath="//span[text()='PURCHASE PACKAGE']")
+	WebElement purchasePackageButton;
 	
 	public WebElement dontHaveAPackageMessage()
 	{
@@ -519,20 +519,19 @@ public class ClientSignUp extends Abstract_Component {
 		return dontHaveAPackageMessage;
 	}
 	
-	@FindBy(xpath="//span[text()='SIGN UP']")
-	WebElement clientAccountSessionSignUp;
+	@FindBy(css="div[class='MuiAlert-message']")
+	WebElement sessionSignedUpMessage;
 	
-	public WebElement clientAccountSessionSignUp()
+	public WebElement sessionSignedUpMessage()
 	{
-		waitForElementToBeClickable(clientAccountSessionSignUp);
-		return clientAccountSessionSignUp;
+		waitForVisibilityOfElement(sessionSignedUpMessage);
+		return sessionSignedUpMessage;
 	}
-	
 	
 	@FindBy(xpath="//p/div/div[4]/div/div[2]/div/div/div[5]")
 	WebElement greenCheckMark;
 	
-	public WebElement greenCheckMark()
+	public WebElement SessionSignedUp_IsShownWith_GreenCheckMark()
 	{
 		waitForVisibilityOfElement(greenCheckMark);
 		return greenCheckMark;
