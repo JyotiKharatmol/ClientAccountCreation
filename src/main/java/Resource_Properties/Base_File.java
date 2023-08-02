@@ -26,13 +26,13 @@ public class Base_File
    
    if(browserName.equalsIgnoreCase("chrome"))
    { 
-	   ChromeOptions options = new ChromeOptions();
+	  ChromeOptions options = new ChromeOptions();
 	   
-	  // options.setBinary("/usr/bin/chromium-browser");
+	  options.addArguments("--headless");
+	  
+	  options.addArguments("--window-size=1400, 600");
 	   
-	   options.addArguments("--remote-allow-origins=*","--no-sandbox","start-maximized","--headless","--disable-dev-shm-usage");
-	   
-	   WebDriverManager.chromedriver().setup();
+	  WebDriverManager.chromedriver().setup();
 	  
 	  driver = new ChromeDriver(options);
    }
