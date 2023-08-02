@@ -28,13 +28,15 @@ public class Base_File
    { 
 	  ChromeOptions options = new ChromeOptions();
 	
-	  options.setBinary("/usr/bin/chromium-browser");
+	//  options.setBinary("/usr/bin/chromium-browser");
 	  
 	  options.addArguments("--headless");
 	  
 	  options.addArguments("--window-size=1400, 600");
 	   
-	  WebDriverManager.chromedriver().setup();
+	 // WebDriverManager.chromedriver().browserVersion("115.0.5790.102").setup();
+	  
+	  System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	  
 	  driver = new ChromeDriver(options);
    }
