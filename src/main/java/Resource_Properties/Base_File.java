@@ -6,6 +6,8 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base_File 
@@ -24,8 +26,15 @@ public class Base_File
    
    if(browserName.equalsIgnoreCase("chrome"))
    { 
-	  WebDriverManager.chromedriver().setup();
-	  driver = new ChromeDriver();
+	   ChromeOptions options = new ChromeOptions();
+	   
+	  // options.setBinary("/usr/bin/chromium-browser");
+	   
+	   options.addArguments("--remote-allow-origins=*","--no-sandbox","start-maximized","--headless","--disable-dev-shm-usage");
+	   
+	   WebDriverManager.chromedriver().setup();
+	  
+	  driver = new ChromeDriver(options);
    }
    
  

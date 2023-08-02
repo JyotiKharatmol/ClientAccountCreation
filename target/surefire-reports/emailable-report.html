@@ -9,38 +9,64 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">344,297</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">413,180</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Client.ClientAccountCreation</td><td><a href="#m0">AccountCreationWith_PurchaseUnlimitedMem</a></td><td rowspan="1">1690930292188</td><td rowspan="1">33103</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">Client.ClientAccountCreation</td><td><a href="#m1">AccountCreationWith_FreeFirstMonthMemPack</a></td><td rowspan="1">1690930331945</td><td rowspan="1">41951</td></tr><tr class="passedeven"><td><a href="#m2">AccountCreationWith_FreeTrailPack</a></td><td rowspan="1">1690930158169</td><td rowspan="1">37588</td></tr><tr class="passedeven"><td><a href="#m3">AccountCreationWith_NoPackage</a></td><td rowspan="1">1690930093075</td><td rowspan="1">58351</td></tr><tr class="passedeven"><td><a href="#m4">AccountCreationWith_PurchaseClassAndMemPack</a></td><td rowspan="1">1690930380405</td><td rowspan="1">48080</td></tr><tr class="passedeven"><td><a href="#m5">AccountCreationWith_PurchaseClassPack</a></td><td rowspan="1">1690930203070</td><td rowspan="1">33942</td></tr><tr class="passedeven"><td><a href="#m6">AccountCreationWith_PurchaseMemPack</a></td><td rowspan="1">1690930244564</td><td rowspan="1">41166</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">Client.ClientAccountCreation</td><td><a href="#m0">AccountCreationWith_FreeTrailPack</a></td><td rowspan="1">1690975377994</td><td rowspan="1">50665</td></tr><tr class="failedeven"><td><a href="#m1">AccountCreationWith_PurchaseClassAndMemPack</a></td><td rowspan="1">1690975661453</td><td rowspan="1">54020</td></tr><tr class="failedeven"><td><a href="#m2">AccountCreationWith_PurchaseMemPack</a></td><td rowspan="1">1690975494582</td><td rowspan="1">52854</td></tr><tr class="failedeven"><td><a href="#m3">AccountCreationWith_PurchaseUnlimitedMem</a></td><td rowspan="1">1690975553198</td><td rowspan="1">46729</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Client.ClientAccountCreation</td><td><a href="#m4">AccountCreationWith_FreeFirstMonthMemPack</a></td><td rowspan="1">1690975605818</td><td rowspan="1">50299</td></tr><tr class="passedeven"><td><a href="#m5">AccountCreationWith_NoPackage</a></td><td rowspan="1">1690975314020</td><td rowspan="1">57994</td></tr><tr class="passedeven"><td><a href="#m6">AccountCreationWith_PurchaseClassPack</a></td><td rowspan="1">1690975439844</td><td rowspan="1">49067</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">Client.ClientAccountCreation#AccountCreationWith_PurchaseUnlimitedMem</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (888, 385). Other element would receive the click: &lt;div class=&quot;jss432&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=115.0.5790.110)
+<h2>Test</h2><h3 id="m0">Client.ClientAccountCreation#AccountCreationWith_FreeTrailPack</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (22698c7aab51ade75e0ebf11d1c3a3cd)] -&gt; xpath: //div/div[2]/div/p/div/div/div/div/div[6]/div/div/ul/li[2]/div] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ab310f5e61e3bcc5b9de1e51bbacb583, clickElement {id=DDA7CBB7C68737BE8246CC5882C1C7C2_element_219}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53076}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53076/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ab310f5e61e3bcc5b9de1e51bbacb583)] -&gt; xpath: //span[text()=&apos;Login&apos;]]
-Session ID: ab310f5e61e3bcc5b9de1e51bbacb583
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMem(ClientAccountCreation.java:279)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60985}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60985/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22698c7aab51ade75e0ebf11d1c3a3cd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.Abstract_Component.waitForElementToBeClickable(Abstract_Component.java:57)
+	at Page_Objects.ClientSignUp.zero$classPack(ClientSignUp.java:252)
+	at Client.ClientAccountCreation.AccountCreationWith_FreeTrailPack(ClientAccountCreation.java:100)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Client.ClientAccountCreation#AccountCreationWith_FreeFirstMonthMemPack</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Client.ClientAccountCreation#AccountCreationWith_FreeTrailPack</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Client.ClientAccountCreation#AccountCreationWith_NoPackage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Client.ClientAccountCreation#AccountCreationWith_PurchaseClassAndMemPack</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">Client.ClientAccountCreation#AccountCreationWith_PurchaseClassPack</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">Client.ClientAccountCreation#AccountCreationWith_PurchaseMemPack</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Client.ClientAccountCreation#AccountCreationWith_PurchaseClassAndMemPack</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (db3f46de8740c834b9071e86d23902cd)] -&gt; xpath: //p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61169}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61169/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: db3f46de8740c834b9071e86d23902cd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.Abstract_Component.waitForElementToBeClickable(Abstract_Component.java:57)
+	at Page_Objects.ClientSignUp.xSessionsMemPack(ClientSignUp.java:270)
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPack(ClientAccountCreation.java:379)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Client.ClientAccountCreation#AccountCreationWith_PurchaseMemPack</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (6310a3a0a19418421f911de8fc29dd21)] -&gt; xpath: //p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61084}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61084/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6310a3a0a19418421f911de8fc29dd21
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.Abstract_Component.waitForElementToBeClickable(Abstract_Component.java:57)
+	at Page_Objects.ClientSignUp.xSessionsMemPack(ClientSignUp.java:270)
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPack(ClientAccountCreation.java:207)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Client.ClientAccountCreation#AccountCreationWith_PurchaseUnlimitedMem</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (d9d884bab705cf2dea6918635c5585c1)] -&gt; xpath: //p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61112/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9d884bab705cf2dea6918635c5585c1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.Abstract_Component.waitForElementToBeClickable(Abstract_Component.java:57)
+	at Page_Objects.ClientSignUp.unlimitedMemPack(ClientSignUp.java:279)
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMem(ClientAccountCreation.java:263)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Client.ClientAccountCreation#AccountCreationWith_FreeFirstMonthMemPack</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Client.ClientAccountCreation#AccountCreationWith_NoPackage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Client.ClientAccountCreation#AccountCreationWith_PurchaseClassPack</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

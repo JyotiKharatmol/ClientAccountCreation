@@ -24,7 +24,7 @@ public class ClientSignUp extends Abstract_Component {
 		return doYouHaveACustomerAccount;
 	}
 	
-	@FindBy(xpath="//p/div/div[4]/div/div[2]/div")
+	@FindBy(xpath="//p/div/div[7]/div/div[2]/div")
 	WebElement sessionOnCalendar;
 	
 	public WebElement SessionOnCalendar()
@@ -528,7 +528,7 @@ public class ClientSignUp extends Abstract_Component {
 		return sessionSignedUpMessage;
 	}
 	
-	@FindBy(xpath="//p/div/div[4]/div/div[2]/div/div/div[5]")
+	@FindBy(xpath="//p/div/div[7]/div/div[2]/div/div/div[5]")
 	WebElement greenCheckMark;
 	
 	public WebElement SessionSignedUp_IsShownWith_GreenCheckMark()
