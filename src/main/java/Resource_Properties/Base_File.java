@@ -23,7 +23,6 @@ public class Base_File
    String browserName = pro.getProperty("browser");
    
    
-   
    if(browserName.equalsIgnoreCase("chrome"))
    { 
 	  ChromeOptions options = new ChromeOptions();
@@ -34,7 +33,7 @@ public class Base_File
 	  
 	  options.addArguments("--disable-dev-shm-usage");
 	  
-	  options.addArguments("--headless");
+	  options.addArguments("--headless=new");
 	  
 	  options.addArguments("--window-size=1400, 600");
 	  
