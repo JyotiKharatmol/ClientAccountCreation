@@ -117,7 +117,7 @@ public class ClientAccountCreation extends Base_File
 		a.clientLogin().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
 		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
-		
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
 	}
 	
 	@Test(priority=3)
@@ -173,6 +173,7 @@ public class ClientAccountCreation extends Base_File
 		a.clientLogin().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
 		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
 	}
 	
 	@Test(priority=4)
@@ -229,6 +230,7 @@ public class ClientAccountCreation extends Base_File
 		a.clientLogin().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
 		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
 	}
 	
 	@Test(priority=5)
@@ -285,6 +287,8 @@ public class ClientAccountCreation extends Base_File
 		a.clientLogin().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
 		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
+		
 	}
 	
 	
@@ -343,7 +347,9 @@ public class ClientAccountCreation extends Base_File
 		a.clientLogin().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
 		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
 	}
+	
 	
 	
 	@Test(priority=7)
@@ -401,8 +407,9 @@ public class ClientAccountCreation extends Base_File
 		a.clientLogin().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
 		Assert.assertTrue(a.SessionSignedUp_IsShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
+		
 	}	
-	
 	
 	
 	@AfterMethod()

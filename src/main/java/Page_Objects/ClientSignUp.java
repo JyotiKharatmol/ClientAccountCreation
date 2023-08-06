@@ -24,6 +24,14 @@ public class ClientSignUp extends Abstract_Component {
 		return doYouHaveACustomerAccount;
 	}
 	
+	@FindBy(xpath="//span/a[3]")
+	WebElement signUpLink;
+	
+	public WebElement signUpLink()
+	{
+		return signUpLink;
+	}
+	
 	@FindBy(xpath="//p/div/div[7]/div/div[2]/div")
 	WebElement sessionOnCalendar;
 	
@@ -535,6 +543,15 @@ public class ClientSignUp extends Abstract_Component {
 	{
 		waitForVisibilityOfElement(greenCheckMark);
 		return greenCheckMark;
+	}
+	@FindBy(tagName="h1")
+	WebElement packageStatus;
+	
+	public WebElement packageStatus()
+	{
+		waitForInvisibilityOfWebElement(sessionSignedUpMessage);
+		waitForVisibilityOfElement(greenCheckMark);
+		return packageStatus;
 	}
 	
 }

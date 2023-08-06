@@ -22,21 +22,25 @@ public class Base_File
    pro.load(fis);
    String browserName = pro.getProperty("browser");
    
-
+   
    
    if(browserName.equalsIgnoreCase("chrome"))
    { 
 	  ChromeOptions options = new ChromeOptions();
 	
-	//  options.setBinary("/usr/bin/chromium-browser");
-	  
 	  options.addArguments("--headless");
 	  
-	  options.addArguments("--window-size=1400, 600");
-	   
-	 // WebDriverManager.chromedriver().browserVersion("115.0.5790.102").setup();
+	  options.addArguments("--disable-gbu");
 	  
+	  options.addArguments("--no-sandbox");
+	  
+	  options.addArguments("--window-size=1400, 600");
+	  
+	  options.addArguments("--disable-dev-shm-usage");
+	   
 	  System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	  
+	 // WebDriverManager.chromedriver().setup();
 	  
 	  driver = new ChromeDriver(options);
    }
@@ -49,3 +53,5 @@ public class Base_File
 	
 	
 }
+//options.setBinary("/usr/bin/chromium-browser");
+// System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
