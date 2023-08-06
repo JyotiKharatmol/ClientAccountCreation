@@ -29,11 +29,11 @@ public class Base_File
 	  
 	  options.setBinary("/usr/bin/chromium-browser");
 	  
+	  options.addArguments("--headless=new");
+	  
 	  options.addArguments("--no-sandbox");
 	  
 	  options.addArguments("--disable-dev-shm-usage");
-	  
-	  options.addArguments("--headless=new");
 	  
 	  options.addArguments("--window-size=1400, 600");
 	  
