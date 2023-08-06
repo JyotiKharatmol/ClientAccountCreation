@@ -37,6 +37,8 @@ public class Base_File
 	  options.addArguments("--window-size=1400, 600");
 	  
 	  options.addArguments("--disable-dev-shm-usage");
+	  
+	  options.setBinary("/usr/bin/chromium-browser");
 	   
 	  System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	  
