@@ -27,9 +27,11 @@ public class Base_File
    { 
 	  ChromeOptions options = new ChromeOptions();
 	  
-	  options.setBinary("/usr/bin/chromium-browser");
-	  
 	  options.addArguments("--headless=new");
+	  
+	  options.addArguments("disable-infobars");
+	  
+	  options.addArguments("--disable-extensions");
 	  
 	  options.addArguments("--no-sandbox");
 	  
