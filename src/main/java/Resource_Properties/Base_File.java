@@ -27,22 +27,18 @@ public class Base_File
    if(browserName.equalsIgnoreCase("chrome"))
    { 
 	  ChromeOptions options = new ChromeOptions();
-	
+	  
 	  options.addArguments("--headless");
 	  
-	  options.addArguments("--disable-gbu");
-	  
-	  options.addArguments("--no-sandbox");
-	  
 	  options.addArguments("--window-size=1400, 600");
+	   
+	  options.addArguments("--no-sandbox");
 	  
 	  options.addArguments("--disable-dev-shm-usage");
 	  
-	  options.setBinary("/usr/bin/chromium-browser");
-	   
-	  System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	  options.addArguments("--disable-gbu");
 	  
-	 // WebDriverManager.chromedriver().setup();
+	  WebDriverManager.chromedriver().setup();
 	  
 	  driver = new ChromeDriver(options);
    }
@@ -55,5 +51,3 @@ public class Base_File
 	
 	
 }
-//options.setBinary("/usr/bin/chromium-browser");
-// System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");

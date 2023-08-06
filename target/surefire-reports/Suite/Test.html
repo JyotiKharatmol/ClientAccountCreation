@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 06 12:11:03 IST 2023</td>
+<td>Started on:</td><td>Sun Aug 06 17:11:57 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>448 seconds (448394 ms)</td>
+<tr><td>Total time:</td><td>413 seconds (413449 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,76 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_NoPackage()'><b>AccountCreationWith_NoPackage</b><br>Test class: Client.ClientAccountCreation</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (8fb086f1bdb2bdbed89ca1fdd231f2a9)] -&gt; css selector: div[class=&apos;MuiAlert-message&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60902/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fb086f1bdb2bdbed89ca1fdd231f2a9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.Abstract_Component.waitForInvisibilityOfWebElement(Abstract_Component.java:74)
+	at Page_Objects.ClientSignUp.skipPackage_Term1Checkbox(ClientSignUp.java:329)
+	at Client.ClientAccountCreation.AccountCreationWith_NoPackage(ClientAccountCreation.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1092407638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1092407638'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (8fb086f1bdb2bdbed89ca1fdd231f2a9)] -&gt; css selector: div[class=&apos;MuiAlert-message&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60902/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fb086f1bdb2bdbed89ca1fdd231f2a9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.Abstract_Component.waitForInvisibilityOfWebElement(Abstract_Component.java:74)
+	at Page_Objects.ClientSignUp.skipPackage_Term1Checkbox(ClientSignUp.java:329)
+	at Client.ClientAccountCreation.AccountCreationWith_NoPackage(ClientAccountCreation.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>44</td>
+<td>Client.ClientAccountCreation@4d0f2471</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,40 +146,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPack()'><b>AccountCreationWith_PurchaseMemPack</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>53</td>
+<td>Client.ClientAccountCreation@4d0f2471</td></tr>
+<tr>
 <td title='Client.ClientAccountCreation.AccountCreationWith_FreeFirstMonthMemPack()'><b>AccountCreationWith_FreeFirstMonthMemPack</b><br>Test class: Client.ClientAccountCreation</td>
 <td></td>
-<td>57</td>
-<td>Client.ClientAccountCreation@53fdffa1</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPack()'><b>AccountCreationWith_PurchaseClassPack</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>66</td>
-<td>Client.ClientAccountCreation@53fdffa1</td></tr>
+<td>54</td>
+<td>Client.ClientAccountCreation@4d0f2471</td></tr>
 <tr>
 <td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMem()'><b>AccountCreationWith_PurchaseUnlimitedMem</b><br>Test class: Client.ClientAccountCreation</td>
 <td></td>
-<td>58</td>
-<td>Client.ClientAccountCreation@53fdffa1</td></tr>
+<td>54</td>
+<td>Client.ClientAccountCreation@4d0f2471</td></tr>
 <tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_NoPackage()'><b>AccountCreationWith_NoPackage</b><br>Test class: Client.ClientAccountCreation</td>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPack()'><b>AccountCreationWith_PurchaseClassPack</b><br>Test class: Client.ClientAccountCreation</td>
 <td></td>
-<td>49</td>
-<td>Client.ClientAccountCreation@53fdffa1</td></tr>
+<td>56</td>
+<td>Client.ClientAccountCreation@4d0f2471</td></tr>
 <tr>
 <td title='Client.ClientAccountCreation.AccountCreationWith_FreeTrailPack()'><b>AccountCreationWith_FreeTrailPack</b><br>Test class: Client.ClientAccountCreation</td>
 <td></td>
-<td>54</td>
-<td>Client.ClientAccountCreation@53fdffa1</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPack()'><b>AccountCreationWith_PurchaseMemPack</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>59</td>
-<td>Client.ClientAccountCreation@53fdffa1</td></tr>
+<td>51</td>
+<td>Client.ClientAccountCreation@4d0f2471</td></tr>
 <tr>
 <td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPack()'><b>AccountCreationWith_PurchaseClassAndMemPack</b><br>Test class: Client.ClientAccountCreation</td>
 <td></td>
-<td>40</td>
-<td>Client.ClientAccountCreation@53fdffa1</td></tr>
+<td>53</td>
+<td>Client.ClientAccountCreation@4d0f2471</td></tr>
 </table><p>
 </body>
 </html>
