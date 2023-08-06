@@ -28,6 +28,8 @@ public class Base_File
    { 
 	  ChromeOptions options = new ChromeOptions();
 	  
+	  options.setBinary("/usr/bin/chromium-browser");
+	  
 	  options.addArguments("--headless");
 	  
 	  options.addArguments("--window-size=1400, 600");
