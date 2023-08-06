@@ -30,13 +30,13 @@ public class Base_File
 	  
 	  options.setBinary("/usr/bin/chromium-browser");
 	  
-	  options.addArguments("--headless");
-	  
-	  options.addArguments("--window-size=1400, 600");
-	   
 	  options.addArguments("--no-sandbox");
 	  
 	  options.addArguments("--disable-dev-shm-usage");
+	  
+	  options.addArguments("--headless");
+	  
+	  options.addArguments("--window-size=1400, 600");
 	  
 	  options.addArguments("--disable-gbu");
 	  
