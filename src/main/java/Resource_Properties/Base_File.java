@@ -27,15 +27,15 @@ public class Base_File
    { 
 	  ChromeOptions options = new ChromeOptions();
 	  
-	  options.addArguments("--headless=new");
-	  
-	  options.addArguments("disable-infobars");
-	  
-	  options.addArguments("--disable-extensions");
+	  options.addArguments("--headless");
 	  
 	  options.addArguments("--no-sandbox");
 	  
 	  options.addArguments("--disable-dev-shm-usage");
+	  
+	  options.addArguments("disable-infobars");
+	  
+	  options.addArguments("--disable-extensions");
 	  
 	  options.addArguments("--window-size=1400, 600");
 	  
