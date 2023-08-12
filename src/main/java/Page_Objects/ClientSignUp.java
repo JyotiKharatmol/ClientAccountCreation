@@ -31,7 +31,7 @@ public class ClientSignUp extends Abstract_Component {
 	{
 		return signUpLink;
 	}
-	
+		
 	@FindBy(xpath="//p/div/div[7]/div/div[2]/div")
 	WebElement sessionOnCalendar;
 	
@@ -297,7 +297,6 @@ public class ClientSignUp extends Abstract_Component {
 		return freeFirstMonthMemPack;
 	}
 	
-	
 	@FindBy(css="div[align='center'] a")
 	WebElement skipPurchasePackageLater;
 	
@@ -313,6 +312,7 @@ public class ClientSignUp extends Abstract_Component {
 	{
 		return saveAndContinue2;
 	}
+	
 	@FindBy(css="div[class='MuiAlert-message']")
 	WebElement skipPackageAlertMessage;
 	
@@ -409,12 +409,135 @@ public class ClientSignUp extends Abstract_Component {
 		return saveAndContinue4;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[2]/div/div/div/div[4]/div/div/div/div[3]/span[2]")
-	WebElement $0grantTotal;
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[4]/div/div/div/div[3]/span[1]")
+	WebElement actualGrandTotalName;
 	
-	public WebElement $0grantTotal()
+	public WebElement actualGrandTotalName()
 	{
-		return $0grantTotal;
+		return actualGrandTotalName;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[4]/div/div/div/div[3]/span[2]")
+	WebElement actualGrandTotalAmount;
+	
+	public WebElement actualGrandTotalAmount()
+	{
+		return actualGrandTotalAmount;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[6]/div/div/div/div[3]/span[1]")
+	WebElement actualGrandTotalName_ClassAndMem;
+	
+	public WebElement actualGrandTotalName_ClassAndMem()
+	{
+		return actualGrandTotalName_ClassAndMem;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[6]/div/div/div/div[3]/span[2]")
+	WebElement actualGrandTotalAmount_ClassAndMem;
+	
+	public WebElement actualGrandTotalAmount_ClassAndMem()
+	{
+		return actualGrandTotalAmount_ClassAndMem;
+	}
+	
+	
+	@FindBy(css="input[name='promoCode']")
+	WebElement promoCode;
+	
+	public WebElement promoCode()
+	{
+		return promoCode;
+	}
+	
+	@FindBy(css="button[name='promoCodeApply']")
+	WebElement promoCodeApply;
+	
+	public WebElement promoCodeApply()
+	{
+		return promoCodeApply;
+	}
+	
+	@FindBy(css="div[class='MuiAlert-message']")
+	WebElement promoCodeAppliedMessage;
+	
+	public WebElement promoCodeAppliedMessage()
+	{
+		waitForVisibilityOfElement(promoCodeAppliedMessage);
+		return promoCodeAppliedMessage;
+	}
+	
+	@FindBy(xpath="//div/p/div/div/div[2]/div/div/div/div[4]/div/div/div/div[3]/span[1]")
+	WebElement promoCodeName;
+	
+	public WebElement promoCodeName()
+	{
+		return promoCodeName;
+	}
+	
+	@FindBy(xpath="//div/p/div/div/div[2]/div/div/div/div[4]/div/div/div/div[3]/span[2]")
+	WebElement promoCodeAmount;
+	
+	public WebElement promoCodeAmount()
+	{
+		return promoCodeAmount;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[6]/div/div/div/div[3]/span[1]")
+	WebElement promoCodeName_ClassAndMem;
+	
+	public WebElement promoCodeName_ClassAndMem()
+	{
+		return promoCodeName_ClassAndMem;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[6]/div/div/div/div[3]/span[2]")
+	WebElement promoCodeAmount_ClassAndMem;
+	
+	public WebElement promoCodeAmount_ClassAndMem()
+	{
+		return promoCodeAmount_ClassAndMem;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div/div[4]/div/div/div/div[4]/span[1]")
+	WebElement grandTotalNameAfterDiscount;
+	
+	public WebElement grandTotalNameAfterDiscount()
+	{
+		return grandTotalNameAfterDiscount;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div/div[4]/div/div/div/div[4]/span[2]")
+	WebElement grandTotalAmountAfterDiscount;
+	
+	public WebElement grandTotalAmountAfterDiscount()
+	{
+		return grandTotalAmountAfterDiscount;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[6]/div/div/div/div[4]/span[1]")
+	WebElement grandTotalName_ClassAndMem_AfterDiscount;
+	
+	
+	public WebElement grandTotalName_ClassAndMem_AfterDiscount()
+	{
+		return grandTotalName_ClassAndMem_AfterDiscount;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[6]/div/div/div/div[4]/span[2]")
+	WebElement grandTotalAmount_ClassAndMem_AfterDiscount;
+	
+	public WebElement grandTotalAmount_ClassAndMem_AfterDiscount()
+	{
+		return grandTotalAmount_ClassAndMem_AfterDiscount;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div/div[4]/div/div/div/div[3]/span[2]")
+	WebElement $0grandTotal;
+	
+	public WebElement $0grandTotal()
+	{
+		return $0grandTotal;
 	}
 	
 	@FindBy(xpath="//p/div/div/div[3]/div/div/div[9]/div/div/div[2]/div/label/span[1]/span[1]")
@@ -537,20 +660,39 @@ public class ClientSignUp extends Abstract_Component {
 	}
 	
 	@FindBy(xpath="//p/div/div[7]/div/div[2]/div/div/div[5]")
-	WebElement greenCheckMark;
+	WebElement sessionOnCalendarShownWith_GreenCheckMark;
 	
-	public WebElement SessionSignedUp_IsShownWith_GreenCheckMark()
+	public WebElement sessionOnCalendarShownWith_GreenCheckMark()
 	{
-		waitForVisibilityOfElement(greenCheckMark);
-		return greenCheckMark;
+		waitForVisibilityOfElement(sessionOnCalendarShownWith_GreenCheckMark);
+		return sessionOnCalendarShownWith_GreenCheckMark;
 	}
+	
+	@FindBy(css="svg:nth-child(2)")
+	WebElement sessionModalShownWith_GreenCheckMark;
+	
+	public WebElement sessionModalShownWith_GreenCheckMark()
+	{
+		return sessionModalShownWith_GreenCheckMark;
+	}
+	
+	@FindBy(xpath="//span[text()='CANCEL SESSION']")
+	WebElement cancelSession;
+	
+	public WebElement cancelSession()
+	{
+		waitForVisibilityOfElement(cancelSession);
+		return cancelSession;
+	}
+	
+	
 	@FindBy(tagName="h1")
 	WebElement packageStatus;
 	
 	public WebElement packageStatus()
 	{
 		waitForInvisibilityOfWebElement(sessionSignedUpMessage);
-		waitForVisibilityOfElement(greenCheckMark);
+		waitForVisibilityOfElement(sessionOnCalendarShownWith_GreenCheckMark);
 		return packageStatus;
 	}
 	

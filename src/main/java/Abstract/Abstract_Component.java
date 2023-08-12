@@ -15,29 +15,28 @@ public class Abstract_Component
 
 	public Abstract_Component(WebDriver driver) 
 	{
-
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(linkText = "#/fit/solo-client/client/app")
 	WebElement calendar;
-
-	@FindBy(linkText = "fit/solo-client/client/app/client-signup")
-	WebElement signUp;
-
-	@FindBy(xpath = "//span[text()='LOG IN']")
-	WebElement login;
-
+	
 	public WebElement Calendar() 
 	{
 		return calendar;
 	}
 
+	@FindBy(xpath = "//ul/a[2]/div")
+	WebElement signUp;
+	
 	public WebElement SignUp() 
 	{
 		return signUp;
 	}
+
+	@FindBy(xpath = "//span[text()='LOG IN']")
+	WebElement login;
 
 	public WebElement Login() 
 	{
@@ -50,7 +49,7 @@ public class Abstract_Component
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(30));
 		w.until(ExpectedConditions.visibilityOf(a));
 	}
-
+	
 	public void waitForElementToBeClickable(WebElement a) 
 	{
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(30));

@@ -3,16 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="Client.ClientAccountCreation">
+      <class name="Client.ClientAccountSignUp">
         <methods>
-          <include name="AccountCreationWith_FreeTrailPack"/>
-          <include name="AccountCreationWith_PurchaseUnlimitedMem"/>
           <include name="tearDown"/>
+          <include name="SignUp_AccountCreationWith_FreeTrailPack"/>
           <include name="initialize"/>
-          <include name="AccountCreationWith_PurchaseClassAndMemPack"/>
-          <include name="AccountCreationWith_FreeFirstMonthMemPack"/>
         </methods>
-      </class> <!-- Client.ClientAccountCreation -->
+      </class> <!-- Client.ClientAccountSignUp -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
