@@ -63,6 +63,7 @@ public class ClientSignUp extends Abstract_Component {
 	
 	public WebElement FirstName()
 	{
+	waitForVisibilityOfElement(firstName);
 	return firstName;
 	}
 	

@@ -27,8 +27,7 @@ public class Base_File
    { 
 	  ChromeOptions options = new ChromeOptions();
 	   
-	  /*
-	   options.addArguments("--headless");
+	  options.addArguments("--headless");
 	  
 	  options.addArguments("--no-sandbox");
 	  
@@ -41,8 +40,6 @@ public class Base_File
 	  options.addArguments("--window-size=1400, 600");
 	  
 	  options.addArguments("--disable-gbu");
-	    
-	  */
 	  
 	  WebDriverManager.chromedriver().setup();
 	  

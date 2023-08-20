@@ -474,7 +474,7 @@ public class ClientAccountCreation extends Base_File
 		a.SessionOnCalendar().click();
 		a.sessionSignUp().click();
 		a.dontHaveAnAccountClientSignUp().click();
-		a.FirstName().sendKeys("Ava");
+		a.FirstName().sendKeys("Shirely");
 		a.LastName().sendKeys("Hathaway");
 		String randomInt = RandomStringUtils.randomAlphanumeric(3);
 		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
@@ -487,9 +487,9 @@ public class ClientAccountCreation extends Base_File
 		a.State().click();
 		a.Georgia().click();
 		a.Zip().sendKeys("30303");
-		a.eFirstName().sendKeys("Shirley");
+		a.eFirstName().sendKeys("Anne");
 		a.eLastName().sendKeys("Hathaway");
-		a.eEmail().sendKeys("shirley.hathaway@gmail.com");
+		a.eEmail().sendKeys("anne.hathaway@gmail.com");
 		a.ePhoneNo().sendKeys("4253453412");
 		a.eRelationship().sendKeys("Sister");
 		a.Password().sendKeys("Password@3");
@@ -501,12 +501,12 @@ public class ClientAccountCreation extends Base_File
 		a.Term1Checkbox().click();
 		a.Term2Checkbox().click();
 		a.DefaultCheckbox().click();
-		a.TypeFullName().sendKeys("Anne Hathaway");
+		a.TypeFullName().sendKeys("Shirely Hathaway");
 		a.SaveAndContinue3().click();
 		a.PoliciesTerm1().click();
 		a.PoliciesTerm2().click();
 		a.PoliciesDefaultCheckbox().click();
-		a.PoliciesTypeFullName().sendKeys("Anne Hathway");
+		a.PoliciesTypeFullName().sendKeys("Shirely Hathway");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName_ClassAndMem().getText(), "Grand Total");
 		Assert.assertEquals(a.actualGrandTotalAmount_ClassAndMem().getText(), "$2.00");
