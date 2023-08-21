@@ -3,11 +3,9 @@ import java.time.Duration;
 import java.util.Properties;
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base_File 
@@ -21,12 +19,12 @@ public class Base_File
    pro = new Properties();
    pro.load(fis);
    String browserName = pro.getProperty("browser");
-   
+
    
    if(browserName.equalsIgnoreCase("chrome"))
-   { 
+   { 	  
 	  ChromeOptions options = new ChromeOptions();
-	   
+	 
 	  options.addArguments("--headless");
 	  
 	  options.addArguments("--no-sandbox");
@@ -39,7 +37,7 @@ public class Base_File
 	  
 	  options.addArguments("--window-size=1400, 600");
 	  
-	  options.addArguments("--disable-gbu");
+	  options.addArguments("--disable-gbu"); 
 	  
 	  WebDriverManager.chromedriver().setup();
 	  

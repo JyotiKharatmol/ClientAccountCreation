@@ -1,13 +1,10 @@
 package Client;
-
 import java.io.IOException;
-
 import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import Page_Objects.ClientSignUp;
 import Resource_Properties.Base_File;
 
@@ -117,6 +114,8 @@ public class ClientAccountSignUp extends Base_File
 		a.SessionOnCalendar().click();
 		a.sessionSignUp().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.cancelSession().isDisplayed());
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
 		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
 		Assert.assertTrue(a.packageStatus().getText().contains("1/"));	
 	}
@@ -159,6 +158,15 @@ public class ClientAccountSignUp extends Base_File
 		a.PoliciesDefaultCheckbox().click();
 		a.PoliciesTypeFullName().sendKeys("Alexandra Daddario");
 		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
+		a.promoCode().sendKeys("yog247");
+		a.promoCodeApply().click();
+		Assert.assertEquals(a.promoCodeAppliedMessage().getText(), "Your promo code has been applied successfully!");
+		Assert.assertEquals(a.promoCodeName().getText(), "Promo-(yog247)");
+		Assert.assertEquals(a.promoCodeAmount().getText(), "-$0.50");
+		Assert.assertEquals(a.grandTotalNameAfterDiscount().getText(), "Grand Total");
+		Assert.assertEquals(a.grandTotalAmountAfterDiscount().getText(), "$0.50");
 		a.sameAsClientDetails().click();
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
@@ -172,6 +180,8 @@ public class ClientAccountSignUp extends Base_File
 		a.SessionOnCalendar().click();
 		a.sessionSignUp().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.cancelSession().isDisplayed());
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
 		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
 		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
 	}
@@ -214,6 +224,15 @@ public class ClientAccountSignUp extends Base_File
 		a.PoliciesDefaultCheckbox().click();
 		a.PoliciesTypeFullName().sendKeys("Elizabeth Olsen");
 		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
+		a.promoCode().sendKeys("mempack23");
+		a.promoCodeApply().click();
+		Assert.assertEquals(a.promoCodeAppliedMessage().getText(), "Your promo code has been applied successfully!");
+		Assert.assertEquals(a.promoCodeName().getText(), "Promo-(mempack23)");
+		Assert.assertEquals(a.promoCodeAmount().getText(), "-$0.50");
+		Assert.assertEquals(a.grandTotalNameAfterDiscount().getText(), "Grand Total");
+		Assert.assertEquals(a.grandTotalAmountAfterDiscount().getText(), "$0.50");		
 		a.sameAsClientDetails().click();
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
@@ -228,6 +247,8 @@ public class ClientAccountSignUp extends Base_File
 		a.SessionOnCalendar().click();
 		a.sessionSignUp().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.cancelSession().isDisplayed());
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
 		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
 		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
 	}
@@ -270,6 +291,15 @@ public class ClientAccountSignUp extends Base_File
 		a.PoliciesDefaultCheckbox().click();
 		a.PoliciesTypeFullName().sendKeys("Matthew McConaughey");
 		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
+		a.promoCode().sendKeys("mempack23");
+		a.promoCodeApply().click();
+		Assert.assertEquals(a.promoCodeAppliedMessage().getText(), "Your promo code has been applied successfully!");
+		Assert.assertEquals(a.promoCodeName().getText(), "Promo-(mempack23)");
+		Assert.assertEquals(a.promoCodeAmount().getText(), "-$0.50");
+		Assert.assertEquals(a.grandTotalNameAfterDiscount().getText(), "Grand Total");
+		Assert.assertEquals(a.grandTotalAmountAfterDiscount().getText(), "$0.50");	
 		a.sameAsClientDetails().click();
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
@@ -284,6 +314,8 @@ public class ClientAccountSignUp extends Base_File
 		a.SessionOnCalendar().click();
 		a.sessionSignUp().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.cancelSession().isDisplayed());
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
 		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
 		Assert.assertTrue(a.packageStatus().getText().contains("1/"));	
 	}
@@ -326,7 +358,8 @@ public class ClientAccountSignUp extends Base_File
 		a.PoliciesDefaultCheckbox().click();
 		a.PoliciesTypeFullName().sendKeys("Julianne Moore");
 		a.SaveAndContinue4().click();
-		Assert.assertEquals(a.$0grandTotal().getText(), "$0.00");
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$0.00");
 		a.sameAsClientDetails().click();
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
@@ -341,6 +374,8 @@ public class ClientAccountSignUp extends Base_File
 		a.SessionOnCalendar().click();
 		a.sessionSignUp().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.cancelSession().isDisplayed());
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
 		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
 		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
 	}
@@ -383,7 +418,16 @@ public class ClientAccountSignUp extends Base_File
 		a.PoliciesTerm2().click();
 		a.PoliciesDefaultCheckbox().click();
 		a.PoliciesTypeFullName().sendKeys("Elle Fanning");
-		a.SaveAndContinue4().click();
+		a.SaveAndContinue4().click();	
+		Assert.assertEquals(a.actualGrandTotalName_ClassAndMem().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount_ClassAndMem().getText(), "$2.00");
+		a.promoCode().sendKeys("mempack23");
+		a.promoCodeApply().click();
+		Assert.assertEquals(a.promoCodeAppliedMessage().getText(), "Your promo code has been applied successfully!");
+		Assert.assertEquals(a.promoCodeName_ClassAndMem().getText(), "Promo-(mempack23)");
+		Assert.assertEquals(a.promoCodeAmount_ClassAndMem().getText(), "-$0.50");
+		Assert.assertEquals(a.grandTotalName_ClassAndMem_AfterDiscount().getText(), "Grand Total");
+		Assert.assertEquals(a.grandTotalAmount_ClassAndMem_AfterDiscount().getText(), "$1.50");
 		a.sameAsClientDetails().click();
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
@@ -398,41 +442,86 @@ public class ClientAccountSignUp extends Base_File
 		a.SessionOnCalendar().click();
 		a.sessionSignUp().click();
 		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.cancelSession().isDisplayed());
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
 		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
-		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
-		
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));	
 	}	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@Test(priority=8)
+	public void SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode()
+	{
+		ClientSignUp a = new ClientSignUp(driver);
+		a.signUpLink().click();
+		a.FirstName().sendKeys("Isabella");
+		a.LastName().sendKeys("Fanning");
+		String randomInt = RandomStringUtils.randomAlphanumeric(3);
+		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
+		a.PhoneNo().sendKeys("4825434121");
+		a.DOB().sendKeys("09091995");
+		a.selectGender().click();
+		a.PreferNotDisclose().click();
+		a.Address1().sendKeys("Highland Street 120");
+		a.City().sendKeys("Atlanta");
+		a.State().click();
+		a.Georgia().click();
+		a.Zip().sendKeys("30303");
+		a.eFirstName().sendKeys("Emma");
+		a.eLastName().sendKeys("Fanning");
+		a.eEmail().sendKeys("emma.fanning@gmail.com");
+		a.ePhoneNo().sendKeys("4253453412");
+		a.eRelationship().sendKeys("Sister");
+		a.Password().sendKeys("Password@3");
+		a.ConfirmPassword().sendKeys("Password@3");
+		a.SaveAndContinue1().click();
+		a.$classPack().click();
+		a.xSessionsMemPack().click();
+		a.SaveAndContinue2().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
+		a.TypeFullName().sendKeys("Isabella Fanning");
+		a.SaveAndContinue3().click();
+		a.PoliciesTerm1().click();
+		a.PoliciesTerm2().click();
+		a.PoliciesDefaultCheckbox().click();
+		a.PoliciesTypeFullName().sendKeys("Isabella Fanning");
+		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.actualGrandTotalName_ClassAndMem().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount_ClassAndMem().getText(), "$2.00");
+		a.promoCode().sendKeys("yog247");
+		a.promoCodeApply().click();
+		Assert.assertEquals(a.promoCodeAppliedMessage().getText(), "Your promo code has been applied successfully!");
+		Assert.assertEquals(a.promoCodeName_ClassAndMem().getText(), "Promo-(yog247)");
+		Assert.assertEquals(a.promoCodeAmount_ClassAndMem().getText(), "-$0.50");
+		Assert.assertEquals(a.grandTotalName_ClassAndMem_AfterDiscount().getText(), "Grand Total");
+		Assert.assertEquals(a.grandTotalAmount_ClassAndMem_AfterDiscount().getText(), "$1.50");
+		a.sameAsClientDetails().click();
+		a.EnterCreditCardNo().sendKeys("4242424242424242");
+		a.EnterExpiryDate().sendKeys("0224");
+		a.EnterCVV().sendKeys("4391");
+		a.agreeToChargeMonthlyCheckbox().click();
+		a.Confirm_pay().click();
+		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
+		a.Login().click();
+		a.clientUsername().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
+		a.clientPassword().sendKeys("Password@3");
+		a.clientLogin().click();
+		a.SessionOnCalendar().click();
+		a.sessionSignUp().click();
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.cancelSession().isDisplayed());
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));	
+	}	
 	
 	@AfterMethod
 	public void tearDown()
 	{
 		driver.close();
 	}
-	
-	
-	
-	
-	
-	
+
 	
 }

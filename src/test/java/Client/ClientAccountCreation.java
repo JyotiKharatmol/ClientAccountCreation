@@ -10,8 +10,7 @@ import Page_Objects.ClientSignUp;
 
 public class ClientAccountCreation extends Base_File 
 {
-
-	@BeforeMethod()
+	@BeforeMethod
 	public void initialize() throws IOException 
 	{
 		driver = initializeBrowser();
@@ -27,7 +26,7 @@ public class ClientAccountCreation extends Base_File
 		a.sessionSignUp().click();
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Rose");
-		a.LastName().sendKeys("Lavelle");	
+		a.LastName().sendKeys("Lavelle");
 		String randomInt = RandomStringUtils.randomAlphanumeric(3);
 		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
 		a.PhoneNo().sendKeys("4834484031");
@@ -64,8 +63,7 @@ public class ClientAccountCreation extends Base_File
 		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
 		a.clientPassword().sendKeys("Password@3");
 		a.clientLogin().click();
-		Assert.assertEquals(a.dontHaveAPackageMessage().getText(), "You don't have a package on file for this session.\n"+"Would you like to purchase a new package?");
-		
+		Assert.assertEquals(a.dontHaveAPackageMessage().getText(), "You don't have a package on file for this session.\n"+"Would you like to purchase a new package?");	
 	}
 	
 	@Test(priority=2)
@@ -109,6 +107,8 @@ public class ClientAccountCreation extends Base_File
 		a.PoliciesDefaultCheckbox().click();
 		a.PoliciesTypeFullName().sendKeys("Crystal Dunn");
 		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$0.00");
 		a.Confirm().click();
 		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
 		a.Login().click();
@@ -124,7 +124,7 @@ public class ClientAccountCreation extends Base_File
 	}
 	
 	@Test(priority=3)
-	public void AccountCreationWith_PurchaseClassPack() 
+	public void AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard() 
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -188,12 +188,216 @@ public class ClientAccountCreation extends Base_File
 		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
 		a.SessionOnCalendar().click();
 		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
-		Assert.assertTrue(a.cancelSession().isDisplayed());
-		
+		Assert.assertTrue(a.cancelSession().isDisplayed());	
 	}
 	
 	@Test(priority=4)
-	public void AccountCreationWith_PurchaseMemPack()
+	public void AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard() 
+	{
+		ClientSignUp a = new ClientSignUp(driver);
+		a.DoYouHaveAcustomerAccount().click();
+		a.SessionOnCalendar().click();
+		a.sessionSignUp().click();
+		a.dontHaveAnAccountClientSignUp().click();
+		a.FirstName().sendKeys("Sophia");
+		a.LastName().sendKeys("Huerta");
+		String randomInt = RandomStringUtils.randomAlphanumeric(3);
+		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.PhoneNo().sendKeys("4825434121");
+		a.Address1().sendKeys("Highland Street 140");
+		a.City().sendKeys("Atlanta");
+		a.DOB().sendKeys("09091995");
+		a.selectGender().click();
+		a.Female().click();
+		a.Zip().sendKeys("30303");
+		a.State().click();
+		a.Georgia().click();
+		a.eFirstName().sendKeys("Alyssa");
+		a.eLastName().sendKeys("Huerta");
+		a.eEmail().sendKeys("alyssa.huerta@gmail.com");
+		a.ePhoneNo().sendKeys("4853453412");
+		a.eRelationship().sendKeys("Sister");
+		a.Password().sendKeys("Password@3");
+		a.ConfirmPassword().sendKeys("Password@3");
+		a.SaveAndContinue1().click();
+		a.$classPack().click();
+		a.SaveAndContinue2().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
+		a.TypeFullName().sendKeys("Sophia Huerta");
+		a.SaveAndContinue3().click();
+		a.PoliciesTerm1().click();
+		a.PoliciesTerm2().click();
+		a.PoliciesDefaultCheckbox().click();
+		a.PoliciesTypeFullName().sendKeys("Sophia Huerta");
+		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
+		a.promoCode().sendKeys("yog247");
+		a.promoCodeApply().click();
+		Assert.assertEquals(a.promoCodeAppliedMessage().getText(), "Your promo code has been applied successfully!");
+		Assert.assertEquals(a.promoCodeName().getText(), "Promo-(yog247)");
+		Assert.assertEquals(a.promoCodeAmount().getText(), "-$0.50");
+		Assert.assertEquals(a.grandTotalNameAfterDiscount().getText(), "Grand Total");
+		Assert.assertEquals(a.grandTotalAmountAfterDiscount().getText(), "$0.50");
+		a.cardHolderFirstName().sendKeys("Alyssa");
+		a.cardHolderLastName().sendKeys("Huerta");
+		a.cardHolderEmail().sendKeys("alysaa.huerta@gmail.com");
+		a.cardHolderAddress().sendKeys("Highland Street 120");
+		a.cardHolderCity().sendKeys("Atlanta");
+		a.cardHolderSelectState().click();
+		a.cardHolderGeorgia().click();
+		a.cardHolderZip().sendKeys("30303");
+		a.EnterCreditCardNo().sendKeys("4242424242424242");
+		a.EnterExpiryDate().sendKeys("0224");
+		a.EnterCVV().sendKeys("4391");
+		a.Confirm_pay().click();
+		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
+		a.Login().click();
+		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.clientPassword().sendKeys("Password@3");
+		a.clientLogin().click();
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
+		a.SessionOnCalendar().click();
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.cancelSession().isDisplayed());	
+	}
+	
+	@Test(priority=5)
+	public void AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard() 
+	{
+		ClientSignUp a = new ClientSignUp(driver);
+		a.DoYouHaveAcustomerAccount().click();
+		a.SessionOnCalendar().click();
+		a.sessionSignUp().click();
+		a.dontHaveAnAccountClientSignUp().click();
+		a.FirstName().sendKeys("Sophia");
+		a.LastName().sendKeys("Huerta");
+		String randomInt = RandomStringUtils.randomAlphanumeric(3);
+		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.PhoneNo().sendKeys("4825434121");
+		a.Address1().sendKeys("Highland Street 140");
+		a.City().sendKeys("Atlanta");
+		a.DOB().sendKeys("09091995");
+		a.selectGender().click();
+		a.Female().click();
+		a.Zip().sendKeys("30303");
+		a.State().click();
+		a.Georgia().click();
+		a.eFirstName().sendKeys("Alyssa");
+		a.eLastName().sendKeys("Huerta");
+		a.eEmail().sendKeys("alyssa.huerta@gmail.com");
+		a.ePhoneNo().sendKeys("4853453412");
+		a.eRelationship().sendKeys("Sister");
+		a.Password().sendKeys("Password@3");
+		a.ConfirmPassword().sendKeys("Password@3");
+		a.SaveAndContinue1().click();
+		a.$classPack().click();
+		a.SaveAndContinue2().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
+		a.TypeFullName().sendKeys("Sophia Huerta");
+		a.SaveAndContinue3().click();
+		a.PoliciesTerm1().click();
+		a.PoliciesTerm2().click();
+		a.PoliciesDefaultCheckbox().click();
+		a.PoliciesTypeFullName().sendKeys("Sophia Huerta");
+		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
+		a.sameAsClientDetails().click();
+		a.EnterCreditCardNo().sendKeys("4242424242424242");
+		a.EnterExpiryDate().sendKeys("0224");
+		a.EnterCVV().sendKeys("4391");
+		a.Confirm_pay().click();
+		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
+		a.Login().click();
+		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.clientPassword().sendKeys("Password@3");
+		a.clientLogin().click();
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
+		a.SessionOnCalendar().click();
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.cancelSession().isDisplayed());	
+	}
+		
+	@Test(priority=6)
+	public void AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard() 
+	{
+		ClientSignUp a = new ClientSignUp(driver);
+		a.DoYouHaveAcustomerAccount().click();
+		a.SessionOnCalendar().click();
+		a.sessionSignUp().click();
+		a.dontHaveAnAccountClientSignUp().click();
+		a.FirstName().sendKeys("Sophia");
+		a.LastName().sendKeys("Huerta");
+		String randomInt = RandomStringUtils.randomAlphanumeric(3);
+		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.PhoneNo().sendKeys("4825434121");
+		a.Address1().sendKeys("Highland Street 140");
+		a.City().sendKeys("Atlanta");
+		a.DOB().sendKeys("09091995");
+		a.selectGender().click();
+		a.Female().click();
+		a.Zip().sendKeys("30303");
+		a.State().click();
+		a.Georgia().click();
+		a.eFirstName().sendKeys("Alyssa");
+		a.eLastName().sendKeys("Huerta");
+		a.eEmail().sendKeys("alyssa.huerta@gmail.com");
+		a.ePhoneNo().sendKeys("4853453412");
+		a.eRelationship().sendKeys("Sister");
+		a.Password().sendKeys("Password@3");
+		a.ConfirmPassword().sendKeys("Password@3");
+		a.SaveAndContinue1().click();
+		a.$classPack().click();
+		a.SaveAndContinue2().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
+		a.TypeFullName().sendKeys("Sophia Huerta");
+		a.SaveAndContinue3().click();
+		a.PoliciesTerm1().click();
+		a.PoliciesTerm2().click();
+		a.PoliciesDefaultCheckbox().click();
+		a.PoliciesTypeFullName().sendKeys("Sophia Huerta");
+		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
+		a.cardHolderFirstName().sendKeys("Alyssa");
+		a.cardHolderLastName().sendKeys("Huerta");
+		a.cardHolderEmail().sendKeys("alysaa.huerta@gmail.com");
+		a.cardHolderAddress().sendKeys("Highland Street 120");
+		a.cardHolderCity().sendKeys("Atlanta");
+		a.cardHolderSelectState().click();
+		a.cardHolderGeorgia().click();
+		a.cardHolderZip().sendKeys("30303");
+		a.EnterCreditCardNo().sendKeys("4242424242424242");
+		a.EnterExpiryDate().sendKeys("0224");
+		a.EnterCVV().sendKeys("4391");
+		a.Confirm_pay().click();
+		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
+		a.Login().click();
+		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.clientPassword().sendKeys("Password@3");
+		a.clientLogin().click();
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
+		a.SessionOnCalendar().click();
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.cancelSession().isDisplayed());	
+	}
+	
+	
+	@Test(priority=7)
+	public void AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -215,7 +419,7 @@ public class ClientAccountCreation extends Base_File
 		a.Zip().sendKeys("30303");
 		a.eFirstName().sendKeys("Naomi");
 		a.eLastName().sendKeys("Sanchez");
-		a.eEmail().sendKeys("micheal.william@gmail.com");
+		a.eEmail().sendKeys("naomi.sanchez@gmail.com");
 		a.ePhoneNo().sendKeys("4853453412");
 		a.eRelationship().sendKeys("Sister");
 		a.Password().sendKeys("Password@3");
@@ -258,12 +462,149 @@ public class ClientAccountCreation extends Base_File
 		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
 		a.SessionOnCalendar().click();
 		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
-		Assert.assertTrue(a.cancelSession().isDisplayed());
-		
+		Assert.assertTrue(a.cancelSession().isDisplayed());	
 	}
 	
-	@Test(priority=5)
-	public void AccountCreationWith_PurchaseUnlimitedMem()
+	@Test(priority=8)
+	public void AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard()
+	{
+		ClientSignUp a = new ClientSignUp(driver);
+		a.DoYouHaveAcustomerAccount().click();
+		a.SessionOnCalendar().click();
+		a.sessionSignUp().click();
+		a.dontHaveAnAccountClientSignUp().click();
+		a.FirstName().sendKeys("Ashley");
+		a.LastName().sendKeys("Sanchez");
+		String randomInt = RandomStringUtils.randomAlphanumeric(3);
+		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.PhoneNo().sendKeys("4805434121");
+		a.DOB().sendKeys("09091995");
+		a.selectGender().click();
+		a.Female().click();
+		a.Address1().sendKeys("Highland Street 150");
+		a.City().sendKeys("Atlanta");
+		a.State().click();
+		a.Georgia().click();
+		a.Zip().sendKeys("30303");
+		a.eFirstName().sendKeys("Naomi");
+		a.eLastName().sendKeys("Sanchez");
+		a.eEmail().sendKeys("naomi.sanchez@gmail.com");
+		a.ePhoneNo().sendKeys("4853453412");
+		a.eRelationship().sendKeys("Sister");
+		a.Password().sendKeys("Password@3");
+		a.ConfirmPassword().sendKeys("Password@3");
+		a.SaveAndContinue1().click();
+		a.xSessionsMemPack().click();
+		a.SaveAndContinue2().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
+		a.TypeFullName().sendKeys("Ashley Sanchez");
+		a.SaveAndContinue3().click();
+		a.PoliciesTerm1().click();
+		a.PoliciesTerm2().click();
+		a.PoliciesDefaultCheckbox().click();
+		a.PoliciesTypeFullName().sendKeys("Ashley Sanchez");
+		a.SaveAndContinue4().click();	
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
+		a.promoCode().sendKeys("mempack23");
+		a.promoCodeApply().click();
+		Assert.assertEquals(a.promoCodeAppliedMessage().getText(), "Your promo code has been applied successfully!");
+		Assert.assertEquals(a.promoCodeName().getText(), "Promo-(mempack23)");
+		Assert.assertEquals(a.promoCodeAmount().getText(), "-$0.50");
+		Assert.assertEquals(a.grandTotalNameAfterDiscount().getText(), "Grand Total");
+		Assert.assertEquals(a.grandTotalAmountAfterDiscount().getText(), "$0.50");		
+		a.cardHolderFirstName().sendKeys("Naomi");
+		a.cardHolderLastName().sendKeys("Sanchez");
+		a.cardHolderEmail().sendKeys("naomi.sanchez@gmail.com");
+		a.cardHolderAddress().sendKeys("Highland Street 120");
+		a.cardHolderCity().sendKeys("Atlanta");
+		a.cardHolderSelectState().click();
+		a.cardHolderGeorgia().click();
+		a.cardHolderZip().sendKeys("30303");
+		a.EnterCreditCardNo().sendKeys("4242424242424242");
+		a.EnterExpiryDate().sendKeys("0224");
+		a.EnterCVV().sendKeys("4391");
+		a.agreeToChargeMonthlyCheckbox().click();
+		a.Confirm_pay().click();
+		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
+		a.Login().click();
+		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.clientPassword().sendKeys("Password@3");
+		a.clientLogin().click();
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
+		a.SessionOnCalendar().click();
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.cancelSession().isDisplayed());	
+	}
+		
+	@Test(priority=9)
+	public void AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard()
+	{
+		ClientSignUp a = new ClientSignUp(driver);
+		a.DoYouHaveAcustomerAccount().click();
+		a.SessionOnCalendar().click();
+		a.sessionSignUp().click();
+		a.dontHaveAnAccountClientSignUp().click();
+		a.FirstName().sendKeys("Ashley");
+		a.LastName().sendKeys("Sanchez");
+		String randomInt = RandomStringUtils.randomAlphanumeric(3);
+		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.PhoneNo().sendKeys("4805434121");
+		a.DOB().sendKeys("09091995");
+		a.selectGender().click();
+		a.Female().click();
+		a.Address1().sendKeys("Highland Street 150");
+		a.City().sendKeys("Atlanta");
+		a.State().click();
+		a.Georgia().click();
+		a.Zip().sendKeys("30303");
+		a.eFirstName().sendKeys("Naomi");
+		a.eLastName().sendKeys("Sanchez");
+		a.eEmail().sendKeys("naomi.sanchez@gmail.com");
+		a.ePhoneNo().sendKeys("4853453412");
+		a.eRelationship().sendKeys("Sister");
+		a.Password().sendKeys("Password@3");
+		a.ConfirmPassword().sendKeys("Password@3");
+		a.SaveAndContinue1().click();
+		a.xSessionsMemPack().click();
+		a.SaveAndContinue2().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
+		a.TypeFullName().sendKeys("Ashley Sanchez");
+		a.SaveAndContinue3().click();
+		a.PoliciesTerm1().click();
+		a.PoliciesTerm2().click();
+		a.PoliciesDefaultCheckbox().click();
+		a.PoliciesTypeFullName().sendKeys("Ashley Sanchez");
+		a.SaveAndContinue4().click();	
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
+		a.sameAsClientDetails().click();
+		a.EnterCreditCardNo().sendKeys("4242424242424242");
+		a.EnterExpiryDate().sendKeys("0224");
+		a.EnterCVV().sendKeys("4391");
+		a.agreeToChargeMonthlyCheckbox().click();
+		a.Confirm_pay().click();
+		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
+		a.Login().click();
+		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.clientPassword().sendKeys("Password@3");
+		a.clientLogin().click();
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
+		a.SessionOnCalendar().click();
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.cancelSession().isDisplayed());	
+	}
+		
+	@Test(priority=10)
+	public void AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -331,8 +672,146 @@ public class ClientAccountCreation extends Base_File
 		Assert.assertTrue(a.cancelSession().isDisplayed());
 	}
 	
+	@Test(priority=11)
+	public void AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard()
+	{
+		ClientSignUp a = new ClientSignUp(driver);
+		a.DoYouHaveAcustomerAccount().click();
+		a.SessionOnCalendar().click();
+		a.sessionSignUp().click();
+		a.dontHaveAnAccountClientSignUp().click();
+		a.FirstName().sendKeys("Morgan");
+		a.LastName().sendKeys("Freeman");
+		String randomInt = RandomStringUtils.randomAlphanumeric(3);
+		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.PhoneNo().sendKeys("4567765420");
+		a.DOB().sendKeys("09301994");
+		a.selectGender().click();
+		a.Male().click();
+		a.Address1().sendKeys("Highland Street 140");
+		a.City().sendKeys("Atlanta");
+		a.State().click();
+		a.Georgia().click();
+		a.Zip().sendKeys("30303");
+		a.eFirstName().sendKeys("Matthew");
+		a.eLastName().sendKeys("Freeman");
+		a.eEmail().sendKeys("matthew.freeman@gmail.com");
+		a.ePhoneNo().sendKeys("4567876545");
+		a.eRelationship().sendKeys("Sister");
+		a.Password().sendKeys("Password@3");
+		a.ConfirmPassword().sendKeys("Password@3");
+		a.SaveAndContinue1().click();
+		a.unlimitedMemPack().click();
+		a.SaveAndContinue2().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
+		a.TypeFullName().sendKeys("Morgan Freeman");
+		a.SaveAndContinue3().click();
+		a.PoliciesTerm1().click();
+		a.PoliciesTerm2().click();
+		a.PoliciesDefaultCheckbox().click();
+		a.PoliciesTypeFullName().sendKeys("Morgan Freeman");
+		a.SaveAndContinue4().click();	
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
+		a.promoCode().sendKeys("mempack23");
+		a.promoCodeApply().click();
+		Assert.assertEquals(a.promoCodeAppliedMessage().getText(), "Your promo code has been applied successfully!");
+		Assert.assertEquals(a.promoCodeName().getText(), "Promo-(mempack23)");
+		Assert.assertEquals(a.promoCodeAmount().getText(), "-$0.50");
+		Assert.assertEquals(a.grandTotalNameAfterDiscount().getText(), "Grand Total");
+		Assert.assertEquals(a.grandTotalAmountAfterDiscount().getText(), "$0.50");	
+		a.cardHolderFirstName().sendKeys("Matthew");
+		a.cardHolderLastName().sendKeys("Freeman");
+		a.cardHolderEmail().sendKeys("matthew.freeman@gmail.com");
+		a.cardHolderAddress().sendKeys("Highland Street 120");
+		a.cardHolderCity().sendKeys("Atlanta");
+		a.cardHolderSelectState().click();
+		a.cardHolderGeorgia().click();
+		a.cardHolderZip().sendKeys("30303");
+		a.EnterCreditCardNo().sendKeys("4242424242424242");
+		a.EnterExpiryDate().sendKeys("0224");
+		a.EnterCVV().sendKeys("1204");
+		a.agreeToChargeMonthlyCheckbox().click();
+		a.Confirm_pay().click();
+		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
+		a.Login().click();
+		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.clientPassword().sendKeys("Password@3");
+		a.clientLogin().click();
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
+		a.SessionOnCalendar().click();
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.cancelSession().isDisplayed());
+	}
 	
-	@Test(priority=6)
+	@Test(priority=12)
+	public void AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard()
+	{
+		ClientSignUp a = new ClientSignUp(driver);
+		a.DoYouHaveAcustomerAccount().click();
+		a.SessionOnCalendar().click();
+		a.sessionSignUp().click();
+		a.dontHaveAnAccountClientSignUp().click();
+		a.FirstName().sendKeys("Morgan");
+		a.LastName().sendKeys("Freeman");
+		String randomInt = RandomStringUtils.randomAlphanumeric(3);
+		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.PhoneNo().sendKeys("4567765420");
+		a.DOB().sendKeys("09301994");
+		a.selectGender().click();
+		a.Male().click();
+		a.Address1().sendKeys("Highland Street 140");
+		a.City().sendKeys("Atlanta");
+		a.State().click();
+		a.Georgia().click();
+		a.Zip().sendKeys("30303");
+		a.eFirstName().sendKeys("Matthew");
+		a.eLastName().sendKeys("Freeman");
+		a.eEmail().sendKeys("matthew.freeman@gmail.com");
+		a.ePhoneNo().sendKeys("4567876545");
+		a.eRelationship().sendKeys("Sister");
+		a.Password().sendKeys("Password@3");
+		a.ConfirmPassword().sendKeys("Password@3");
+		a.SaveAndContinue1().click();
+		a.unlimitedMemPack().click();
+		a.SaveAndContinue2().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
+		a.TypeFullName().sendKeys("Morgan Freeman");
+		a.SaveAndContinue3().click();
+		a.PoliciesTerm1().click();
+		a.PoliciesTerm2().click();
+		a.PoliciesDefaultCheckbox().click();
+		a.PoliciesTypeFullName().sendKeys("Morgan Freeman");
+		a.SaveAndContinue4().click();	
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
+		a.sameAsClientDetails().click();
+		a.EnterCreditCardNo().sendKeys("4242424242424242");
+		a.EnterExpiryDate().sendKeys("0224");
+		a.EnterCVV().sendKeys("1204");
+		a.agreeToChargeMonthlyCheckbox().click();
+		a.Confirm_pay().click();
+		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
+		a.Login().click();
+		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		a.clientPassword().sendKeys("Password@3");
+		a.clientLogin().click();
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
+		a.SessionOnCalendar().click();
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.cancelSession().isDisplayed());
+	}
+	
+	
+	@Test(priority=13)
 	public void AccountCreationWith_FreeFirstMonthMemPack()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
@@ -373,7 +852,8 @@ public class ClientAccountCreation extends Base_File
 		a.PoliciesDefaultCheckbox().click();
 		a.PoliciesTypeFullName().sendKeys("Betty White");
 		a.SaveAndContinue4().click();
-		Assert.assertEquals(a.$0grandTotal().getText(), "$0.00");
+		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$0.00");
 		a.sameAsClientDetails().click();
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
@@ -393,10 +873,8 @@ public class ClientAccountCreation extends Base_File
 		Assert.assertTrue(a.cancelSession().isDisplayed());
 	}
 	
-	
-	
-	@Test(priority=7)
-	public void AccountCreationWith_PurchaseClassAndMemPack()
+	@Test(priority=14)
+	public void AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -465,9 +943,8 @@ public class ClientAccountCreation extends Base_File
 		Assert.assertTrue(a.cancelSession().isDisplayed());	
 	}	
 	
-	
-	@Test(priority=8)
-	public void AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromo()
+	@Test(priority=15)
+	public void AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -533,11 +1010,71 @@ public class ClientAccountCreation extends Base_File
 		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
 		a.SessionOnCalendar().click();
 		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
-		Assert.assertTrue(a.cancelSession().isDisplayed());
-		
+		Assert.assertTrue(a.cancelSession().isDisplayed());	
 	}
 	
-	
+	@Test(priority=16)
+	public void AccountCreationWith_PurchaseClassAndMemPack()
+	{
+		ClientSignUp a = new ClientSignUp(driver);
+		a.DoYouHaveAcustomerAccount().click();
+		a.SessionOnCalendar().click();
+		a.sessionSignUp().click();
+		a.dontHaveAnAccountClientSignUp().click();
+		a.FirstName().sendKeys("Shirely");
+		a.LastName().sendKeys("Hathaway");
+		String randomInt = RandomStringUtils.randomAlphanumeric(3);
+		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
+		a.PhoneNo().sendKeys("4825434121");
+		a.DOB().sendKeys("09091995");
+		a.selectGender().click();
+		a.PreferNotDisclose().click();
+		a.Address1().sendKeys("Highland Street 125");
+		a.City().sendKeys("Atlanta");
+		a.State().click();
+		a.Georgia().click();
+		a.Zip().sendKeys("30303");
+		a.eFirstName().sendKeys("Anne");
+		a.eLastName().sendKeys("Hathaway");
+		a.eEmail().sendKeys("anne.hathaway@gmail.com");
+		a.ePhoneNo().sendKeys("4253453412");
+		a.eRelationship().sendKeys("Sister");
+		a.Password().sendKeys("Password@3");
+		a.ConfirmPassword().sendKeys("Password@3");
+		a.SaveAndContinue1().click();
+		a.$classPack().click();
+		a.xSessionsMemPack().click();
+		a.SaveAndContinue2().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
+		a.TypeFullName().sendKeys("Shirely Hathaway");
+		a.SaveAndContinue3().click();
+		a.PoliciesTerm1().click();
+		a.PoliciesTerm2().click();
+		a.PoliciesDefaultCheckbox().click();
+		a.PoliciesTypeFullName().sendKeys("Shirely Hathway");
+		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.actualGrandTotalName_ClassAndMem().getText(), "Grand Total");
+		Assert.assertEquals(a.actualGrandTotalAmount_ClassAndMem().getText(), "$2.00");
+		a.sameAsClientDetails().click();
+		a.EnterCreditCardNo().sendKeys("4242424242424242");
+		a.EnterExpiryDate().sendKeys("0224");
+		a.EnterCVV().sendKeys("4391");
+		a.agreeToChargeMonthlyCheckbox().click();
+		a.Confirm_pay().click();
+		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
+		a.Login().click();
+		a.clientUsername().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
+		a.clientPassword().sendKeys("Password@3");
+		a.clientLogin().click();
+		Assert.assertEquals(a.sessionSignedUpMessage().getText(), "You have been registered for this session!");
+		Assert.assertTrue(a.sessionOnCalendarShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.packageStatus().getText().contains("1/"));
+		a.SessionOnCalendar().click();
+		Assert.assertTrue(a.sessionModalShownWith_GreenCheckMark().isDisplayed());
+		Assert.assertTrue(a.cancelSession().isDisplayed());	
+	}
 	
 	@AfterMethod()
 	public void tearDown()

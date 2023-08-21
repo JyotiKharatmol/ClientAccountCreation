@@ -5,8 +5,8 @@
     <classes>
       <class name="Client.ClientAccountSignUp">
         <methods>
-          <include name="SignUp_AccountCreationWith_PurchaseClassPack"/>
           <include name="tearDown"/>
+          <include name="SignUp_AccountCreationWith_NoPackage"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- Client.ClientAccountSignUp -->

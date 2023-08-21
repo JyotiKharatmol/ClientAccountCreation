@@ -442,7 +442,6 @@ public class ClientSignUp extends Abstract_Component {
 		return actualGrandTotalAmount_ClassAndMem;
 	}
 	
-	
 	@FindBy(css="input[name='promoCode']")
 	WebElement promoCode;
 	
@@ -533,20 +532,76 @@ public class ClientSignUp extends Abstract_Component {
 		return grandTotalAmount_ClassAndMem_AfterDiscount;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[2]/div/div/div/div[4]/div/div/div/div[3]/span[2]")
-	WebElement $0grandTotal;
-	
-	public WebElement $0grandTotal()
-	{
-		return $0grandTotal;
-	}
-	
 	@FindBy(xpath="//p/div/div/div[3]/div/div/div[9]/div/div/div[2]/div/label/span[1]/span[1]")
 	WebElement sameAsClientDetails;
 	
 	public WebElement sameAsClientDetails()
 	{
 		return sameAsClientDetails;
+	}
+	
+	@FindBy(css="input[name='firstName']")
+	WebElement cardHolderFirstName;
+	
+	public WebElement cardHolderFirstName()
+	{
+		return cardHolderFirstName;
+	}
+	
+	@FindBy(css="input[name='lastName']")
+	WebElement cardHolderLastName;
+	
+	public WebElement cardHolderLastName()
+	{
+		return cardHolderLastName;
+	}
+	
+	@FindBy(css="input[name='emailId']")
+	WebElement cardHolderEmail;
+	
+	public WebElement cardHolderEmail()
+	{
+		return cardHolderEmail;
+	}
+	
+	@FindBy(css="input[name='address1']")
+	WebElement cardHolderAddress;
+	
+	public WebElement cardHolderAddress()
+	{
+		return cardHolderAddress;
+	}
+	
+	@FindBy(css="input[name='city']")
+	WebElement cardHolderCity;
+	
+	public WebElement cardHolderCity()
+	{
+		return cardHolderCity;
+	}
+	
+	@FindBy(css="div[id='mui-component-select-state']")
+	WebElement cardHolderSelectState;
+	
+	public WebElement cardHolderSelectState()
+	{
+		return cardHolderSelectState;
+	}
+	
+	@FindBy(css="ul[role='listbox'] li:nth-child(11)")
+	WebElement cardHolderGeorgia;
+	
+	public WebElement cardHolderGeorgia()
+	{
+		return cardHolderGeorgia;
+	}
+	
+	@FindBy(css="input[name='zip']")
+	WebElement cardHolderZip;
+	
+	public WebElement cardHolderZip()
+	{
+		return cardHolderZip;
 	}
 	
 	@FindBy(xpath="//div[14]/div/div/input")

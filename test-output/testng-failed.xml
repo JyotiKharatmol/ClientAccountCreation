@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="initialize"/>
-          <include name="AccountCreationWith_PurchaseClassAndMemPack"/>
+          <include name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard"/>
         </methods>
       </class> <!-- Client.ClientAccountCreation -->
     </classes>
