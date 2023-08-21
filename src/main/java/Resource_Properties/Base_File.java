@@ -14,42 +14,32 @@ public class Base_File
    public Properties pro;
    
    public WebDriver initializeBrowser() throws IOException
-   {
-   /*
-   
+   {  
    FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/Resource_Properties/data.properties");
    pro = new Properties();
    pro.load(fis);
    String browserName = pro.getProperty("browser");
-
    
    if(browserName.equalsIgnoreCase("chrome"))
    { 	
-   */  
 	  ChromeOptions options = new ChromeOptions();
-	 
+	  
 	  options.addArguments("--headless");
-	  
 	  options.addArguments("--no-sandbox");
-	  
 	  options.addArguments("--disable-dev-shm-usage");
-	  
 	  options.addArguments("disable-infobars");
-	  
 	  options.addArguments("--disable-extensions");
-	  
-	  options.addArguments("--wind3ow-size=1400, 600");
-	  
+	  options.addArguments("--window-size=1400, 600");
 	  options.addArguments("--disable-gbu"); 
 	  
 	  WebDriverManager.chromedriver().setup();
 	  
-	  driver = new ChromeDriver(options);
+	  driver = new ChromeDriver(options);	  
+   }
    
    driver.manage().window().maximize();	
    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));	
-	return driver;
+   return driver;	
+   
    }
-	
-	
 }
