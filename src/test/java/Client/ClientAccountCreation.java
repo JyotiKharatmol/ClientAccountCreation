@@ -14,7 +14,7 @@ public class ClientAccountCreation extends Base_File
 	public void initialize() throws IOException 
 	{
 		driver = initializeBrowser();
-		driver.get(pro.getProperty("url"));
+		driver.get("https://smartstudio-stage.azul-arc.com/#/alias29/solo-instructor/login");	
 	}
 	
 	@Test(priority=1)

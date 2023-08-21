@@ -1,14 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1,414.702 s <<< FAILURE! - in TestSuite
-SignUp_AccountCreationWith_NoPackage(Client.ClientAccountSignUp)  Time elapsed: 43.353 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (a6924d63d8eb7d2fda07a6b0c55d501f)] -> css selector: div[class='MuiAlert-message']] (tried for 30 second(s) with 500 milliseconds interval)
+Tests run: 24, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1,429.093 s <<< FAILURE! - in TestSuite
+AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard(Client.ClientAccountCreation)  Time elapsed: 26.174 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (820, 385). Other element would receive the click: <div class="jss431" tabindex="-1">...</div>
+  (Session info: headless chrome=115.0.5790.173)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63364}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63364/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a6924d63d8eb7d2fda07a6b0c55d501f
-	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage(ClientAccountSignUp.java:48)
+Command: [ecc724466b7b3301baf3b938789ac51e, clickElement {id=739D95A85B38D1F1732D48245163DE01_element_196}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49189/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ecc724466b7b3301baf3b938789ac51e)] -> xpath: //span[text()='Login']]
+Session ID: ecc724466b7b3301baf3b938789ac51e
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard(ClientAccountCreation.java:318)
 

@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Client.ClientAccountSignUp" class="method navigator-link" hash-for-method="SignUp_AccountCreationWith_NoPackage">SignUp_AccountCreationWith_NoPackage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Client.ClientAccountCreation" class="method navigator-link" hash-for-method="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -148,11 +148,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Client.ClientAccountCreation" class="method navigator-link" hash-for-method="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Client.ClientAccountCreation" class="method navigator-link" hash-for-method="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -207,6 +202,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Client.ClientAccountSignUp" class="method navigator-link" hash-for-method="SignUp_AccountCreationWith_NoPackage">SignUp_AccountCreationWith_NoPackage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Client.ClientAccountSignUp" class="method navigator-link" hash-for-method="SignUp_AccountCreationWith_PurchaseClassAndMemPack">SignUp_AccountCreationWith_PurchaseClassAndMemPack</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -245,27 +245,37 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Client.ClientAccountSignUp</span>
+              <span class="class-name">Client.ClientAccountCreation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SignUp_AccountCreationWith_NoPackage">
-                  </a> <!-- SignUp_AccountCreationWith_NoPackage -->
-                  <span class="method-name">SignUp_AccountCreationWith_NoPackage</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (a6924d63d8eb7d2fda07a6b0c55d501f)] -&gt; css selector: div[class=&apos;MuiAlert-message&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+                  <a name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard">
+                  </a> <!-- AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard -->
+                  <span class="method-name">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (820, 385). Other element would receive the click: &lt;div class=&quot;jss431&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: headless chrome=115.0.5790.173)
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63364}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63364/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a6924d63d8eb7d2fda07a6b0c55d501f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at Abstract.Abstract_Component.waitForInvisibilityOfWebElement(Abstract_Component.java:73)
-	at Page_Objects.ClientSignUp.skipPackage_Term1Checkbox(ClientSignUp.java:330)
-	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage(ClientAccountSignUp.java:48)
+Command: [ecc724466b7b3301baf3b938789ac51e, clickElement {id=739D95A85B38D1F1732D48245163DE01_element_196}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49189/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ecc724466b7b3301baf3b938789ac51e)] -&gt; xpath: //span[text()=&apos;Login&apos;]]
+Session ID: ecc724466b7b3301baf3b938789ac51e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard(ClientAccountCreation.java:318)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
+... Removed 39 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -289,6 +299,13 @@ Session ID: a6924d63d8eb7d2fda07a6b0c55d501f
                   <a name="SignUp_AccountCreationWith_FreeTrailPack">
                   </a> <!-- SignUp_AccountCreationWith_FreeTrailPack -->
                   <span class="method-name">SignUp_AccountCreationWith_FreeTrailPack</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignUp_AccountCreationWith_NoPackage">
+                  </a> <!-- SignUp_AccountCreationWith_NoPackage -->
+                  <span class="method-name">SignUp_AccountCreationWith_NoPackage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -381,13 +398,6 @@ Session ID: a6924d63d8eb7d2fda07a6b0c55d501f
                   <a name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard">
                   </a> <!-- AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard -->
                   <span class="method-name">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard">
-                  </a> <!-- AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard -->
-                  <span class="method-name">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -503,106 +513,106 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(24);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SignUp_AccountCreationWith_PurchaseUnlimitedMem')
-data.setCell(0, 2, 'Client.ClientAccountSignUp')
-data.setCell(0, 3, 62337);
+data.setCell(0, 1, 'AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard')
+data.setCell(0, 2, 'Client.ClientAccountCreation')
+data.setCell(0, 3, 59830);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SignUp_AccountCreationWith_PurchaseMemPack')
-data.setCell(1, 2, 'Client.ClientAccountSignUp')
-data.setCell(1, 3, 59028);
+data.setCell(1, 1, 'AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard')
+data.setCell(1, 2, 'Client.ClientAccountCreation')
+data.setCell(1, 3, 59738);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SignUp_AccountCreationWith_PurchaseClassPack')
-data.setCell(2, 2, 'Client.ClientAccountSignUp')
-data.setCell(2, 3, 58912);
+data.setCell(2, 1, 'AccountCreationWith_FreeFirstMonthMemPack')
+data.setCell(2, 2, 'Client.ClientAccountCreation')
+data.setCell(2, 3, 57795);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard')
 data.setCell(3, 2, 'Client.ClientAccountCreation')
-data.setCell(3, 3, 58559);
+data.setCell(3, 3, 57230);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard')
+data.setCell(4, 1, 'AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard')
 data.setCell(4, 2, 'Client.ClientAccountCreation')
-data.setCell(4, 3, 57926);
+data.setCell(4, 3, 57217);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard')
+data.setCell(5, 1, 'AccountCreationWith_PurchaseClassAndMemPack')
 data.setCell(5, 2, 'Client.ClientAccountCreation')
-data.setCell(5, 3, 57858);
+data.setCell(5, 3, 57026);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard')
-data.setCell(6, 2, 'Client.ClientAccountCreation')
-data.setCell(6, 3, 56567);
+data.setCell(6, 1, 'SignUp_AccountCreationWith_PurchaseMemPack')
+data.setCell(6, 2, 'Client.ClientAccountSignUp')
+data.setCell(6, 3, 56325);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard')
-data.setCell(7, 2, 'Client.ClientAccountCreation')
-data.setCell(7, 3, 56134);
+data.setCell(7, 1, 'SignUp_AccountCreationWith_PurchaseUnlimitedMem')
+data.setCell(7, 2, 'Client.ClientAccountSignUp')
+data.setCell(7, 3, 55920);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'AccountCreationWith_PurchaseClassAndMemPack')
+data.setCell(8, 1, 'AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard')
 data.setCell(8, 2, 'Client.ClientAccountCreation')
-data.setCell(8, 3, 55558);
+data.setCell(8, 3, 55857);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard')
+data.setCell(9, 1, 'AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard')
 data.setCell(9, 2, 'Client.ClientAccountCreation')
-data.setCell(9, 3, 55548);
+data.setCell(9, 3, 55334);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode')
+data.setCell(10, 1, 'SignUp_AccountCreationWith_FreeFirstMonthMemPack')
 data.setCell(10, 2, 'Client.ClientAccountSignUp')
-data.setCell(10, 3, 55365);
+data.setCell(10, 3, 55183);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard')
+data.setCell(11, 1, 'AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard')
 data.setCell(11, 2, 'Client.ClientAccountCreation')
-data.setCell(11, 3, 54436);
+data.setCell(11, 3, 54754);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'SignUp_AccountCreationWith_PurchaseClassAndMemPack')
 data.setCell(12, 2, 'Client.ClientAccountSignUp')
-data.setCell(12, 3, 54275);
+data.setCell(12, 3, 54696);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode')
+data.setCell(13, 1, 'AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard')
 data.setCell(13, 2, 'Client.ClientAccountCreation')
-data.setCell(13, 3, 54240);
+data.setCell(13, 3, 54509);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'AccountCreationWith_FreeFirstMonthMemPack')
+data.setCell(14, 1, 'AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode')
 data.setCell(14, 2, 'Client.ClientAccountCreation')
-data.setCell(14, 3, 53745);
+data.setCell(14, 3, 54285);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode')
+data.setCell(15, 1, 'AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode')
 data.setCell(15, 2, 'Client.ClientAccountCreation')
-data.setCell(15, 3, 53419);
+data.setCell(15, 3, 54053);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'SignUp_AccountCreationWith_FreeFirstMonthMemPack')
+data.setCell(16, 1, 'SignUp_AccountCreationWith_PurchaseClassPack')
 data.setCell(16, 2, 'Client.ClientAccountSignUp')
-data.setCell(16, 3, 52144);
+data.setCell(16, 3, 53688);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard')
-data.setCell(17, 2, 'Client.ClientAccountCreation')
-data.setCell(17, 3, 51760);
+data.setCell(17, 1, 'SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode')
+data.setCell(17, 2, 'Client.ClientAccountSignUp')
+data.setCell(17, 3, 53563);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'AccountCreationWith_FreeTrailPack')
+data.setCell(18, 1, 'AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard')
 data.setCell(18, 2, 'Client.ClientAccountCreation')
-data.setCell(18, 3, 50653);
+data.setCell(18, 3, 53474);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'SignUp_AccountCreationWith_FreeTrailPack')
-data.setCell(19, 2, 'Client.ClientAccountSignUp')
-data.setCell(19, 3, 48112);
+data.setCell(19, 1, 'AccountCreationWith_FreeTrailPack')
+data.setCell(19, 2, 'Client.ClientAccountCreation')
+data.setCell(19, 3, 51956);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'SignUp_AccountCreationWith_NoPackage')
+data.setCell(20, 1, 'SignUp_AccountCreationWith_FreeTrailPack')
 data.setCell(20, 2, 'Client.ClientAccountSignUp')
-data.setCell(20, 3, 43227);
+data.setCell(20, 3, 48712);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'AccountCreationWith_NoPackage')
 data.setCell(21, 2, 'Client.ClientAccountCreation')
-data.setCell(21, 3, 42103);
+data.setCell(21, 3, 43702);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard')
-data.setCell(22, 2, 'Client.ClientAccountCreation')
-data.setCell(22, 3, 33931);
+data.setCell(22, 1, 'SignUp_AccountCreationWith_NoPackage')
+data.setCell(22, 2, 'Client.ClientAccountSignUp')
+data.setCell(22, 3, 42328);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard')
 data.setCell(23, 2, 'Client.ClientAccountCreation')
-data.setCell(23, 3, 32798);
+data.setCell(23, 3, 26151);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 minutes</span>
+              <span class="suite-total-time">Total running time: 21 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -635,292 +645,292 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_NoPackage</span>
-                <span class="method-start">11012 ms</span>
+                <span class="method-start">14149 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53120 ms</span>
+                <span class="method-start">57855 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">53224 ms</span>
+                <span class="method-start">57962 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_FreeTrailPack</span>
-                <span class="method-start">58624 ms</span>
+                <span class="method-start">63441 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">109277 ms</span>
+                <span class="method-start">115397 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">109316 ms</span>
+                <span class="method-start">115433 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard</span>
-                <span class="method-start">115247 ms</span>
+                <span class="method-start">121156 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">173806 ms</span>
+                <span class="method-start">178386 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">173853 ms</span>
+                <span class="method-start">178427 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard</span>
-                <span class="method-start">180306 ms</span>
+                <span class="method-start">184190 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">238232 ms</span>
+                <span class="method-start">239524 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">238310 ms</span>
+                <span class="method-start">239563 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard</span>
-                <span class="method-start">243699 ms</span>
+                <span class="method-start">247566 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">276497 ms</span>
+                <span class="method-start">273736 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">276562 ms</span>
+                <span class="method-start">273791 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard</span>
-                <span class="method-start">282207 ms</span>
+                <span class="method-start">279252 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">337756 ms</span>
+                <span class="method-start">335109 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">337790 ms</span>
+                <span class="method-start">335145 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard</span>
-                <span class="method-start">343395 ms</span>
+                <span class="method-start">341391 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">397832 ms</span>
+                <span class="method-start">401222 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">397872 ms</span>
+                <span class="method-start">401284 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard</span>
-                <span class="method-start">403447 ms</span>
+                <span class="method-start">406845 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">460014 ms</span>
+                <span class="method-start">466583 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">460067 ms</span>
+                <span class="method-start">466649 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard</span>
-                <span class="method-start">466812 ms</span>
+                <span class="method-start">471647 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">500743 ms</span>
+                <span class="method-start">526402 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">500785 ms</span>
+                <span class="method-start">526464 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard</span>
-                <span class="method-start">507789 ms</span>
+                <span class="method-start">532177 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">565647 ms</span>
+                <span class="method-start">585651 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">565734 ms</span>
+                <span class="method-start">585708 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard</span>
-                <span class="method-start">571833 ms</span>
+                <span class="method-start">591210 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">627967 ms</span>
+                <span class="method-start">648427 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">628000 ms</span>
+                <span class="method-start">648471 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard</span>
-                <span class="method-start">634209 ms</span>
+                <span class="method-start">653908 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">685969 ms</span>
+                <span class="method-start">708418 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">686063 ms</span>
+                <span class="method-start">708482 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_FreeFirstMonthMemPack</span>
-                <span class="method-start">691700 ms</span>
+                <span class="method-start">714830 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">745445 ms</span>
+                <span class="method-start">772625 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">745479 ms</span>
+                <span class="method-start">772659 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode</span>
-                <span class="method-start">752299 ms</span>
+                <span class="method-start">777863 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">806539 ms</span>
+                <span class="method-start">831917 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">806610 ms</span>
+                <span class="method-start">831952 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode</span>
-                <span class="method-start">812672 ms</span>
+                <span class="method-start">837283 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">866091 ms</span>
+                <span class="method-start">891569 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">866131 ms</span>
+                <span class="method-start">891620 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccountCreationWith_PurchaseClassAndMemPack</span>
-                <span class="method-start">872280 ms</span>
+                <span class="method-start">896861 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">927838 ms</span>
+                <span class="method-start">953887 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Client.ClientAccountSignUp</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">927908 ms</span>
+                <span class="method-start">953957 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">SignUp_AccountCreationWith_NoPackage</span>
-                <span class="method-start">933153 ms</span>
+                <span class="method-start">960122 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">976504 ms</span>
+                <span class="method-start">1002450 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">976563 ms</span>
+                <span class="method-start">1002501 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SignUp_AccountCreationWith_FreeTrailPack</span>
-                <span class="method-start">982672 ms</span>
+                <span class="method-start">1009494 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1030784 ms</span>
+                <span class="method-start">1058207 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">1030850 ms</span>
+                <span class="method-start">1058244 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SignUp_AccountCreationWith_PurchaseClassPack</span>
-                <span class="method-start">1037313 ms</span>
+                <span class="method-start">1063169 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1096226 ms</span>
+                <span class="method-start">1116857 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">1096565 ms</span>
+                <span class="method-start">1116895 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SignUp_AccountCreationWith_PurchaseMemPack</span>
-                <span class="method-start">1103468 ms</span>
+                <span class="method-start">1122330 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1162497 ms</span>
+                <span class="method-start">1178655 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">1162586 ms</span>
+                <span class="method-start">1178723 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SignUp_AccountCreationWith_PurchaseUnlimitedMem</span>
-                <span class="method-start">1167965 ms</span>
+                <span class="method-start">1187236 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1230303 ms</span>
+                <span class="method-start">1243156 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">1230339 ms</span>
+                <span class="method-start">1243209 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SignUp_AccountCreationWith_FreeFirstMonthMemPack</span>
-                <span class="method-start">1236467 ms</span>
+                <span class="method-start">1252150 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1288611 ms</span>
+                <span class="method-start">1307333 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">1288659 ms</span>
+                <span class="method-start">1307376 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SignUp_AccountCreationWith_PurchaseClassAndMemPack</span>
-                <span class="method-start">1294053 ms</span>
+                <span class="method-start">1313547 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1348329 ms</span>
+                <span class="method-start">1368243 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">1348368 ms</span>
+                <span class="method-start">1368285 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</span>
-                <span class="method-start">1357528 ms</span>
+                <span class="method-start">1373926 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1412894 ms</span>
+                <span class="method-start">1427490 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

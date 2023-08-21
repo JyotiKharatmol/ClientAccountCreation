@@ -15,6 +15,8 @@ public class Base_File
    
    public WebDriver initializeBrowser() throws IOException
    {
+   /*
+   
    FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/Resource_Properties/data.properties");
    pro = new Properties();
    pro.load(fis);
@@ -22,7 +24,8 @@ public class Base_File
 
    
    if(browserName.equalsIgnoreCase("chrome"))
-   { 	  
+   { 	
+   */  
 	  ChromeOptions options = new ChromeOptions();
 	 
 	  options.addArguments("--headless");
@@ -35,16 +38,14 @@ public class Base_File
 	  
 	  options.addArguments("--disable-extensions");
 	  
-	  options.addArguments("--window-size=1400, 600");
+	  options.addArguments("--wind3ow-size=1400, 600");
 	  
 	  options.addArguments("--disable-gbu"); 
 	  
 	  WebDriverManager.chromedriver().setup();
 	  
 	  driver = new ChromeDriver(options);
-   }
    
- 
    driver.manage().window().maximize();	
    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));	
 	return driver;
