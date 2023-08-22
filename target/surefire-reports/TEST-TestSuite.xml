@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,422.123" tests="24" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,574.906" tests="24" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Users\jyoti_xfiqe3z\Downloads\eclipse-java-2023-03-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\JYOTI_~1\AppData\Local\Temp\surefire6251484936384590498\surefirebooter14032637779390284049.jar C:\Users\jyoti_xfiqe3z\AppData\Local\Temp\surefire6251484936384590498 2023-08-21T23-12-51_352-jvmRun1 surefire6458168721896704283tmp surefire_05867380121824247260tmp"/>
+    <property name="sun.java.command" value="C:\Users\JYOTI_~1\AppData\Local\Temp\surefire9273708347190967306\surefirebooter9021878816953861033.jar C:\Users\jyoti_xfiqe3z\AppData\Local\Temp\surefire9273708347190967306 2023-08-22T12-25-27_349-jvmRun1 surefire15551006212632092701tmp surefire_011568948582573665586tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\target\test-classes;C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\target\classes;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-java\4.11.0\selenium-java-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-api\4.11.0\selenium-api-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.11.0\selenium-chrome-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.11.0\selenium-chromium-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-json\4.11.0\selenium-json-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.11.0\selenium-manager-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.11.0\selenium-devtools-v113-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.11.0\selenium-devtools-v114-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.11.0\selenium-devtools-v115-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.11.0\selenium-devtools-v85-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.11.0\selenium-edge-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.11.0\selenium-firefox-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-http\4.11.0\selenium-http-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.11.0\selenium-ie-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.11.0\selenium-remote-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.11.0\selenium-safari-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-support\4.11.0\selenium-support-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\github\bonigarcia\webdrivermanager\5.4.1\webdrivermanager-5.4.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\github\docker-java\docker-java\3.3.2\docker-java-3.3.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\github\docker-java\docker-java-core\3.3.2\docker-java-core-3.3.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\github\docker-java\docker-java-api\3.3.2\docker-java-api-3.3.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.2\docker-java-transport-httpclient5-3.3.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\github\docker-java\docker-java-transport\3.3.2\docker-java-transport-3.3.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\slf4j\slf4j-api\1.5.6\slf4j-api-1.5.6.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\slf4j\slf4j-simple\1.5.6\slf4j-simple-1.5.6.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\JYOTI_~1\AppData\Local\Temp\surefire6251484936384590498\surefirebooter14032637779390284049.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\JYOTI_~1\AppData\Local\Temp\surefire9273708347190967306\surefirebooter9021878816953861033.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.6+10"/>
@@ -51,100 +51,55 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\jyoti_xfiqe3z\Downloads\eclipse-java-2023-03-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/jyoti_xfiqe3z/Downloads/eclipse-java-2023-03-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin/server;C:/Users/jyoti_xfiqe3z/Downloads/eclipse-java-2023-03-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\Wbem;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\jyoti_xfiqe3z\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;C:\Users\jyoti_xfiqe3z\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;C:\Program Files\Git\cmd;C:\Users\jyoti_xfiqe3z\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.3\bin;;C:\WINDOWS\system32;;."/>
+    <property name="java.library.path" value="C:\Users\jyoti_xfiqe3z\Downloads\eclipse-java-2023-03-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/jyoti_xfiqe3z/Downloads/eclipse-java-2023-03-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin/server;C:/Users/jyoti_xfiqe3z/Downloads/eclipse-java-2023-03-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\Wbem;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\jyoti_xfiqe3z\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;C:\Users\jyoti_xfiqe3z\Downloads\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Bitvise SSH Client;C:\Users\jyoti_xfiqe3z\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.3\bin;;C:\WINDOWS\system32;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
     <property name="java.vm.version" value="17.0.6+10"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="AccountCreationWith_NoPackage" classname="Client.ClientAccountCreation" time="46.777">
-    <failure message="Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (7153cfad4657f956d4929b472dbb594d)] -&gt; css selector: div[class=&apos;MuiAlert-message&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50612/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7153cfad4657f956d4929b472dbb594d" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (7153cfad4657f956d4929b472dbb594d)] -> css selector: div[class='MuiAlert-message']] (tried for 30 second(s) with 500 milliseconds interval)
+  <testcase name="AccountCreationWith_NoPackage" classname="Client.ClientAccountCreation" time="51.546"/>
+  <testcase name="AccountCreationWith_FreeTrailPack" classname="Client.ClientAccountCreation" time="54.134"/>
+  <testcase name="AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="63.102"/>
+  <testcase name="AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="62.609"/>
+  <testcase name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="57.56"/>
+  <testcase name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="60.585"/>
+  <testcase name="AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="60.665"/>
+  <testcase name="AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="67.798"/>
+  <testcase name="AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="58.404"/>
+  <testcase name="AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="34.497">
+    <failure message="element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (888, 385). Other element would receive the click: &lt;div class=&quot;jss442&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=116.0.5845.97)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fa3719c79baec7c301b07bddf8c6b265, clickElement {id=9EA6645A2079C0FFE265127976F6E28B_element_300}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.97, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56111/devtoo..., se:cdpVersion: 116.0.5845.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (fa3719c79baec7c301b07bddf8c6b265)] -&gt; xpath: //span[text()=&apos;Login&apos;]]&#10;Session ID: fa3719c79baec7c301b07bddf8c6b265" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (888, 385). Other element would receive the click: <div class="jss442" tabindex="-1">...</div>
+  (Session info: chrome=116.0.5845.97)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50612/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7153cfad4657f956d4929b472dbb594d
-	at Client.ClientAccountCreation.AccountCreationWith_NoPackage(ClientAccountCreation.java:50)
-</failure>
-    <system-err><![CDATA[2035 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 115.0.5790.170 (resolved driver for Chrome 115)
-2092 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\115.0.5790.170\chromedriver.exe
-]]></system-err>
-  </testcase>
-  <testcase name="AccountCreationWith_FreeTrailPack" classname="Client.ClientAccountCreation" time="52.352"/>
-  <testcase name="AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="37.065"/>
-  <testcase name="AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="59.442"/>
-  <testcase name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="55.361"/>
-  <testcase name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="57.257"/>
-  <testcase name="AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="34.123">
-    <failure message="element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (820, 385). Other element would receive the click: &lt;div class=&quot;jss440&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;&#10;  (Session info: headless chrome=115.0.5790.173)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a9607881d3d5c210627b2fed68b1bbe9, clickElement {id=A6C39B5D58371D99D016A216E42C2CCE_element_229}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50914}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50914/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (a9607881d3d5c210627b2fed68b1bbe9)] -&gt; xpath: //span[text()=&apos;Login&apos;]]&#10;Session ID: a9607881d3d5c210627b2fed68b1bbe9" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (820, 385). Other element would receive the click: <div class="jss440" tabindex="-1">...</div>
-  (Session info: headless chrome=115.0.5790.173)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a9607881d3d5c210627b2fed68b1bbe9, clickElement {id=A6C39B5D58371D99D016A216E42C2CCE_element_229}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50914}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50914/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a9607881d3d5c210627b2fed68b1bbe9)] -> xpath: //span[text()='Login']]
-Session ID: a9607881d3d5c210627b2fed68b1bbe9
-	at Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard(ClientAccountCreation.java:456)
+Command: [fa3719c79baec7c301b07bddf8c6b265, clickElement {id=9EA6645A2079C0FFE265127976F6E28B_element_300}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.97, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56111/devtoo..., se:cdpVersion: 116.0.5845.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fa3719c79baec7c301b07bddf8c6b265)] -> xpath: //span[text()='Login']]
+Session ID: fa3719c79baec7c301b07bddf8c6b265
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard(ClientAccountCreation.java:663)
 ]]></failure>
-    <system-err><![CDATA[348825 [AsyncHttpClient-1-3] WARN org.asynchttpclient.netty.handler.WebSocketHandler - onError
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Aug 21, 2023 11:18:41 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Connection reset
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-348868 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 115.0.5790.170 (resolved driver for Chrome 115)
-348889 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\115.0.5790.170\chromedriver.exe
+    <system-err><![CDATA[617586 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 116.0.5845.96 (resolved driver for Chrome 116)
+617618 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\116.0.5845.96\chromedriver.exe
+Aug 22, 2023 12:35:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 115
 ]]></system-err>
   </testcase>
-  <testcase name="AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="63.169"/>
-  <testcase name="AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="61.851"/>
-  <testcase name="AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="58.387"/>
-  <testcase name="AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="34.194">
-    <failure message="element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (820, 385). Other element would receive the click: &lt;div class=&quot;jss441&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;&#10;  (Session info: headless chrome=115.0.5790.173)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3bd58c940f8753f9553c924c999535d6, clickElement {id=8072E2B4CEAD10CE25BC5BE86DDFF5DC_element_237}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51120}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51120/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (3bd58c940f8753f9553c924c999535d6)] -&gt; xpath: //span[text()=&apos;Login&apos;]]&#10;Session ID: 3bd58c940f8753f9553c924c999535d6" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (820, 385). Other element would receive the click: <div class="jss441" tabindex="-1">...</div>
-  (Session info: headless chrome=115.0.5790.173)
+  <testcase name="AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="39.174">
+    <failure message="element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (888, 385). Other element would receive the click: &lt;div class=&quot;jss440&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=116.0.5845.97)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f10a11c32d1bc1738685781574d4e1ab, clickElement {id=408CD63C8FEA4321BEF4FAD3A1E2B8C8_element_314}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.97, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56150}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56150/devtoo..., se:cdpVersion: 116.0.5845.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (f10a11c32d1bc1738685781574d4e1ab)] -&gt; xpath: //span[text()=&apos;Login&apos;]]&#10;Session ID: f10a11c32d1bc1738685781574d4e1ab" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (888, 385). Other element would receive the click: <div class="jss440" tabindex="-1">...</div>
+  (Session info: chrome=116.0.5845.97)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3bd58c940f8753f9553c924c999535d6, clickElement {id=8072E2B4CEAD10CE25BC5BE86DDFF5DC_element_237}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51120}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51120/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3bd58c940f8753f9553c924c999535d6)] -> xpath: //span[text()='Login']]
-Session ID: 3bd58c940f8753f9553c924c999535d6
+Command: [f10a11c32d1bc1738685781574d4e1ab, clickElement {id=408CD63C8FEA4321BEF4FAD3A1E2B8C8_element_314}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.97, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56150}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56150/devtoo..., se:cdpVersion: 116.0.5845.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f10a11c32d1bc1738685781574d4e1ab)] -> xpath: //span[text()='Login']]
+Session ID: f10a11c32d1bc1738685781574d4e1ab
 	at Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard(ClientAccountCreation.java:739)
 ]]></failure>
-    <system-err><![CDATA[589615 [AsyncHttpClient-1-7] WARN org.asynchttpclient.netty.handler.WebSocketHandler - onError
+    <system-err><![CDATA[663772 [AsyncHttpClient-1-7] WARN org.asynchttpclient.netty.handler.WebSocketHandler - onError
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -160,7 +115,7 @@ java.net.SocketException: Connection reset
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Aug 21, 2023 11:22:42 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+Aug 22, 2023 12:36:33 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
 WARNING: Connection reset
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
@@ -178,68 +133,23 @@ java.net.SocketException: Connection reset
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 
-589664 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 115.0.5790.170 (resolved driver for Chrome 115)
-589691 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\115.0.5790.170\chromedriver.exe
+663862 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 116.0.5845.96 (resolved driver for Chrome 116)
+663897 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\116.0.5845.96\chromedriver.exe
+Aug 22, 2023 12:36:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 115
 ]]></system-err>
   </testcase>
-  <testcase name="AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="59.161"/>
-  <testcase name="AccountCreationWith_FreeFirstMonthMemPack" classname="Client.ClientAccountCreation" time="54.639"/>
-  <testcase name="AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode" classname="Client.ClientAccountCreation" time="57.454"/>
-  <testcase name="AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode" classname="Client.ClientAccountCreation" time="60.16"/>
-  <testcase name="AccountCreationWith_PurchaseClassAndMemPack" classname="Client.ClientAccountCreation" time="56.71"/>
-  <testcase name="SignUp_AccountCreationWith_NoPackage" classname="Client.ClientAccountSignUp" time="43.401">
-    <failure message="Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (197a835cfd03473f3152039a9ce6e736)] -&gt; css selector: div[class=&apos;MuiAlert-message&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51431/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 197a835cfd03473f3152039a9ce6e736" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (197a835cfd03473f3152039a9ce6e736)] -> css selector: div[class='MuiAlert-message']] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.173, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51431}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51431/devtoo..., se:cdpVersion: 115.0.5790.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 197a835cfd03473f3152039a9ce6e736
-	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage(ClientAccountSignUp.java:48)
-</failure>
-    <system-err><![CDATA[950012 [AsyncHttpClient-1-9] WARN org.asynchttpclient.netty.handler.WebSocketHandler - onError
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Aug 21, 2023 11:28:43 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Connection reset
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-950057 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 115.0.5790.170 (resolved driver for Chrome 115)
-950075 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\115.0.5790.170\chromedriver.exe
-]]></system-err>
-  </testcase>
-  <testcase name="SignUp_AccountCreationWith_FreeTrailPack" classname="Client.ClientAccountSignUp" time="55.164"/>
-  <testcase name="SignUp_AccountCreationWith_PurchaseClassPack" classname="Client.ClientAccountSignUp" time="40.817"/>
-  <testcase name="SignUp_AccountCreationWith_PurchaseMemPack" classname="Client.ClientAccountSignUp" time="54.608"/>
-  <testcase name="SignUp_AccountCreationWith_PurchaseUnlimitedMem" classname="Client.ClientAccountSignUp" time="57.572"/>
-  <testcase name="SignUp_AccountCreationWith_FreeFirstMonthMemPack" classname="Client.ClientAccountSignUp" time="57.898"/>
-  <testcase name="SignUp_AccountCreationWith_PurchaseClassAndMemPack" classname="Client.ClientAccountSignUp" time="56.466"/>
-  <testcase name="SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode" classname="Client.ClientAccountSignUp" time="56.024"/>
+  <testcase name="AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="62.367"/>
+  <testcase name="AccountCreationWith_FreeFirstMonthMemPack" classname="Client.ClientAccountCreation" time="57.398"/>
+  <testcase name="AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode" classname="Client.ClientAccountCreation" time="61.162"/>
+  <testcase name="AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode" classname="Client.ClientAccountCreation" time="59.2"/>
+  <testcase name="AccountCreationWith_PurchaseClassAndMemPack" classname="Client.ClientAccountCreation" time="60.996"/>
+  <testcase name="SignUp_AccountCreationWith_NoPackage" classname="Client.ClientAccountSignUp" time="50.818"/>
+  <testcase name="SignUp_AccountCreationWith_FreeTrailPack" classname="Client.ClientAccountSignUp" time="58.256"/>
+  <testcase name="SignUp_AccountCreationWith_PurchaseClassPack" classname="Client.ClientAccountSignUp" time="58.29"/>
+  <testcase name="SignUp_AccountCreationWith_PurchaseMemPack" classname="Client.ClientAccountSignUp" time="63.654"/>
+  <testcase name="SignUp_AccountCreationWith_PurchaseUnlimitedMem" classname="Client.ClientAccountSignUp" time="61.203"/>
+  <testcase name="SignUp_AccountCreationWith_FreeFirstMonthMemPack" classname="Client.ClientAccountSignUp" time="61.465"/>
+  <testcase name="SignUp_AccountCreationWith_PurchaseClassAndMemPack" classname="Client.ClientAccountSignUp" time="59.565"/>
+  <testcase name="SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode" classname="Client.ClientAccountSignUp" time="57.933"/>
 </testsuite>

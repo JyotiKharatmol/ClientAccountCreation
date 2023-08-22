@@ -21,15 +21,21 @@ public class Base_File
    String browserName = pro.getProperty("browser");
    
    if(browserName.equalsIgnoreCase("chrome"))
-   { 	
-	  ChromeOptions options = new ChromeOptions();
+   {    
+	  ChromeOptions options = new ChromeOptions();  
+	  
+	  options.addArguments("--no-sandbox");
+	  
+	  options.addArguments("--disable-dev-shm-usage");
 	  
 	  options.addArguments("--headless");
-	  options.addArguments("--no-sandbox");
-	  options.addArguments("--disable-dev-shm-usage");
+	  
 	  options.addArguments("disable-infobars");
+	  
 	  options.addArguments("--disable-extensions");
+	  
 	  options.addArguments("--window-size=1400, 600");
+	  
 	  options.addArguments("--disable-gbu"); 
 	  
 	  WebDriverManager.chromedriver().setup();
