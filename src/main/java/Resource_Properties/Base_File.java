@@ -24,8 +24,6 @@ public class Base_File
    {    
 	  FirefoxOptions options = new FirefoxOptions();
 	  
-	  /*
-	  
 	  options.addArguments("--no-sandbox");
 	  
 	  options.addArguments("--disable-dev-shm-usage");
@@ -39,8 +37,6 @@ public class Base_File
 	  options.addArguments("--window-size=1400, 600");
 	  
 	  options.addArguments("--disable-gbu"); 
-	  
-	  */
 	  
 	  WebDriverManager.firefoxdriver().setup();
 	  
