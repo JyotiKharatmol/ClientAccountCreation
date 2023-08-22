@@ -71,6 +71,7 @@ public class Abstract_Component
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(30));
 		w.until(ExpectedConditions.invisibilityOf(a));		
 	}
+
 	
 	
 }

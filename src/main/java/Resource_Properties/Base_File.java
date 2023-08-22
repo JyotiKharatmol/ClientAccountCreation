@@ -4,8 +4,8 @@ import java.util.Properties;
 import java.io.FileInputStream;
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base_File 
@@ -20,9 +20,11 @@ public class Base_File
    pro.load(fis);
    String browserName = pro.getProperty("browser");
    
-   if(browserName.equalsIgnoreCase("chrome"))
+   if(browserName.equalsIgnoreCase("firefox"))
    {    
-	  ChromeOptions options = new ChromeOptions();  
+	  FirefoxOptions options = new FirefoxOptions();
+	  
+	  /*
 	  
 	  options.addArguments("--no-sandbox");
 	  
@@ -38,9 +40,11 @@ public class Base_File
 	  
 	  options.addArguments("--disable-gbu"); 
 	  
-	  WebDriverManager.chromedriver().setup();
+	  */
 	  
-	  driver = new ChromeDriver(options);	  
+	  WebDriverManager.firefoxdriver().setup();
+	  
+	  driver = new FirefoxDriver(options);	  
    }
    
    driver.manage().window().maximize();	
