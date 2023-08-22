@@ -24,8 +24,6 @@ public class Base_File
    {    
 	  ChromeOptions options = new ChromeOptions();
 	  
-	  options.addArguments("");
-	  
 	  options.addArguments("--no-sandbox");
 	  
 	  options.addArguments("--disable-dev-shm-usage");
