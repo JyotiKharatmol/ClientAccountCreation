@@ -23,8 +23,6 @@ public class Base_File
    if(browserName.equalsIgnoreCase("chrome"))
    {    
 	  ChromeOptions options = new ChromeOptions();
-	  
-	  options.setBinary("/usr/bin/google-chrome /usr/share/man/man1/google-chrome.1.gz");
 	 
 	  options.addArguments("--headless");
 	  
