@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="15" total="16" passed="1" failed="0" skipped="0">
+<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-23T14:55:57 IST" name="Default suite" finished-at="2023-08-23T14:56:58 IST" duration-ms="61075">
+  <suite started-at="2023-08-23T16:34:04 IST" name="Default suite" finished-at="2023-08-23T16:34:57 IST" duration-ms="52927">
     <groups>
     </groups>
-    <test started-at="2023-08-23T14:55:57 IST" name="Default test" finished-at="2023-08-23T14:56:58 IST" duration-ms="61075">
-      <class name="Client.ClientAccountCreation">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountCreation@306e95ec]" started-at="2023-08-23T14:55:57 IST" name="initialize" finished-at="2023-08-23T14:56:14 IST" duration-ms="17545" status="PASS">
+    <test started-at="2023-08-23T16:34:04 IST" name="Default test" finished-at="2023-08-23T16:34:57 IST" duration-ms="52927">
+      <class name="Client.ClientAccountSignUp">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@7c24b813]" started-at="2023-08-23T16:34:04 IST" name="initialize" finished-at="2023-08-23T16:34:13 IST" duration-ms="8666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="AccountCreationWith_NoPackage()[pri:1, instance:Client.ClientAccountCreation@306e95ec]" started-at="2023-08-23T14:56:14 IST" name="AccountCreationWith_NoPackage" finished-at="2023-08-23T14:56:58 IST" duration-ms="43350" status="PASS">
+        <test-method signature="SignUp_AccountCreationWith_NoPackage()[pri:1, instance:Client.ClientAccountSignUp@7c24b813]" started-at="2023-08-23T16:34:13 IST" name="SignUp_AccountCreationWith_NoPackage" finished-at="2023-08-23T16:34:57 IST" duration-ms="44134" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AccountCreationWith_NoPackage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountCreation@306e95ec]" started-at="2023-08-23T14:56:58 IST" name="tearDown" finished-at="2023-08-23T14:56:58 IST" duration-ms="106" status="PASS">
+        </test-method> <!-- SignUp_AccountCreationWith_NoPackage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@7c24b813]" started-at="2023-08-23T16:34:57 IST" name="tearDown" finished-at="2023-08-23T16:34:57 IST" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Client.ClientAccountCreation -->
+      </class> <!-- Client.ClientAccountSignUp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

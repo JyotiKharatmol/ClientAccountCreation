@@ -26,7 +26,7 @@ public class Base_File
 	 
 	  options.addArguments("--headless");
 	  
-	  options.addArguments("--disable-gbu");
+	  options.addArguments("--disable-gpu");
 	  
 	  options.addArguments("--no-sandbox");
 	  

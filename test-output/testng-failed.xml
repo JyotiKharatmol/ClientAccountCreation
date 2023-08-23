@@ -5,16 +5,9 @@
     <classes>
       <class name="Client.ClientAccountSignUp">
         <methods>
-          <include name="SignUp_AccountCreationWith_PurchaseClassPack"/>
           <include name="tearDown"/>
-          <include name="SignUp_AccountCreationWith_FreeTrailPack"/>
           <include name="SignUp_AccountCreationWith_NoPackage"/>
-          <include name="SignUp_AccountCreationWith_PurchaseMemPack"/>
-          <include name="SignUp_AccountCreationWith_PurchaseClassAndMemPack"/>
           <include name="initialize"/>
-          <include name="SignUp_AccountCreationWith_FreeFirstMonthMemPack"/>
-          <include name="SignUp_AccountCreationWith_PurchaseUnlimitedMem"/>
-          <include name="SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode"/>
         </methods>
       </class> <!-- Client.ClientAccountSignUp -->
     </classes>
