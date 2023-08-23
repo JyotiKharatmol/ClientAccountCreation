@@ -38,7 +38,7 @@ public class Base_File
 	  
 	  options.addArguments("--window-size=1400, 600");
 	  
-	  WebDriverManager.chromiumdriver().setup();
+	  WebDriverManager.chromedriver().setup();
 	  
 	  driver = new ChromeDriver(options);
    }
