@@ -24,21 +24,21 @@ public class Base_File
    {    
 	  ChromeOptions options = new ChromeOptions();
 	  
+	  options.addArguments("--headless");
+	  
+	  options.addArguments("--disable-gbu");
+	  
 	  options.addArguments("--no-sandbox");
 	  
 	  options.addArguments("--disable-dev-shm-usage");
 	  
-	  options.addArguments("--headless");
-	  
-	  options.addArguments("disable-infobars");
+	  options.addArguments("--disable-infobars");
 	  
 	  options.addArguments("--disable-extensions");
 	  
 	  options.addArguments("--window-size=1400, 600");
 	  
-	  options.addArguments("--disable-gbu"); 
-	  
-	  WebDriverManager.chromedriver().setup();
+	  WebDriverManager.chromiumdriver().setup();
 	  
 	  driver = new ChromeDriver(options);
    }
