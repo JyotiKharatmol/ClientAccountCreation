@@ -38,8 +38,6 @@ public class Base_File
 	  
 	  options.addArguments("--window-size=1400, 600");
 	  
-	  options.addArguments("--no-sandbox");
-	  
 	  WebDriverManager.chromedriver().setup();
 	  
 	  driver = new ChromeDriver(options);
