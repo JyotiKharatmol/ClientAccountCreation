@@ -24,6 +24,8 @@ public class Base_File
    {    
 	  ChromeOptions options = new ChromeOptions();
 	  
+	  options.setBinary("/usr/bin/google-chrome /usr/share/man/man1/google-chrome.1.gz");
+	 
 	  options.addArguments("--headless");
 	  
 	  options.addArguments("--disable-gbu");
