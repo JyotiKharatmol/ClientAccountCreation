@@ -28,8 +28,6 @@ public class Base_File
 	  
 	  options.addArguments("--disable-gpu");
 	  
-	  //test
-	  
 	  options.addArguments("--no-sandbox");
 	  
 	  options.addArguments("--disable-dev-shm-usage");
@@ -39,6 +37,8 @@ public class Base_File
 	  options.addArguments("--disable-extensions");
 	  
 	  options.addArguments("--window-size=1400, 600");
+	  
+	  options.addArguments("-no-sandbox");
 	  
 	  WebDriverManager.chromedriver().setup();
 	  
