@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/3/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 23 18:19:38 IST 2023</td>
+<td>Started on:</td><td>Mon Aug 28 15:41:21 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1756 seconds (1756977 ms)</td>
+<tr><td>Total time:</td><td>1538 seconds (1538639 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,373 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Client.ClientAccountCreation.tearDown()'><b>tearDown</b><br>Test class: Client.ClientAccountCreation</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: headless chrome=116.0.5845.111)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd9698476253fbd38fde195e00e1304f, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50071/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd9698476253fbd38fde195e00e1304f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:405)
+	at Client.ClientAccountCreation.tearDown(ClientAccountCreation.java:1082)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace902020892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace902020892'><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: headless chrome=116.0.5845.111)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd9698476253fbd38fde195e00e1304f, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50071/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd9698476253fbd38fde195e00e1304f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:405)
+	at Client.ClientAccountCreation.tearDown(ClientAccountCreation.java:1082)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Client.ClientAccountCreation.tearDown()'><b>tearDown</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>0</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.initialize()'><b>initialize</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>0</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode()'><b>AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode</b><br>Test class: Client.ClientAccountCreation</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: headless chrome=116.0.5845.111)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd9698476253fbd38fde195e00e1304f, findElement {using=css selector, value=div[class=&apos;MuiAlert-message&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50071/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd9698476253fbd38fde195e00e1304f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1374)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$200(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1358)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at Abstract.Abstract_Component.waitForInvisibilityOfWebElement(Abstract_Component.java:72)
+	at Page_Objects.ClientSignUp.packageStatus(ClientSignUp.java:750)
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode(ClientAccountCreation.java:1010)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace301043040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace301043040'><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: headless chrome=116.0.5845.111)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd9698476253fbd38fde195e00e1304f, findElement {using=css selector, value=div[class=&apos;MuiAlert-message&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50071/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd9698476253fbd38fde195e00e1304f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1374)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$200(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1358)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at Abstract.Abstract_Component.waitForInvisibilityOfWebElement(Abstract_Component.java:72)
+	at Page_Objects.ClientSignUp.packageStatus(ClientSignUp.java:750)
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode(ClientAccountCreation.java:1010)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>45</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage()'><b>SignUp_AccountCreationWith_NoPackage</b><br>Test class: Client.ClientAccountSignUp</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (fd47368a7d9a53db958e784d27acba38)] -&gt; css selector: div[class=&apos;MuiAlert-message&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50112/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd47368a7d9a53db958e784d27acba38
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.Abstract_Component.waitForInvisibilityOfWebElement(Abstract_Component.java:72)
+	at Page_Objects.ClientSignUp.skipPackage_Term1Checkbox(ClientSignUp.java:330)
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage(ClientAccountSignUp.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1161177879", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1161177879'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (fd47368a7d9a53db958e784d27acba38)] -&gt; css selector: div[class=&apos;MuiAlert-message&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50112/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd47368a7d9a53db958e784d27acba38
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.Abstract_Component.waitForInvisibilityOfWebElement(Abstract_Component.java:72)
+	at Page_Objects.ClientSignUp.skipPackage_Term1Checkbox(ClientSignUp.java:330)
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage(ClientAccountSignUp.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>75</td>
+<td>Client.ClientAccountSignUp@68999068</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (820, 385). Other element would receive the click: &lt;div class=&quot;jss432&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: headless chrome=116.0.5845.111)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a2bf28c5bdbfd7df5ec8e4c2011b9659, clickElement {id=23A840A3F95712C792F2F5A02A3E9635_element_224}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49992}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49992/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a2bf28c5bdbfd7df5ec8e4c2011b9659)] -&gt; xpath: //span[text()=&apos;Login&apos;]]
+Session ID: a2bf28c5bdbfd7df5ec8e4c2011b9659
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard(ClientAccountCreation.java:801)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1035101789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1035101789'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (820, 385). Other element would receive the click: &lt;div class=&quot;jss432&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: headless chrome=116.0.5845.111)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a2bf28c5bdbfd7df5ec8e4c2011b9659, clickElement {id=23A840A3F95712C792F2F5A02A3E9635_element_224}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49992}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49992/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a2bf28c5bdbfd7df5ec8e4c2011b9659)] -&gt; xpath: //span[text()=&apos;Login&apos;]]
+Session ID: a2bf28c5bdbfd7df5ec8e4c2011b9659
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard(ClientAccountCreation.java:801)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>33</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,124 +443,198 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPack()'><b>AccountCreationWith_PurchaseClassAndMemPack</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>64</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard()'><b>AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>72</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>41</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_FreeTrailPack()'><b>AccountCreationWith_FreeTrailPack</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>62</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_NoPackage()'><b>AccountCreationWith_NoPackage</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>53</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassAndMemPack()'><b>SignUp_AccountCreationWith_PurchaseClassAndMemPack</b><br>Test class: Client.ClientAccountSignUp</td>
-<td></td>
-<td>62</td>
-<td>Client.ClientAccountSignUp@68999068</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard()'><b>AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>71</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode()'><b>SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</b><br>Test class: Client.ClientAccountSignUp</td>
-<td></td>
-<td>65</td>
-<td>Client.ClientAccountSignUp@68999068</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode()'><b>AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>67</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
 <td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseUnlimitedMem()'><b>SignUp_AccountCreationWith_PurchaseUnlimitedMem</b><br>Test class: Client.ClientAccountSignUp</td>
-<td></td>
-<td>67</td>
-<td>Client.ClientAccountSignUp@68999068</td></tr>
-<tr>
-<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_FreeFirstMonthMemPack()'><b>SignUp_AccountCreationWith_FreeFirstMonthMemPack</b><br>Test class: Client.ClientAccountSignUp</td>
-<td></td>
-<td>66</td>
-<td>Client.ClientAccountSignUp@68999068</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>68</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode()'><b>AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>61</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>71</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard()'><b>AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>67</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>65</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage()'><b>SignUp_AccountCreationWith_NoPackage</b><br>Test class: Client.ClientAccountSignUp</td>
-<td></td>
-<td>49</td>
-<td>Client.ClientAccountSignUp@68999068</td></tr>
-<tr>
-<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseMemPack()'><b>SignUp_AccountCreationWith_PurchaseMemPack</b><br>Test class: Client.ClientAccountSignUp</td>
-<td></td>
-<td>73</td>
-<td>Client.ClientAccountSignUp@68999068</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard()'><b>AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>78</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>64</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassPack()'><b>SignUp_AccountCreationWith_PurchaseClassPack</b><br>Test class: Client.ClientAccountSignUp</td>
-<td></td>
-<td>71</td>
-<td>Client.ClientAccountSignUp@68999068</td></tr>
-<tr>
-<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
-<td></td>
-<td>76</td>
-<td>Client.ClientAccountCreation@654f0d9c</td></tr>
-<tr>
-<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_FreeTrailPack()'><b>SignUp_AccountCreationWith_FreeTrailPack</b><br>Test class: Client.ClientAccountSignUp</td>
 <td></td>
 <td>56</td>
 <td>Client.ClientAccountSignUp@68999068</td></tr>
 <tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard()'><b>AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>63</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>59</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>64</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_NoPackage()'><b>AccountCreationWith_NoPackage</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>47</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard()'><b>AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>64</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_FreeTrailPack()'><b>AccountCreationWith_FreeTrailPack</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>54</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_FreeTrailPack()'><b>SignUp_AccountCreationWith_FreeTrailPack</b><br>Test class: Client.ClientAccountSignUp</td>
+<td></td>
+<td>55</td>
+<td>Client.ClientAccountSignUp@68999068</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode()'><b>AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>63</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode()'><b>SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</b><br>Test class: Client.ClientAccountSignUp</td>
+<td></td>
+<td>54</td>
+<td>Client.ClientAccountSignUp@68999068</td></tr>
+<tr>
 <td title='Client.ClientAccountCreation.AccountCreationWith_FreeFirstMonthMemPack()'><b>AccountCreationWith_FreeFirstMonthMemPack</b><br>Test class: Client.ClientAccountCreation</td>
 <td></td>
-<td>66</td>
+<td>62</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>61</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassPack()'><b>SignUp_AccountCreationWith_PurchaseClassPack</b><br>Test class: Client.ClientAccountSignUp</td>
+<td></td>
+<td>55</td>
+<td>Client.ClientAccountSignUp@68999068</td></tr>
+<tr>
+<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_FreeFirstMonthMemPack()'><b>SignUp_AccountCreationWith_FreeFirstMonthMemPack</b><br>Test class: Client.ClientAccountSignUp</td>
+<td></td>
+<td>53</td>
+<td>Client.ClientAccountSignUp@68999068</td></tr>
+<tr>
+<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassAndMemPack()'><b>SignUp_AccountCreationWith_PurchaseClassAndMemPack</b><br>Test class: Client.ClientAccountSignUp</td>
+<td></td>
+<td>54</td>
+<td>Client.ClientAccountSignUp@68999068</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard()'><b>AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>65</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>59</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseMemPack()'><b>SignUp_AccountCreationWith_PurchaseMemPack</b><br>Test class: Client.ClientAccountSignUp</td>
+<td></td>
+<td>59</td>
+<td>Client.ClientAccountSignUp@68999068</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard()'><b>AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>62</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard()'><b>AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard</b><br>Test class: Client.ClientAccountCreation</td>
+<td></td>
+<td>60</td>
+<td>Client.ClientAccountCreation@654f0d9c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPack()'><b>AccountCreationWith_PurchaseClassAndMemPack</b><br>Test class: Client.ClientAccountCreation</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: headless chrome=116.0.5845.111)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd9698476253fbd38fde195e00e1304f, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50071/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd9698476253fbd38fde195e00e1304f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:405)
+	at Client.ClientAccountCreation.tearDown(ClientAccountCreation.java:1082)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2099358540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2099358540'><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: headless chrome=116.0.5845.111)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd9698476253fbd38fde195e00e1304f, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50071/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd9698476253fbd38fde195e00e1304f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:405)
+	at Client.ClientAccountCreation.tearDown(ClientAccountCreation.java:1082)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
 <td>Client.ClientAccountCreation@654f0d9c</td></tr>
 </table><p>
 </body>

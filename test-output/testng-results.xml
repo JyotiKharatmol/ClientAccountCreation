@@ -1,21 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-23T16:34:04 IST" name="Default suite" finished-at="2023-08-23T16:34:57 IST" duration-ms="52927">
+  <suite started-at="2023-08-28T13:52:06 IST" name="Default suite" finished-at="2023-08-28T14:00:53 IST" duration-ms="526723">
     <groups>
     </groups>
-    <test started-at="2023-08-23T16:34:04 IST" name="Default test" finished-at="2023-08-23T16:34:57 IST" duration-ms="52927">
+    <test started-at="2023-08-28T13:52:06 IST" name="Default test" finished-at="2023-08-28T14:00:53 IST" duration-ms="526723">
       <class name="Client.ClientAccountSignUp">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@7c24b813]" started-at="2023-08-23T16:34:04 IST" name="initialize" finished-at="2023-08-23T16:34:13 IST" duration-ms="8666" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:52:06 IST" name="initialize" finished-at="2023-08-28T13:52:17 IST" duration-ms="10248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="SignUp_AccountCreationWith_NoPackage()[pri:1, instance:Client.ClientAccountSignUp@7c24b813]" started-at="2023-08-23T16:34:13 IST" name="SignUp_AccountCreationWith_NoPackage" finished-at="2023-08-23T16:34:57 IST" duration-ms="44134" status="PASS">
+        <test-method signature="SignUp_AccountCreationWith_NoPackage()[pri:1, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:52:17 IST" name="SignUp_AccountCreationWith_NoPackage" finished-at="2023-08-28T13:53:03 IST" duration-ms="46122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignUp_AccountCreationWith_NoPackage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@7c24b813]" started-at="2023-08-23T16:34:57 IST" name="tearDown" finished-at="2023-08-23T16:34:57 IST" duration-ms="49" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:53:03 IST" name="tearDown" finished-at="2023-08-28T13:53:03 IST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:53:03 IST" name="initialize" finished-at="2023-08-28T13:53:10 IST" duration-ms="7518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_FreeTrailPack()[pri:2, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:53:10 IST" name="SignUp_AccountCreationWith_FreeTrailPack" finished-at="2023-08-28T13:54:06 IST" duration-ms="55547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_FreeTrailPack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:54:06 IST" name="tearDown" finished-at="2023-08-28T13:54:06 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:54:06 IST" name="initialize" finished-at="2023-08-28T13:54:12 IST" duration-ms="5866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_PurchaseClassPack()[pri:3, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:54:12 IST" name="SignUp_AccountCreationWith_PurchaseClassPack" finished-at="2023-08-28T13:55:13 IST" duration-ms="60545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_PurchaseClassPack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:55:13 IST" name="tearDown" finished-at="2023-08-28T13:55:13 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:55:13 IST" name="initialize" finished-at="2023-08-28T13:55:20 IST" duration-ms="7203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_PurchaseMemPack()[pri:4, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:55:20 IST" name="SignUp_AccountCreationWith_PurchaseMemPack" finished-at="2023-08-28T13:56:20 IST" duration-ms="59874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_PurchaseMemPack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:56:20 IST" name="tearDown" finished-at="2023-08-28T13:56:20 IST" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:56:20 IST" name="initialize" finished-at="2023-08-28T13:56:28 IST" duration-ms="8041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_PurchaseUnlimitedMem()[pri:5, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:56:28 IST" name="SignUp_AccountCreationWith_PurchaseUnlimitedMem" finished-at="2023-08-28T13:57:28 IST" duration-ms="59650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_PurchaseUnlimitedMem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:57:28 IST" name="tearDown" finished-at="2023-08-28T13:57:28 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:57:28 IST" name="initialize" finished-at="2023-08-28T13:57:35 IST" duration-ms="6817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_FreeFirstMonthMemPack()[pri:6, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:57:35 IST" name="SignUp_AccountCreationWith_FreeFirstMonthMemPack" finished-at="2023-08-28T13:58:35 IST" duration-ms="60171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_FreeFirstMonthMemPack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:58:35 IST" name="tearDown" finished-at="2023-08-28T13:58:35 IST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:58:35 IST" name="initialize" finished-at="2023-08-28T13:58:42 IST" duration-ms="6860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_PurchaseClassAndMemPack()[pri:7, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:58:42 IST" name="SignUp_AccountCreationWith_PurchaseClassAndMemPack" finished-at="2023-08-28T13:59:43 IST" duration-ms="61048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_PurchaseClassAndMemPack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:59:43 IST" name="tearDown" finished-at="2023-08-28T13:59:44 IST" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:59:44 IST" name="initialize" finished-at="2023-08-28T13:59:50 IST" duration-ms="6720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode()[pri:8, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T13:59:50 IST" name="SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode" finished-at="2023-08-28T14:00:53 IST" duration-ms="62173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@618425b5]" started-at="2023-08-28T14:00:53 IST" name="tearDown" finished-at="2023-08-28T14:00:53 IST" duration-ms="305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

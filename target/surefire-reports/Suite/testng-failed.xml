@@ -5,34 +5,17 @@
     <classes>
       <class name="Client.ClientAccountSignUp">
         <methods>
-          <include name="SignUp_AccountCreationWith_PurchaseClassPack"/>
           <include name="tearDown"/>
-          <include name="SignUp_AccountCreationWith_FreeTrailPack"/>
-          <include name="SignUp_AccountCreationWith_PurchaseMemPack"/>
+          <include name="SignUp_AccountCreationWith_NoPackage"/>
           <include name="initialize"/>
-          <include name="SignUp_AccountCreationWith_PurchaseClassAndMemPack"/>
-          <include name="SignUp_AccountCreationWith_FreeFirstMonthMemPack"/>
-          <include name="SignUp_AccountCreationWith_PurchaseUnlimitedMem"/>
-          <include name="SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode"/>
         </methods>
       </class> <!-- Client.ClientAccountSignUp -->
       <class name="Client.ClientAccountCreation">
         <methods>
           <include name="AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode"/>
-          <include name="AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard"/>
           <include name="AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard"/>
           <include name="tearDown"/>
-          <include name="AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard"/>
-          <include name="AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard"/>
-          <include name="AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard"/>
-          <include name="AccountCreationWith_FreeFirstMonthMemPack"/>
-          <include name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard"/>
-          <include name="AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard"/>
-          <include name="AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard"/>
-          <include name="AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard"/>
-          <include name="AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode"/>
           <include name="initialize"/>
-          <include name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard"/>
           <include name="AccountCreationWith_PurchaseClassAndMemPack"/>
         </methods>
       </class> <!-- Client.ClientAccountCreation -->
