@@ -331,6 +331,18 @@ public class ClientSignUp extends Abstract_Component {
 		waitForElementToBeClickable(term1Checkbox);
 		return term1Checkbox;
 	}
+	public WebElement skipPackage_NoStudioTermAdded_DefaultWaiverTerm()
+	{
+		waitForInvisibilityOfWebElement(skipPackageAlertMessage);
+		waitForElementToBeClickable(term1Checkbox);
+		return term1Checkbox;
+	}
+	
+	public WebElement NoStudioTermAdded_DefaultWaiverTerm()
+	{
+		waitForElementToBeClickable(term1Checkbox);
+		return term1Checkbox;
+	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[2]/label/span[1]/span[1]")
 	WebElement term2Checkbox;
@@ -370,6 +382,13 @@ public class ClientSignUp extends Abstract_Component {
 	WebElement policiesTerm1;
 	
 	public WebElement PoliciesTerm1()
+	{
+		waitForAttributeOfElementToBe(policiesTypeFullName);
+		waitForElementToBeClickable(policiesTerm1);
+		return policiesTerm1;
+	}
+	
+	public WebElement NoStudioTermAdded_DefaultPoliciesTerm()
 	{
 		waitForAttributeOfElementToBe(policiesTypeFullName);
 		waitForElementToBeClickable(policiesTerm1);
@@ -666,6 +685,16 @@ public class ClientSignUp extends Abstract_Component {
 	
 	public WebElement Login()
 	{
+		waitForElementToBeClickable(login);
+		return login;
+	}
+	
+	@FindBy(css="img[alt='Loader']")
+	WebElement loaderIcon;
+	
+	public WebElement Login_afterPay()
+	{
+		waitForInvisibilityOfWebElement(loaderIcon);
 		waitForElementToBeClickable(login);
 		return login;
 	}

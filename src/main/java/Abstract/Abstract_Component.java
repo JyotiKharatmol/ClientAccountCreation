@@ -45,7 +45,7 @@ public class Abstract_Component
 	
 	public void waitForVisibilityOfElement(WebElement a)
 	{
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(70));
 		w.until(ExpectedConditions.visibilityOf(a));
 	}
 	

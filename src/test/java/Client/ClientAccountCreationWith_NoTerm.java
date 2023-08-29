@@ -8,17 +8,17 @@ import org.testng.annotations.Test;
 import Resource_Properties.Base_File;
 import Page_Objects.ClientSignUp;
 
-public class ClientAccountCreation extends Base_File 
+public class ClientAccountCreationWith_NoTerm extends Base_File 
 {
 	@BeforeMethod
 	public void initialize() throws IOException 
 	{
 		driver = initializeBrowser();
-		driver.get(pro.getProperty("url"));	
+		driver.get(pro.getProperty("url1"));	
 	}
 	
 	@Test(priority=1)
-	public void AccountCreationWith_NoPackage() 
+	public void AccountCreationWithNoTerm_NoPackage() 
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -47,14 +47,10 @@ public class ClientAccountCreation extends Base_File
 		a.ConfirmPassword().sendKeys("Password@3");
 		a.SaveAndContinue1().click();
 		a.skipPurchasePackageLater().click();
-		a.skipPackage_Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.skipPackage_NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Rose Lavelle");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Rose Lavelle");
 		a.SaveAndContinue4().click();
 		a.Confirm().click();
@@ -67,7 +63,7 @@ public class ClientAccountCreation extends Base_File
 	}
 	
 	@Test(priority=2)
-	public void AccountCreationWith_FreeTrailPack() throws InterruptedException 
+	public void AccountCreationWithNoTerm_FreeTrailPack() throws InterruptedException 
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -97,14 +93,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.zero$classPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Crystal Dunn");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Crystal Dunn");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -124,7 +116,7 @@ public class ClientAccountCreation extends Base_File
 	}
 	
 	@Test(priority=3)
-	public void AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard() 
+	public void AccountCreationWithNoTerm_PurchaseClassPackWith_PromoCodeAndSelfCard() 
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -154,14 +146,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.$classPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Sophia Huerta");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Sophia Huerta");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -192,7 +180,7 @@ public class ClientAccountCreation extends Base_File
 	}
 	
 	@Test(priority=4)
-	public void AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard() 
+	public void AccountCreationWithNoTerm_PurchaseClassPackWith_PromoCodeAndRelativeCard() 
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -222,14 +210,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.$classPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Sophia Huerta");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Sophia Huerta");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -267,7 +251,7 @@ public class ClientAccountCreation extends Base_File
 	}
 	
 	@Test(priority=5)
-	public void AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard() 
+	public void AccountCreationWithNoTerm_PurchaseClassPackWith_NoPromoCodeAndSelfCard() 
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -297,14 +281,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.$classPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Sophia Huerta");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Sophia Huerta");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -328,7 +308,7 @@ public class ClientAccountCreation extends Base_File
 	}
 		
 	@Test(priority=6)
-	public void AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard() 
+	public void AccountCreationWithNoTerm_PurchaseClassPackWith_NoPromoCodeAndRelativeCard() 
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -358,14 +338,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.$classPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Sophia Huerta");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Sophia Huerta");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -397,7 +373,7 @@ public class ClientAccountCreation extends Base_File
 	
 	
 	@Test(priority=7)
-	public void AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard()
+	public void AccountCreationWithNoTerm_PurchaseMemPackWith_PromoCodeAndSelfCard()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -427,14 +403,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Ashley Sanchez");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Ashley Sanchez");
 		a.SaveAndContinue4().click();	
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -466,7 +438,7 @@ public class ClientAccountCreation extends Base_File
 	}
 	
 	@Test(priority=8)
-	public void AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard()
+	public void AccountCreationWithNoTerm_PurchaseMemPackWith_PromoCodeAndRelativeCard()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -496,14 +468,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Ashley Sanchez");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Ashley Sanchez");
 		a.SaveAndContinue4().click();	
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -542,7 +510,7 @@ public class ClientAccountCreation extends Base_File
 	}
 		
 	@Test(priority=9)
-	public void AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard()
+	public void AccountCreationWithNoTerm_PurchaseMemPackWith_NoPromoCodeAndSelfCard()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -572,14 +540,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Ashley Sanchez");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Ashley Sanchez");
 		a.SaveAndContinue4().click();	
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -604,7 +568,7 @@ public class ClientAccountCreation extends Base_File
 	}
 		
 	@Test(priority=10)
-	public void AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard()
+	public void AccountCreationWithNoTerm_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -634,14 +598,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.unlimitedMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Morgan Freeman");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Morgan Freeman");
 		a.SaveAndContinue4().click();	
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -673,7 +633,7 @@ public class ClientAccountCreation extends Base_File
 	}
 	
 	@Test(priority=11)
-	public void AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard()
+	public void AccountCreationWithNoTerm_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -703,14 +663,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.unlimitedMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Morgan Freeman");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Morgan Freeman");
 		a.SaveAndContinue4().click();	
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -749,7 +705,7 @@ public class ClientAccountCreation extends Base_File
 	}
 	
 	@Test(priority=12)
-	public void AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard()
+	public void AccountCreationWithNoTerm_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -779,14 +735,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.unlimitedMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Morgan Freeman");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Morgan Freeman");
 		a.SaveAndContinue4().click();	
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -812,7 +764,7 @@ public class ClientAccountCreation extends Base_File
 	
 	
 	@Test(priority=13)
-	public void AccountCreationWith_FreeFirstMonthMemPack()
+	public void AccountCreationWithNoTerm_FreeFirstMonthMemPack()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -842,14 +794,10 @@ public class ClientAccountCreation extends Base_File
 		a.SaveAndContinue1().click();
 		a.freeFirstMonthMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Betty White");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Betty White");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -874,7 +822,7 @@ public class ClientAccountCreation extends Base_File
 	}
 	
 	@Test(priority=14)
-	public void AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode()
+	public void AccountCreationWithNoTerm_PurchaseClassAndMemPackWith_MemPromoCode()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -905,14 +853,10 @@ public class ClientAccountCreation extends Base_File
 		a.$classPack().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Anne Hathaway");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Anne Hathway");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName_ClassAndMem().getText(), "Grand Total");
@@ -944,7 +888,7 @@ public class ClientAccountCreation extends Base_File
 	}	
 	
 	@Test(priority=15)
-	public void AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode()
+	public void AccountCreationWithNoTerm_PurchaseClassAndMemPackWith_ClassPromoCode()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -975,14 +919,10 @@ public class ClientAccountCreation extends Base_File
 		a.$classPack().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Shirely Hathaway");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Shirely Hathway");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName_ClassAndMem().getText(), "Grand Total");
@@ -1014,7 +954,7 @@ public class ClientAccountCreation extends Base_File
 	}
 	
 	@Test(priority=16)
-	public void AccountCreationWith_PurchaseClassAndMemPack()
+	public void AccountCreationWithNoTerm_PurchaseClassAndMemPack()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.DoYouHaveAcustomerAccount().click();
@@ -1045,14 +985,10 @@ public class ClientAccountCreation extends Base_File
 		a.$classPack().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Shirely Hathaway");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Shirely Hathway");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName_ClassAndMem().getText(), "Grand Total");

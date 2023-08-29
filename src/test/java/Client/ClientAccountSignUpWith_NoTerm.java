@@ -8,18 +8,18 @@ import org.testng.annotations.Test;
 import Page_Objects.ClientSignUp;
 import Resource_Properties.Base_File;
 
-public class ClientAccountSignUp extends Base_File
+public class ClientAccountSignUpWith_NoTerm extends Base_File
 {
 
 	@BeforeMethod
 	public void initialize() throws IOException
 	{
 		driver = initializeBrowser();
-		driver.get(pro.getProperty("url"));
+		driver.get(pro.getProperty("url1"));
 	}
 	
 	@Test(priority=1)
-	public void SignUp_AccountCreationWith_NoPackage()
+	public void SignUp_AccountCreationWith_NoTerm_NoPackage()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -45,14 +45,10 @@ public class ClientAccountSignUp extends Base_File
 		a.ConfirmPassword().sendKeys("Password@3");
 		a.SaveAndContinue1().click();
 		a.skipPurchasePackageLater().click();
-		a.skipPackage_Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.skipPackage_NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Brie Johnsson");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Brie Johnsson");
 		a.SaveAndContinue4().click();
 		a.Confirm().click();
@@ -68,7 +64,7 @@ public class ClientAccountSignUp extends Base_File
 	}
 	
 	@Test(priority=2)
-	public void SignUp_AccountCreationWith_FreeTrailPack()
+	public void SignUp_AccountCreationWith_NoTerm_FreeTrailPack()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -95,14 +91,10 @@ public class ClientAccountSignUp extends Base_File
 		a.SaveAndContinue1().click();
 		a.zero$classPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Jennifer Lawrence");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Jennifer Lawrence");
 		a.SaveAndContinue4().click();
 		a.Confirm().click();
@@ -121,7 +113,7 @@ public class ClientAccountSignUp extends Base_File
 	}
 	
 	@Test(priority=3)
-	public void SignUp_AccountCreationWith_PurchaseClassPack() 
+	public void SignUp_AccountCreationWith_NoTerm_PurchaseClassPack() 
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -148,14 +140,10 @@ public class ClientAccountSignUp extends Base_File
 		a.SaveAndContinue1().click();
 		a.$classPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Alexandra Daddario");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Alexandra Daddario");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -187,7 +175,7 @@ public class ClientAccountSignUp extends Base_File
 	}
 	
 	@Test(priority=4)
-	public void SignUp_AccountCreationWith_PurchaseMemPack()
+	public void SignUp_AccountCreationWith_NoTerm_PurchaseMemPack()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -214,14 +202,10 @@ public class ClientAccountSignUp extends Base_File
 		a.SaveAndContinue1().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Elizabeth Olsen");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Elizabeth Olsen");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -254,7 +238,7 @@ public class ClientAccountSignUp extends Base_File
 	}
 	
 	@Test(priority=5)
-	public void SignUp_AccountCreationWith_PurchaseUnlimitedMem()
+	public void SignUp_AccountCreationWith_NoTerm_PurchaseUnlimitedMem()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -281,14 +265,10 @@ public class ClientAccountSignUp extends Base_File
 		a.SaveAndContinue1().click();
 		a.unlimitedMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Matthew McConaughey");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Matthew McConaughey");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -321,7 +301,7 @@ public class ClientAccountSignUp extends Base_File
 	}
 	
 	@Test(priority=6)
-	public void SignUp_AccountCreationWith_FreeFirstMonthMemPack()
+	public void SignUp_AccountCreationWith_NoTerm_FreeFirstMonthMemPack()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -348,14 +328,10 @@ public class ClientAccountSignUp extends Base_File
 		a.SaveAndContinue1().click();
 		a.freeFirstMonthMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Julianne Moore");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Julianne Moore");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
@@ -381,7 +357,7 @@ public class ClientAccountSignUp extends Base_File
 	}
 	
 	@Test(priority=7)
-	public void SignUp_AccountCreationWith_PurchaseClassAndMemPack()
+	public void SignUp_AccountCreationWith_NoTerm_PurchaseClassAndMemPack()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -409,14 +385,10 @@ public class ClientAccountSignUp extends Base_File
 		a.$classPack().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Elle Fanning");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Elle Fanning");
 		a.SaveAndContinue4().click();	
 		Assert.assertEquals(a.actualGrandTotalName_ClassAndMem().getText(), "Grand Total");
@@ -450,7 +422,7 @@ public class ClientAccountSignUp extends Base_File
 	
 	
 	@Test(priority=8)
-	public void SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode()
+	public void SignUp_AccountCreationWith_NoTerm_PurchaseClassAndMemPack_ClassPackPromoCode()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -478,14 +450,10 @@ public class ClientAccountSignUp extends Base_File
 		a.$classPack().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.Term1Checkbox().click();
-		a.Term2Checkbox().click();
-		a.DefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultWaiverTerm().click();
 		a.TypeFullName().sendKeys("Isabella Fanning");
 		a.SaveAndContinue3().click();
-		a.PoliciesTerm1().click();
-		a.PoliciesTerm2().click();
-		a.PoliciesDefaultCheckbox().click();
+		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Isabella Fanning");
 		a.SaveAndContinue4().click();
 		Assert.assertEquals(a.actualGrandTotalName_ClassAndMem().getText(), "Grand Total");

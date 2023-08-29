@@ -10,15 +10,6 @@
           <include name="initialize"/>
         </methods>
       </class> <!-- Client.ClientAccountSignUp -->
-      <class name="Client.ClientAccountCreation">
-        <methods>
-          <include name="AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode"/>
-          <include name="AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard"/>
-          <include name="tearDown"/>
-          <include name="initialize"/>
-          <include name="AccountCreationWith_PurchaseClassAndMemPack"/>
-        </methods>
-      </class> <!-- Client.ClientAccountCreation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
