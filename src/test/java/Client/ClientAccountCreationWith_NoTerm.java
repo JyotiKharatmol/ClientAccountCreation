@@ -128,7 +128,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		String randomInt = RandomStringUtils.randomAlphanumeric(3);
 		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
 		a.PhoneNo().sendKeys("4825434121");
-		a.Address1().sendKeys("Highland Street 140");
+		a.Address1().sendKeys("Highland Street 120");
 		a.City().sendKeys("Atlanta");
 		a.DOB().sendKeys("09091995");
 		a.selectGender().click();

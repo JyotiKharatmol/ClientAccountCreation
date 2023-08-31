@@ -250,6 +250,7 @@ public class ClientSignUp extends Abstract_Component {
 	
 	public WebElement SaveAndContinue1()
 	{
+		waitForElementToBeClickable(saveAndContinue1);
 		return saveAndContinue1;
 	}
 	

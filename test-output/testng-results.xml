@@ -1,25 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-30T02:30:38 IST" name="Default suite" finished-at="2023-08-30T02:31:59 IST" duration-ms="81389">
+  <suite started-at="2023-09-01T02:37:14 IST" name="Suite" finished-at="2023-09-01T02:47:33 IST" duration-ms="619224">
     <groups>
     </groups>
-    <test started-at="2023-08-30T02:30:38 IST" name="Default test" finished-at="2023-08-30T02:31:59 IST" duration-ms="81389">
+    <test started-at="2023-09-01T02:37:14 IST" name="Test" finished-at="2023-09-01T02:47:33 IST" duration-ms="619224">
       <class name="Client.ClientAccountSignUp">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@7c24b813]" started-at="2023-08-30T02:30:38 IST" name="initialize" finished-at="2023-08-30T02:31:04 IST" duration-ms="25992" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:37:14 IST" name="initialize" finished-at="2023-09-01T02:37:27 IST" duration-ms="12971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="SignUp_AccountCreationWith_NoPackage()[pri:1, instance:Client.ClientAccountSignUp@7c24b813]" started-at="2023-08-30T02:31:04 IST" name="SignUp_AccountCreationWith_NoPackage" finished-at="2023-08-30T02:31:59 IST" duration-ms="55055" status="PASS">
+        <test-method signature="SignUp_AccountCreationWith_NoPackage()[pri:1, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:37:27 IST" name="SignUp_AccountCreationWith_NoPackage" finished-at="2023-09-01T02:38:08 IST" duration-ms="40606" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element Proxy element for: DefaultElementLocator 'By.xpath: //p[1]' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element Proxy element for: DefaultElementLocator 'By.xpath: //p[1]' (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at Abstract.Abstract_Component.waitForTextInElement(Abstract_Component.java:67)
+at Page_Objects.ClientSignUp.AccountCreationSuccessfulMessage(ClientSignUp.java:680)
+at Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage(ClientAccountSignUp.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[1]"}
+  (Session info: chrome=116.0.5845.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4899ba25027800b6d94321e11d342944, findElement {using=xpath, value=//p[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.140, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50424}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50424/devtoo..., se:cdpVersion: 116.0.5845.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4899ba25027800b6d94321e11d342944
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:343)
+at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:339)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignUp_AccountCreationWith_NoPackage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@7c24b813]" started-at="2023-08-30T02:31:59 IST" name="tearDown" finished-at="2023-08-30T02:31:59 IST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:38:08 IST" name="tearDown" finished-at="2023-09-01T02:38:08 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:38:08 IST" name="initialize" finished-at="2023-09-01T02:38:15 IST" duration-ms="6876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_FreeTrailPack()[pri:2, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:38:15 IST" name="SignUp_AccountCreationWith_FreeTrailPack" finished-at="2023-09-01T02:39:11 IST" duration-ms="55398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_FreeTrailPack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:39:11 IST" name="tearDown" finished-at="2023-09-01T02:39:11 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:39:11 IST" name="initialize" finished-at="2023-09-01T02:39:17 IST" duration-ms="6287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_PurchaseClassPack()[pri:3, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:39:17 IST" name="SignUp_AccountCreationWith_PurchaseClassPack" finished-at="2023-09-01T02:40:39 IST" duration-ms="82024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_PurchaseClassPack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:40:39 IST" name="tearDown" finished-at="2023-09-01T02:40:40 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:40:40 IST" name="initialize" finished-at="2023-09-01T02:40:46 IST" duration-ms="6395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_PurchaseMemPack()[pri:4, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:40:46 IST" name="SignUp_AccountCreationWith_PurchaseMemPack" finished-at="2023-09-01T02:41:52 IST" duration-ms="65691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_PurchaseMemPack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:41:52 IST" name="tearDown" finished-at="2023-09-01T02:41:52 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:41:52 IST" name="initialize" finished-at="2023-09-01T02:41:59 IST" duration-ms="6715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_PurchaseUnlimitedMem()[pri:5, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:41:59 IST" name="SignUp_AccountCreationWith_PurchaseUnlimitedMem" finished-at="2023-09-01T02:43:19 IST" duration-ms="79953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_PurchaseUnlimitedMem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:43:19 IST" name="tearDown" finished-at="2023-09-01T02:43:19 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:43:19 IST" name="initialize" finished-at="2023-09-01T02:43:25 IST" duration-ms="6166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_FreeFirstMonthMemPack()[pri:6, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:43:25 IST" name="SignUp_AccountCreationWith_FreeFirstMonthMemPack" finished-at="2023-09-01T02:44:55 IST" duration-ms="90138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_FreeFirstMonthMemPack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:44:55 IST" name="tearDown" finished-at="2023-09-01T02:44:56 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:44:56 IST" name="initialize" finished-at="2023-09-01T02:45:02 IST" duration-ms="6268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_PurchaseClassAndMemPack()[pri:7, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:45:02 IST" name="SignUp_AccountCreationWith_PurchaseClassAndMemPack" finished-at="2023-09-01T02:46:24 IST" duration-ms="81810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_PurchaseClassAndMemPack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:46:24 IST" name="tearDown" finished-at="2023-09-01T02:46:24 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:46:24 IST" name="initialize" finished-at="2023-09-01T02:46:32 IST" duration-ms="7778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode()[pri:8, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:46:32 IST" name="SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode" finished-at="2023-09-01T02:47:33 IST" duration-ms="61387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client.ClientAccountSignUp@338c99c8]" started-at="2023-09-01T02:47:33 IST" name="tearDown" finished-at="2023-09-01T02:47:33 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Client.ClientAccountSignUp -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
