@@ -1,4 +1,5 @@
 package Page_Objects;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -78,9 +79,11 @@ public class ClientSignUp extends Abstract_Component {
 	@FindBy(css="input[name='emailId']")
 	WebElement email;
 	
-	public WebElement Email()
+	public String Email()
 	{
-		return email;
+		String randomInt = RandomStringUtils.randomAlphanumeric(3);
+		email.sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		return randomInt;
 	}
 	
 	@FindBy(xpath="//p/div/div/div[1]/div/div[5]/div/div/div[4]/div/p")
@@ -429,6 +432,86 @@ public class ClientSignUp extends Abstract_Component {
 	{
 		return saveAndContinue4;
 	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[1]/div/div[5]/div[2]/div/div[2]/h4")
+	WebElement confirmFirstName;
+	
+	public WebElement confirmFirstName()
+	{
+		return confirmFirstName;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[1]/div/div[5]/div[3]/div/div[2]/h4")
+	WebElement confirmLastName;
+	
+	public WebElement confirmLastName()
+	{
+		return confirmLastName;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[1]/div/div[5]/div[4]/div/div[2]/h4")
+	WebElement confirmEmail;
+	
+	public WebElement confirmEmail()
+	{
+		return confirmEmail;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[1]/div/div[5]/div[5]/div/div[2]/h4")
+	WebElement confirmPhoneNo;
+	
+	public WebElement confirmPhoneNo()
+	{
+		return confirmPhoneNo;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[1]/div/div[5]/div[6]/div/div[2]/h4")
+	WebElement confirmAddress;
+	
+	public WebElement confirmAddress()
+	{
+		return confirmAddress;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[1]/div/div[6]/div[2]/div/div[2]/h4")
+	WebElement confirmEFirstName;
+	
+	public WebElement confirmEFirstName()
+	{
+		return confirmEFirstName;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[1]/div/div[6]/div[3]/div/div[2]/h4")
+	WebElement confirmELastName;
+	
+	public WebElement confirmELastName()
+	{
+		return confirmELastName;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[1]/div/div[6]/div[4]/div/div[2]/h4")
+	WebElement confirmEEmail;
+	
+	public WebElement confirmEEmail()
+	{
+		return confirmEEmail;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[1]/div/div[6]/div[5]/div/div[2]/h4")
+	WebElement confirmEPhoneNo;
+	
+	public WebElement confirmEPhoneNo()
+	{
+		return confirmEPhoneNo;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[1]/div/div[6]/div[6]/div/div[2]/h4")
+	WebElement confirmERelationship;
+	
+	public WebElement confirmERelationship()
+	{
+		return confirmERelationship;
+	}	
 	
 	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[4]/div/div/div/div[3]/span[1]")
 	WebElement actualGrandTotalName;

@@ -1,4 +1,32 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 599.735 s - in TestSuite
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 490.425 s <<< FAILURE! - in TestSuite
+SignUp_AccountCreationWith_NoPackage(Client.ClientAccountSignUp)  Time elapsed: 51.842 s  <<< FAILURE!
+java.lang.AssertionError: 
+expected [*You don't have a package on file for this session.
+Would you like to purchase a new package?] but found [You don't have a package on file for this session.
+Would you like to purchase a new package?]
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage(ClientAccountSignUp.java:67)
+
+SignUp_AccountCreationWith_FreeTrailPack(Client.ClientAccountSignUp)  Time elapsed: 31.238 s  <<< FAILURE!
+java.lang.AssertionError: expected [*You have been registered for this session!] but found [You have been registered for this session!]
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_FreeTrailPack(ClientAccountSignUp.java:117)
+
+SignUp_AccountCreationWith_PurchaseClassPack(Client.ClientAccountSignUp)  Time elapsed: 28.786 s  <<< FAILURE!
+java.lang.AssertionError: expected [*Congratulations! Your account has been created.] but found [Congratulations! Your account has been created.]
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassPack(ClientAccountSignUp.java:176)
+
+SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode(Client.ClientAccountSignUp)  Time elapsed: 16.318 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (1303, 694). Other element would receive the click: <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6">...</div>
+  (Session info: chrome=116.0.5845.141)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ab6b31d17404917026728a55f4a281e, clickElement {id=CC87F7877E50250F8922B977465C5DEC_element_142}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52235/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9ab6b31d17404917026728a55f4a281e)] -> xpath: //span[text()='SAVE AND CONTINUE']]
+Session ID: 9ab6b31d17404917026728a55f4a281e
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode(ClientAccountSignUp.java:478)
+

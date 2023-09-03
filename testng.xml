@@ -8,10 +8,12 @@
   
   <test thread-count="5" name="Test">
     <classes>
+		
 	 <class name="Client.ClientAccountCreation"/>
-	 <class name="Client.ClientAccountCreationWith_NoTerm"/>
 	 <class name="Client.ClientAccountSignUp"/>
+	 <class name="Client.ClientAccountCreationWith_NoTerm"/>
 	 <class name="Client.ClientAccountSignUpWith_NoTerm"/>
+	 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

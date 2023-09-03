@@ -1,6 +1,5 @@
 package Client;
 import java.io.IOException;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -27,8 +26,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Rose");
 		a.LastName().sendKeys("Lavelle");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4834484031");
 		a.DOB().sendKeys("03091995");
 		a.selectGender().click();
@@ -72,8 +70,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Crystal");
 		a.LastName().sendKeys("Dunn");	
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4845382834");
 		a.DOB().sendKeys("09091995");
 		a.selectGender().click();
@@ -125,8 +122,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Sophia");
 		a.LastName().sendKeys("Huerta");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4825434121");
 		a.Address1().sendKeys("Highland Street 120");
 		a.City().sendKeys("Atlanta");
@@ -189,8 +185,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Sophia");
 		a.LastName().sendKeys("Huerta");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4825434121");
 		a.Address1().sendKeys("Highland Street 140");
 		a.City().sendKeys("Atlanta");
@@ -260,8 +255,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Sophia");
 		a.LastName().sendKeys("Huerta");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4825434121");
 		a.Address1().sendKeys("Highland Street 140");
 		a.City().sendKeys("Atlanta");
@@ -317,8 +311,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Sophia");
 		a.LastName().sendKeys("Huerta");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4825434121");
 		a.Address1().sendKeys("Highland Street 140");
 		a.City().sendKeys("Atlanta");
@@ -382,8 +375,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Ashley");
 		a.LastName().sendKeys("Sanchez");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4805434121");
 		a.DOB().sendKeys("09091995");
 		a.selectGender().click();
@@ -447,8 +439,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Ashley");
 		a.LastName().sendKeys("Sanchez");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4805434121");
 		a.DOB().sendKeys("09091995");
 		a.selectGender().click();
@@ -519,8 +510,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Ashley");
 		a.LastName().sendKeys("Sanchez");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4805434121");
 		a.DOB().sendKeys("09091995");
 		a.selectGender().click();
@@ -577,8 +567,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Morgan");
 		a.LastName().sendKeys("Freeman");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4567765420");
 		a.DOB().sendKeys("09301994");
 		a.selectGender().click();
@@ -642,8 +631,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Morgan");
 		a.LastName().sendKeys("Freeman");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4567765420");
 		a.DOB().sendKeys("09301994");
 		a.selectGender().click();
@@ -714,8 +702,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Morgan");
 		a.LastName().sendKeys("Freeman");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4567765420");
 		a.DOB().sendKeys("09301994");
 		a.selectGender().click();
@@ -773,8 +760,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Betty");
 		a.LastName().sendKeys("White");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4565434567");
 		a.DOB().sendKeys("09301994");
 		a.selectGender().click();
@@ -831,8 +817,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Anne");
 		a.LastName().sendKeys("Hathaway");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4825434121");
 		a.DOB().sendKeys("09091995");
 		a.selectGender().click();
@@ -897,8 +882,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Shirely");
 		a.LastName().sendKeys("Hathaway");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4825434121");
 		a.DOB().sendKeys("09091995");
 		a.selectGender().click();
@@ -963,8 +947,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 		a.dontHaveAnAccountClientSignUp().click();
 		a.FirstName().sendKeys("Shirely");
 		a.LastName().sendKeys("Hathaway");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4825434121");
 		a.DOB().sendKeys("09091995");
 		a.selectGender().click();

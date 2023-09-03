@@ -1,6 +1,5 @@
 package Client;
 import java.io.IOException;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,8 +24,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.signUpLink().click();
 		a.FirstName().sendKeys("Brie");
 		a.LastName().sendKeys("Johnsson");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4526534563");
 		a.DOB().sendKeys("09061994");
 		a.selectGender().click();
@@ -70,8 +68,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.signUpLink().click();
 		a.FirstName().sendKeys("Jennifer");
 		a.LastName().sendKeys("Lawrence");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4624565674");
 		a.DOB().sendKeys("03091994");
 		a.selectGender().click();
@@ -119,8 +116,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.signUpLink().click();
 		a.FirstName().sendKeys("Alexandra");
 		a.LastName().sendKeys("Daddario");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4825434121");
 		a.Address1().sendKeys("Highland Street 120");
 		a.City().sendKeys("Atlanta");
@@ -181,8 +177,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.signUpLink().click();
 		a.FirstName().sendKeys("Elizabeth");
 		a.LastName().sendKeys("Olsen");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4805434121");
 		a.DOB().sendKeys("09091995");
 		a.selectGender().click();
@@ -244,8 +239,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.signUpLink().click();
 		a.FirstName().sendKeys("Matthew");
 		a.LastName().sendKeys("McConaughey");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4567765420");
 		a.DOB().sendKeys("09301994");
 		a.selectGender().click();
@@ -307,8 +301,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.signUpLink().click();
 		a.FirstName().sendKeys("Julianne");
 		a.LastName().sendKeys("Moore");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4565434567");
 		a.DOB().sendKeys("09301994");
 		a.selectGender().click();
@@ -363,8 +356,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.signUpLink().click();
 		a.FirstName().sendKeys("Elle");
 		a.LastName().sendKeys("Fanning");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4825434121");
 		a.DOB().sendKeys("09091995");
 		a.selectGender().click();
@@ -428,8 +420,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.signUpLink().click();
 		a.FirstName().sendKeys("Isabella");
 		a.LastName().sendKeys("Fanning");
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
-		a.Email().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
+		String randomInt = a.Email();
 		a.PhoneNo().sendKeys("4825434121");
 		a.DOB().sendKeys("09091995");
 		a.selectGender().click();

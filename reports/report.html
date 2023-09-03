@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Web Automation Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 1, 2023 03:16:43 am</span></a>
+<a href="#"><span class="badge badge-primary">Sep 1, 2023 03:36:41 am</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,6 +72,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,39 +80,86 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">SignUp_AccountCreationWith_NoPackage</p>
             <p class="text-sm">
-              <span>3:16:56 am</span> / <span>00:00:45:428</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:36:51 am</span> / <span>00:00:51:814</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_NoPackage</h5>
-<span class='badge badge-success'>09.01.2023 3:16:56 am</span>
-<span class='badge badge-danger'>09.01.2023 3:17:41 am</span>
-<span class='badge badge-default'>00:00:45:428</span>
+<h5 class="test-status text-fail">SignUp_AccountCreationWith_NoPackage</h5>
+<span class='badge badge-success'>09.01.2023 3:36:51 am</span>
+<span class='badge badge-danger'>09.01.2023 3:37:42 am</span>
+<span class='badge badge-default'>00:00:51:814</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_NoPackage.png' src="C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_NoPackage.png">
+    <div class="title">SignUp_AccountCreationWith_NoPackage</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:17:41 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:37:42 am</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [*You don't have a package on file for this session.
+Would you like to purchase a new package?] but found [You don't have a package on file for this session.
+Would you like to purchase a new package?]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage(ClientAccountSignUp.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -114,39 +167,84 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">SignUp_AccountCreationWith_FreeTrailPack</p>
             <p class="text-sm">
-              <span>3:17:47 am</span> / <span>00:00:52:340</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:37:50 am</span> / <span>00:00:31:239</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_FreeTrailPack</h5>
-<span class='badge badge-success'>09.01.2023 3:17:47 am</span>
-<span class='badge badge-danger'>09.01.2023 3:18:39 am</span>
-<span class='badge badge-default'>00:00:52:340</span>
+<h5 class="test-status text-fail">SignUp_AccountCreationWith_FreeTrailPack</h5>
+<span class='badge badge-success'>09.01.2023 3:37:50 am</span>
+<span class='badge badge-danger'>09.01.2023 3:38:21 am</span>
+<span class='badge badge-default'>00:00:31:239</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_FreeTrailPack.png' src="C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_FreeTrailPack.png">
+    <div class="title">SignUp_AccountCreationWith_FreeTrailPack</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:18:39 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:38:21 am</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [*You have been registered for this session!] but found [You have been registered for this session!]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_FreeTrailPack(ClientAccountSignUp.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -154,39 +252,84 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="fail" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">SignUp_AccountCreationWith_PurchaseClassPack</p>
             <p class="text-sm">
-              <span>3:18:45 am</span> / <span>00:00:56:474</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:38:28 am</span> / <span>00:00:28:784</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseClassPack</h5>
-<span class='badge badge-success'>09.01.2023 3:18:45 am</span>
-<span class='badge badge-danger'>09.01.2023 3:19:42 am</span>
-<span class='badge badge-default'>00:00:56:474</span>
+<h5 class="test-status text-fail">SignUp_AccountCreationWith_PurchaseClassPack</h5>
+<span class='badge badge-success'>09.01.2023 3:38:28 am</span>
+<span class='badge badge-danger'>09.01.2023 3:38:57 am</span>
+<span class='badge badge-default'>00:00:28:784</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_PurchaseClassPack.png' src="C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_PurchaseClassPack.png">
+    <div class="title">SignUp_AccountCreationWith_PurchaseClassPack</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:19:42 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:38:57 am</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [*Congratulations! Your account has been created.] but found [Congratulations! Your account has been created.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassPack(ClientAccountSignUp.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -201,7 +344,7 @@
           <div class="test-detail">
             <p class="name">SignUp_AccountCreationWith_PurchaseMemPack</p>
             <p class="text-sm">
-              <span>3:19:48 am</span> / <span>00:01:16:471</span>
+              <span>3:39:04 am</span> / <span>00:00:59:894</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -210,9 +353,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseMemPack</h5>
-<span class='badge badge-success'>09.01.2023 3:19:48 am</span>
-<span class='badge badge-danger'>09.01.2023 3:21:04 am</span>
-<span class='badge badge-default'>00:01:16:471</span>
+<span class='badge badge-success'>09.01.2023 3:39:04 am</span>
+<span class='badge badge-danger'>09.01.2023 3:40:04 am</span>
+<span class='badge badge-default'>00:00:59:894</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -224,7 +367,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:21:04 am</td>
+        <td>3:40:04 am</td>
         <td>
           Test Passed
         </td>
@@ -241,7 +384,7 @@
           <div class="test-detail">
             <p class="name">SignUp_AccountCreationWith_PurchaseUnlimitedMem</p>
             <p class="text-sm">
-              <span>3:21:10 am</span> / <span>00:01:18:447</span>
+              <span>3:40:10 am</span> / <span>00:01:20:655</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -250,9 +393,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseUnlimitedMem</h5>
-<span class='badge badge-success'>09.01.2023 3:21:10 am</span>
-<span class='badge badge-danger'>09.01.2023 3:22:29 am</span>
-<span class='badge badge-default'>00:01:18:447</span>
+<span class='badge badge-success'>09.01.2023 3:40:10 am</span>
+<span class='badge badge-danger'>09.01.2023 3:41:31 am</span>
+<span class='badge badge-default'>00:01:20:655</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -264,7 +407,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:22:29 am</td>
+        <td>3:41:31 am</td>
         <td>
           Test Passed
         </td>
@@ -281,7 +424,7 @@
           <div class="test-detail">
             <p class="name">SignUp_AccountCreationWith_FreeFirstMonthMemPack</p>
             <p class="text-sm">
-              <span>3:22:35 am</span> / <span>00:01:17:868</span>
+              <span>3:41:37 am</span> / <span>00:01:21:893</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -290,9 +433,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">SignUp_AccountCreationWith_FreeFirstMonthMemPack</h5>
-<span class='badge badge-success'>09.01.2023 3:22:35 am</span>
-<span class='badge badge-danger'>09.01.2023 3:23:53 am</span>
-<span class='badge badge-default'>00:01:17:868</span>
+<span class='badge badge-success'>09.01.2023 3:41:37 am</span>
+<span class='badge badge-danger'>09.01.2023 3:42:59 am</span>
+<span class='badge badge-default'>00:01:21:893</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -304,7 +447,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:23:53 am</td>
+        <td>3:42:59 am</td>
         <td>
           Test Passed
         </td>
@@ -321,7 +464,7 @@
           <div class="test-detail">
             <p class="name">SignUp_AccountCreationWith_PurchaseClassAndMemPack</p>
             <p class="text-sm">
-              <span>3:23:59 am</span> / <span>00:01:17:053</span>
+              <span>3:43:05 am</span> / <span>00:01:20:742</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -330,9 +473,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseClassAndMemPack</h5>
-<span class='badge badge-success'>09.01.2023 3:23:59 am</span>
-<span class='badge badge-danger'>09.01.2023 3:25:16 am</span>
-<span class='badge badge-default'>00:01:17:053</span>
+<span class='badge badge-success'>09.01.2023 3:43:05 am</span>
+<span class='badge badge-danger'>09.01.2023 3:44:26 am</span>
+<span class='badge badge-default'>00:01:20:742</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -344,7 +487,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:25:16 am</td>
+        <td>3:44:26 am</td>
         <td>
           Test Passed
         </td>
@@ -354,39 +497,105 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="8"
+        <li class="test-item"  status="fail" test-id="8"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</p>
             <p class="text-sm">
-              <span>3:25:21 am</span> / <span>00:01:19:436</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:44:32 am</span> / <span>00:00:16:317</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</h5>
-<span class='badge badge-success'>09.01.2023 3:25:21 am</span>
-<span class='badge badge-danger'>09.01.2023 3:26:41 am</span>
-<span class='badge badge-default'>00:01:19:436</span>
+<h5 class="test-status text-fail">SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</h5>
+<span class='badge badge-success'>09.01.2023 3:44:32 am</span>
+<span class='badge badge-danger'>09.01.2023 3:44:49 am</span>
+<span class='badge badge-default'>00:00:16:317</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode.png' src="C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode.png">
+    <div class="title">SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:26:41 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:44:48 am</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (1303, 694). Other element would receive the click: <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6">...</div>
+  (Session info: chrome=116.0.5845.141)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ab6b31d17404917026728a55f4a281e, clickElement {id=CC87F7877E50250F8922B977465C5DEC_element_142}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52235/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9ab6b31d17404917026728a55f4a281e)] -> xpath: //span[text()='SAVE AND CONTINUE']]
+Session ID: 9ab6b31d17404917026728a55f4a281e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode(ClientAccountSignUp.java:478)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -403,30 +612,126 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:44:32 am</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:36:51 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>SignUp_AccountCreationWith_NoPackage</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:37:50 am</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>SignUp_AccountCreationWith_FreeTrailPack</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:38:28 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>SignUp_AccountCreationWith_PurchaseClassPack</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 1, 2023 03:16:43 am</h3>
+<h3>Sep 1, 2023 03:36:41 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 1, 2023 03:26:41 am</h3>
+<h3>Sep 1, 2023 03:44:49 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>8</h3>
+<h3>4</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>4</h3>
 </div></div>
 </div>
 </div>
@@ -442,12 +747,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>8</b> tests passed
+<div><small data-tooltip='50%'>
+<b>4</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='50%'><b>4</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -465,9 +770,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>8</b> events passed</small></div>
+<div><small data-tooltip='50%'><b>4</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
+<small data-tooltip='50%'><b>4</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -484,7 +789,7 @@
 </div></div>
 <script>
 var timeline = {
-"SignUp_AccountCreationWith_NoPackage":45.428,"SignUp_AccountCreationWith_FreeTrailPack":52.34,"SignUp_AccountCreationWith_PurchaseClassPack":56.474,"SignUp_AccountCreationWith_PurchaseMemPack":76.471,"SignUp_AccountCreationWith_PurchaseUnlimitedMem":78.447,"SignUp_AccountCreationWith_FreeFirstMonthMemPack":77.868,"SignUp_AccountCreationWith_PurchaseClassAndMemPack":77.053,"SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode":79.436
+"SignUp_AccountCreationWith_NoPackage":51.814,"SignUp_AccountCreationWith_FreeTrailPack":31.239,"SignUp_AccountCreationWith_PurchaseClassPack":28.784,"SignUp_AccountCreationWith_PurchaseMemPack":59.894,"SignUp_AccountCreationWith_PurchaseUnlimitedMem":80.655,"SignUp_AccountCreationWith_FreeFirstMonthMemPack":81.893,"SignUp_AccountCreationWith_PurchaseClassAndMemPack":80.742,"SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode":16.317
 };
 </script>
 <div class="row">
@@ -507,8 +812,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 8,
-failParent: 0,
+passParent: 4,
+failParent: 4,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -524,8 +829,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 8,
-failEvents: 0,
+passEvents: 4,
+failEvents: 4,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0
