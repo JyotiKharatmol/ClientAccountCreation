@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Client.ClientAccountCreation">
+      <class name="Client.ClientAccountSignUp">
         <methods>
-          <include name="AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode"/>
           <include name="tearDown"/>
-          <include name="AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode"/>
-          <include name="AccountCreationWith_PurchaseClassAndMemPackWith_NoPromoCode"/>
-          <include name="AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard"/>
           <include name="initialize"/>
+          <include name="SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode"/>
         </methods>
-      </class> <!-- Client.ClientAccountCreation -->
+      </class> <!-- Client.ClientAccountSignUp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
