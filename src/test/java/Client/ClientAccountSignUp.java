@@ -14,7 +14,7 @@ public class ClientAccountSignUp extends Base_File
 	public void initialize() throws IOException
 	{
 		driver = initializeBrowser();
-		driver.get(pro.getProperty("url"));
+		driver.get(pro.getProperty("urlWith_Term"));
 	}
 	
 	@Test(priority=1)
@@ -71,8 +71,7 @@ public class ClientAccountSignUp extends Base_File
 		a.clientLogin().click();
 		a.SessionOnCalendar().click();
 		a.sessionSignUp().click();
-		Assert.assertEquals(a.dontHaveAPackageMessage().getText(), "You don't have a package on file for this session.\n"+"Would you like to purchase a new package?");
-				
+		Assert.assertEquals(a.dontHaveAPackageMessage().getText(), "You don't have a package on file for this session.\n"+"Would you like to purchase a new package?");	
 	}
 	
 	@Test(priority=2)

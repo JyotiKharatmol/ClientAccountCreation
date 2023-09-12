@@ -13,7 +13,7 @@ public class ClientAccountCreationWith_NoTerm extends Base_File
 	public void initialize() throws IOException 
 	{
 		driver = initializeBrowser();
-		driver.get(pro.getProperty("url1"));	
+		driver.get(pro.getProperty("urlWith_NoTerm"));	
 	}
 	
 	@Test(priority=1)

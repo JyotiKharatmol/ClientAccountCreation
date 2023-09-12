@@ -7,18 +7,18 @@ import org.testng.annotations.Test;
 import Page_Objects.ClientSignUp;
 import Resource_Properties.Base_File;
 
-public class ClientAccountSignUpWith_NoTerm extends Base_File
+public class ClientAccountSignUpWith_OnlyWaiverTerm extends Base_File
 {
 
 	@BeforeMethod
 	public void initialize() throws IOException
 	{
 		driver = initializeBrowser();
-		driver.get(pro.getProperty("urlWith_NoTerm"));
+		driver.get(pro.getProperty("urlWith_OnlyWaiverTerm"));
 	}
 	
 	@Test(priority=1)
-	public void SignUp_AccountCreationWith_NoTerm_NoPackage()
+	public void SignUp_AccountCreationWithOnlyWaiverTerm_NoPackage()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -43,12 +43,24 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.ConfirmPassword().sendKeys("Password@3");
 		a.SaveAndContinue1().click();
 		a.skipPurchasePackageLater().click();
-		a.skipPackage_NoStudioTermAdded_DefaultWaiverTerm().click();
+		a.skipPackage_Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
 		a.TypeFullName().sendKeys("Brie Johnsson");
 		a.SaveAndContinue3().click();
 		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Brie Johnsson");
 		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.confirmFirstName().getText(), "Brie");
+		Assert.assertEquals(a.confirmLastName().getText(), "Johnsson");
+		Assert.assertEquals(a.confirmEmail().getText(), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.confirmPhoneNo().getText(), "4526534563");
+		Assert.assertEquals(a.confirmAddress().getText(), "Highland Street 120");
+		Assert.assertEquals(a.confirmEFirstName().getText(), "Alex");
+		Assert.assertEquals(a.confirmELastName().getText(), "Johnsson");
+		Assert.assertEquals(a.confirmEEmail().getText(), "alex.johnsson@gmail.com");
+		Assert.assertEquals(a.confirmEPhoneNo().getText(), "4625676548");
+		Assert.assertEquals(a.confirmERelationship().getText(), "Sister");
 		a.Confirm().click();
 		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
 		a.Login().click();
@@ -62,7 +74,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 	}
 	
 	@Test(priority=2)
-	public void SignUp_AccountCreationWith_NoTerm_FreeTrailPack()
+	public void SignUp_AccountCreationWithOnlyWaiverTerm_FreeTrailPack()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -88,12 +100,24 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.SaveAndContinue1().click();
 		a.zero$classPack().click();
 		a.SaveAndContinue2().click();
-		a.NoStudioTermAdded_DefaultWaiverTerm().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
 		a.TypeFullName().sendKeys("Jennifer Lawrence");
 		a.SaveAndContinue3().click();
 		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Jennifer Lawrence");
 		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.confirmFirstName().getText(), "Jennifer");
+		Assert.assertEquals(a.confirmLastName().getText(), "Lawrence");
+		Assert.assertEquals(a.confirmEmail().getText(), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.confirmPhoneNo().getText(), "4624565674");
+		Assert.assertEquals(a.confirmAddress().getText(), "Highland Street 140");
+		Assert.assertEquals(a.confirmEFirstName().getText(), "Anne");
+		Assert.assertEquals(a.confirmELastName().getText(), "Lawrence");
+		Assert.assertEquals(a.confirmEEmail().getText(), "anne.lawrence@gmail.com");
+		Assert.assertEquals(a.confirmEPhoneNo().getText(), "4626456842");
+		Assert.assertEquals(a.confirmERelationship().getText(), "Sister");
 		a.Confirm().click();
 		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
 		a.Login().click();
@@ -110,7 +134,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 	}
 	
 	@Test(priority=3)
-	public void SignUp_AccountCreationWith_NoTerm_PurchaseClassPack() 
+	public void SignUp_AccountCreationWithOnlyWaiverTerm_PurchaseClassPack() 
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -136,12 +160,24 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.SaveAndContinue1().click();
 		a.$classPack().click();
 		a.SaveAndContinue2().click();
-		a.NoStudioTermAdded_DefaultWaiverTerm().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
 		a.TypeFullName().sendKeys("Alexandra Daddario");
 		a.SaveAndContinue3().click();
 		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Alexandra Daddario");
 		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.confirmFirstName().getText(), "Alexandra");
+		Assert.assertEquals(a.confirmLastName().getText(), "Daddario");
+		Assert.assertEquals(a.confirmEmail().getText(), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.confirmPhoneNo().getText(), "4825434121");
+		Assert.assertEquals(a.confirmAddress().getText(), "Highland Street 120");
+		Assert.assertEquals(a.confirmEFirstName().getText(), "Nina");
+		Assert.assertEquals(a.confirmELastName().getText(), "Daddario");
+		Assert.assertEquals(a.confirmEEmail().getText(), "nina.daddario@gmail.com");
+		Assert.assertEquals(a.confirmEPhoneNo().getText(), "4853453412");
+		Assert.assertEquals(a.confirmERelationship().getText(), "Sister");	
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
 		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
 		a.promoCode().sendKeys("yog247");
@@ -152,6 +188,12 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		Assert.assertEquals(a.grandTotalNameAfterDiscount().getText(), "Grand Total");
 		Assert.assertEquals(a.grandTotalAmountAfterDiscount().getText(), "$0.50");
 		a.sameAsClientDetails().click();
+		Assert.assertEquals(a.cardHolderFirstName().getAttribute("value"), "Alexandra");
+		Assert.assertEquals(a.cardHolderLastName().getAttribute("value"), "Daddario");
+		Assert.assertEquals(a.cardHolderEmail().getAttribute("value"), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.cardHolderAddress().getAttribute("value"), "Highland Street 120");
+		Assert.assertEquals(a.cardHolderCity().getAttribute("value"), "Atlanta");
+		Assert.assertEquals(a.cardHolderZip().getAttribute("value"), "30303");
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
 		a.EnterCVV().sendKeys("4391");
@@ -171,7 +213,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 	}
 	
 	@Test(priority=4)
-	public void SignUp_AccountCreationWith_NoTerm_PurchaseMemPack()
+	public void SignUp_AccountCreationWithOnlyWaiverTerm_PurchaseMemPack()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -197,12 +239,24 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.SaveAndContinue1().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.NoStudioTermAdded_DefaultWaiverTerm().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
 		a.TypeFullName().sendKeys("Elizabeth Olsen");
 		a.SaveAndContinue3().click();
 		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Elizabeth Olsen");
 		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.confirmFirstName().getText(), "Elizabeth");
+		Assert.assertEquals(a.confirmLastName().getText(), "Olsen");
+		Assert.assertEquals(a.confirmEmail().getText(), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.confirmPhoneNo().getText(), "4805434121");
+		Assert.assertEquals(a.confirmAddress().getText(), "Highland Street 150");
+		Assert.assertEquals(a.confirmEFirstName().getText(), "Natalie");
+		Assert.assertEquals(a.confirmELastName().getText(), "Olsen");
+		Assert.assertEquals(a.confirmEEmail().getText(), "natalie.olsen@gmail.com");
+		Assert.assertEquals(a.confirmEPhoneNo().getText(), "4853453412");
+		Assert.assertEquals(a.confirmERelationship().getText(), "Sister");
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
 		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
 		a.promoCode().sendKeys("mempack23");
@@ -213,6 +267,12 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		Assert.assertEquals(a.grandTotalNameAfterDiscount().getText(), "Grand Total");
 		Assert.assertEquals(a.grandTotalAmountAfterDiscount().getText(), "$0.50");		
 		a.sameAsClientDetails().click();
+		Assert.assertEquals(a.cardHolderFirstName().getAttribute("value"), "Elizabeth");
+		Assert.assertEquals(a.cardHolderLastName().getAttribute("value"), "Olsen");
+		Assert.assertEquals(a.cardHolderEmail().getAttribute("value"), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.cardHolderAddress().getAttribute("value"), "Highland Street 150");
+		Assert.assertEquals(a.cardHolderCity().getAttribute("value"), "Atlanta");
+		Assert.assertEquals(a.cardHolderZip().getAttribute("value"), "30303");
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
 		a.EnterCVV().sendKeys("4391");
@@ -233,7 +293,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 	}
 	
 	@Test(priority=5)
-	public void SignUp_AccountCreationWith_NoTerm_PurchaseUnlimitedMem()
+	public void SignUp_AccountCreationWithOnlyWaiverTerm_PurchaseUnlimitedMem()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -259,12 +319,24 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.SaveAndContinue1().click();
 		a.unlimitedMemPack().click();
 		a.SaveAndContinue2().click();
-		a.NoStudioTermAdded_DefaultWaiverTerm().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
 		a.TypeFullName().sendKeys("Matthew McConaughey");
 		a.SaveAndContinue3().click();
 		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Matthew McConaughey");
 		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.confirmFirstName().getText(), "Matthew");
+		Assert.assertEquals(a.confirmLastName().getText(), "McConaughey");
+		Assert.assertEquals(a.confirmEmail().getText(), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.confirmPhoneNo().getText(), "4567765420");
+		Assert.assertEquals(a.confirmAddress().getText(), "Highland Street 140");
+		Assert.assertEquals(a.confirmEFirstName().getText(), "Alex");
+		Assert.assertEquals(a.confirmELastName().getText(), "McConaughey");
+		Assert.assertEquals(a.confirmEEmail().getText(), "alex.mcconaughey@gmail.com");
+		Assert.assertEquals(a.confirmEPhoneNo().getText(), "4567876545");
+		Assert.assertEquals(a.confirmERelationship().getText(), "Sister");	
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
 		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$1.00");
 		a.promoCode().sendKeys("mempack23");
@@ -275,6 +347,12 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		Assert.assertEquals(a.grandTotalNameAfterDiscount().getText(), "Grand Total");
 		Assert.assertEquals(a.grandTotalAmountAfterDiscount().getText(), "$0.50");	
 		a.sameAsClientDetails().click();
+		Assert.assertEquals(a.cardHolderFirstName().getAttribute("value"), "Matthew");
+		Assert.assertEquals(a.cardHolderLastName().getAttribute("value"), "McConaughey");
+		Assert.assertEquals(a.cardHolderEmail().getAttribute("value"), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.cardHolderAddress().getAttribute("value"), "Highland Street 140");
+		Assert.assertEquals(a.cardHolderCity().getAttribute("value"), "Atlanta");
+		Assert.assertEquals(a.cardHolderZip().getAttribute("value"), "30303");
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
 		a.EnterCVV().sendKeys("1204");
@@ -295,7 +373,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 	}
 	
 	@Test(priority=6)
-	public void SignUp_AccountCreationWith_NoTerm_FreeFirstMonthMemPack()
+	public void SignUp_AccountCreationWithOnlyWaiverTerm_FreeFirstMonthMemPack()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -321,15 +399,33 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.SaveAndContinue1().click();
 		a.freeFirstMonthMemPack().click();
 		a.SaveAndContinue2().click();
-		a.NoStudioTermAdded_DefaultWaiverTerm().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
 		a.TypeFullName().sendKeys("Julianne Moore");
 		a.SaveAndContinue3().click();
 		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Julianne Moore");
 		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.confirmFirstName().getText(), "Julianne");
+		Assert.assertEquals(a.confirmLastName().getText(), "Moore");
+		Assert.assertEquals(a.confirmEmail().getText(), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.confirmPhoneNo().getText(), "4565434567");
+		Assert.assertEquals(a.confirmAddress().getText(), "Highland Street 120");
+		Assert.assertEquals(a.confirmEFirstName().getText(), "Odette");
+		Assert.assertEquals(a.confirmELastName().getText(), "Moore");
+		Assert.assertEquals(a.confirmEEmail().getText(), "odette.moore@gmail.com");
+		Assert.assertEquals(a.confirmEPhoneNo().getText(), "4567645674");
+		Assert.assertEquals(a.confirmERelationship().getText(), "Sister");
 		Assert.assertEquals(a.actualGrandTotalName().getText(), "Grand Total");
 		Assert.assertEquals(a.actualGrandTotalAmount().getText(), "$0.00");
 		a.sameAsClientDetails().click();
+		Assert.assertEquals(a.cardHolderFirstName().getAttribute("value"), "Julianne");
+		Assert.assertEquals(a.cardHolderLastName().getAttribute("value"), "Moore");
+		Assert.assertEquals(a.cardHolderEmail().getAttribute("value"), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.cardHolderAddress().getAttribute("value"), "Highland Street 120");
+		Assert.assertEquals(a.cardHolderCity().getAttribute("value"), "Atlanta");
+		Assert.assertEquals(a.cardHolderZip().getAttribute("value"), "30303");
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
 		a.EnterCVV().sendKeys("1041");
@@ -350,7 +446,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 	}
 	
 	@Test(priority=7)
-	public void SignUp_AccountCreationWith_NoTerm_PurchaseClassAndMemPack()
+	public void SignUp_AccountCreationWithOnlyWaiverTerm_PurchaseClassAndMemPack()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -377,12 +473,24 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.$classPack().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.NoStudioTermAdded_DefaultWaiverTerm().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
 		a.TypeFullName().sendKeys("Elle Fanning");
 		a.SaveAndContinue3().click();
 		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Elle Fanning");
 		a.SaveAndContinue4().click();	
+		Assert.assertEquals(a.confirmFirstName().getText(), "Elle");
+		Assert.assertEquals(a.confirmLastName().getText(), "Fanning");
+		Assert.assertEquals(a.confirmEmail().getText(), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.confirmPhoneNo().getText(), "4825434121");
+		Assert.assertEquals(a.confirmAddress().getText(), "Highland Street 125");
+		Assert.assertEquals(a.confirmEFirstName().getText(), "Emilia");
+		Assert.assertEquals(a.confirmELastName().getText(), "Fanning");
+		Assert.assertEquals(a.confirmEEmail().getText(), "emilia.fanning@gmail.com");
+		Assert.assertEquals(a.confirmEPhoneNo().getText(), "4253453412");
+		Assert.assertEquals(a.confirmERelationship().getText(), "Sister");
 		Assert.assertEquals(a.actualGrandTotalName_ClassAndMem().getText(), "Grand Total");
 		Assert.assertEquals(a.actualGrandTotalAmount_ClassAndMem().getText(), "$2.00");
 		a.promoCode().sendKeys("mempack23");
@@ -393,6 +501,12 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		Assert.assertEquals(a.grandTotalName_ClassAndMem_AfterDiscount().getText(), "Grand Total");
 		Assert.assertEquals(a.grandTotalAmount_ClassAndMem_AfterDiscount().getText(), "$1.50");
 		a.sameAsClientDetails().click();
+		Assert.assertEquals(a.cardHolderFirstName().getAttribute("value"), "Elle");
+		Assert.assertEquals(a.cardHolderLastName().getAttribute("value"), "Fanning");
+		Assert.assertEquals(a.cardHolderEmail().getAttribute("value"), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.cardHolderAddress().getAttribute("value"), "Highland Street 125");
+		Assert.assertEquals(a.cardHolderCity().getAttribute("value"), "Atlanta");
+		Assert.assertEquals(a.cardHolderZip().getAttribute("value"), "30303");
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
 		a.EnterCVV().sendKeys("4391");
@@ -412,9 +526,8 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		Assert.assertTrue(a.packageStatus().getText().contains("1/"));	
 	}	
 	
-	
 	@Test(priority=8)
-	public void SignUp_AccountCreationWith_NoTerm_PurchaseClassAndMemPack_ClassPackPromoCode()
+	public void SignUp_AccountCreationWithOnlyWaiverTerm_PurchaseClassAndMemPack_ClassPackPromoCode()
 	{
 		ClientSignUp a = new ClientSignUp(driver);
 		a.signUpLink().click();
@@ -441,12 +554,24 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.$classPack().click();
 		a.xSessionsMemPack().click();
 		a.SaveAndContinue2().click();
-		a.NoStudioTermAdded_DefaultWaiverTerm().click();
+		a.Term1Checkbox().click();
+		a.Term2Checkbox().click();
+		a.DefaultCheckbox().click();
 		a.TypeFullName().sendKeys("Isabella Fanning");
 		a.SaveAndContinue3().click();
 		a.NoStudioTermAdded_DefaultPoliciesTerm().click();
 		a.PoliciesTypeFullName().sendKeys("Isabella Fanning");
 		a.SaveAndContinue4().click();
+		Assert.assertEquals(a.confirmFirstName().getText(), "Isabella");
+		Assert.assertEquals(a.confirmLastName().getText(), "Fanning");
+		Assert.assertEquals(a.confirmEmail().getText(), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.confirmPhoneNo().getText(), "4825434121");
+		Assert.assertEquals(a.confirmAddress().getText(), "Highland Street 120");
+		Assert.assertEquals(a.confirmEFirstName().getText(), "Emma");
+		Assert.assertEquals(a.confirmELastName().getText(), "Fanning");
+		Assert.assertEquals(a.confirmEEmail().getText(), "emma.fanning@gmail.com");
+		Assert.assertEquals(a.confirmEPhoneNo().getText(), "4253453412");
+		Assert.assertEquals(a.confirmERelationship().getText(), "Sister");
 		Assert.assertEquals(a.actualGrandTotalName_ClassAndMem().getText(), "Grand Total");
 		Assert.assertEquals(a.actualGrandTotalAmount_ClassAndMem().getText(), "$2.00");
 		a.promoCode().sendKeys("yog247");
@@ -457,6 +582,12 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		Assert.assertEquals(a.grandTotalName_ClassAndMem_AfterDiscount().getText(), "Grand Total");
 		Assert.assertEquals(a.grandTotalAmount_ClassAndMem_AfterDiscount().getText(), "$1.50");
 		a.sameAsClientDetails().click();
+		Assert.assertEquals(a.cardHolderFirstName().getAttribute("value"), "Isabella");
+		Assert.assertEquals(a.cardHolderLastName().getAttribute("value"), "Fanning");
+		Assert.assertEquals(a.cardHolderEmail().getAttribute("value"), "jyoti.kharatmol+"+randomInt+"@azularc.com");
+		Assert.assertEquals(a.cardHolderAddress().getAttribute("value"), "Highland Street 120");
+		Assert.assertEquals(a.cardHolderCity().getAttribute("value"), "Atlanta");
+		Assert.assertEquals(a.cardHolderZip().getAttribute("value"), "30303");	
 		a.EnterCreditCardNo().sendKeys("4242424242424242");
 		a.EnterExpiryDate().sendKeys("0224");
 		a.EnterCVV().sendKeys("4391");
@@ -464,7 +595,7 @@ public class ClientAccountSignUpWith_NoTerm extends Base_File
 		a.Confirm_pay().click();
 		Assert.assertEquals(a.AccountCreationSuccessfulMessage().getText(),"Congratulations! Your account has been created.");
 		a.Login_afterPay().click();
-		a.clientUsername().sendKeys("jyoti.kharatmol+" + randomInt + "@azularc.com");
+		a.clientUsername().sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
 		a.clientPassword().sendKeys("Password@3");
 		a.clientLogin().click();
 		a.SessionOnCalendar().click();

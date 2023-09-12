@@ -321,6 +321,14 @@ public class ClientSignUp extends Abstract_Component {
 	@FindBy(css="div[class='MuiAlert-message']")
 	WebElement skipPackageAlertMessage;
 	
+	@FindBy(xpath="//div/div[8]/div/div/div/div[1]/label/span[2]")
+	WebElement waiverterm1;
+	
+	public WebElement waiverterm1()
+	{
+		return waiverterm1;
+	}
+	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[1]/label/span[1]/span[1]")
 	WebElement term1Checkbox;
 	
@@ -348,6 +356,14 @@ public class ClientSignUp extends Abstract_Component {
 		return term1Checkbox;
 	}
 	
+	@FindBy(xpath="//div/div[8]/div/div/div/div[2]/label/span[2]")
+	WebElement waiverterm2;
+	
+	public WebElement waiverterm2()
+	{
+		return waiverterm2;
+	}
+	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[2]/label/span[1]/span[1]")
 	WebElement term2Checkbox;
 	
@@ -355,6 +371,14 @@ public class ClientSignUp extends Abstract_Component {
 	{
 		waitForElementToBeClickable(term2Checkbox);
 		return term2Checkbox;
+	}
+	
+	@FindBy(xpath="//div/div[8]/div/div/div/div[3]/label/span[2]")
+	WebElement defaultTerm;
+	
+	public WebElement defaultTerm()
+	{
+		return defaultTerm;
 	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[3]/label/span[1]/span[1]")
@@ -512,6 +536,38 @@ public class ClientSignUp extends Abstract_Component {
 	{
 		return confirmERelationship;
 	}	
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[3]/div[1]/div/div/div/div[2]/div[1]")
+	WebElement confirmPackageName;
+	
+	public WebElement confirmPackageName()
+	{
+		return confirmPackageName;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[3]/div[1]/div/div/div/div[2]/div[3]")
+	WebElement confirmPriceOnClassPack;
+	
+	public WebElement confirmPriceOnClassPack()
+	{
+		return confirmPriceOnClassPack;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[3]/div[1]/div/div/div/div[2]/div[2]")
+	WebElement confirmPriceOnMemPack;
+	
+	public WebElement confirmPriceOnMemPack()
+	{
+		return confirmPriceOnMemPack;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[3]/div[2]/div/span")
+	WebElement confirmPrice;
+	
+	public WebElement confirmPrice()
+	{
+		return confirmPrice;
+	}
 	
 	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[4]/div/div/div/div[3]/span[1]")
 	WebElement actualGrandTotalName;
