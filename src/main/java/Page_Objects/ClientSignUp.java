@@ -266,6 +266,30 @@ public class ClientSignUp extends Abstract_Component {
 		return zero$classPack;	
 	}
 	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[6]/div/div/ul/li[2]/div/div[2]/div[1]")
+	WebElement zero$classPack_Name;
+	
+	public WebElement zero$classPack_Name()
+	{
+		return zero$classPack_Name;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[6]/div/div/ul/li[2]/div/div[2]/div[3]")
+	WebElement zero$classPack_Price;
+	
+	public WebElement zero$classPack_Price()
+	{
+		return zero$classPack_Price;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[6]/div/div/ul/li[2]/div/div[2]/div[2]")
+	WebElement zero$classPack_Expiry;
+	
+	public WebElement zero$classPack_Expiry()
+	{
+		return zero$classPack_Expiry;
+	}
+	
 	@FindBy(xpath="//div/div[2]/div/p/div/div/div/div/div[6]/div/div/ul/li[1]/div")
 	WebElement $classPack;
 	
@@ -273,6 +297,30 @@ public class ClientSignUp extends Abstract_Component {
 	{
 		waitForElementToBeClickable($classPack);
 		return $classPack;	
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[6]/div/div/ul/li[1]/div/div[2]/div[1]")
+	WebElement $classPack_Name;
+	
+	public WebElement $classPack_Name()
+	{
+		return $classPack_Name;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[6]/div/div/ul/li[1]/div/div[2]/div[3]")
+	WebElement $classPack_Price;
+	
+	public WebElement $classPack_Price()
+	{
+		return $classPack_Price;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[6]/div/div/ul/li[1]/div/div[2]/div[2]")
+	WebElement $classPack_Expiry;
+	
+	public WebElement $classPack_Expiry()
+	{
+		return $classPack_Expiry;
 	}
 	
 	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div")
@@ -284,6 +332,30 @@ public class ClientSignUp extends Abstract_Component {
 		return xSessionsMemPack;
 	}
 	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div/div[2]/div[1]")
+	WebElement xSessionsMemPack_Name;
+	
+	public WebElement xSessionsMemPack_Name()
+	{
+		return xSessionsMemPack_Name;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div/div[2]/div[2]")
+	WebElement xSessionsMemPack_Price;
+	
+	public WebElement xSessionsMemPack_Price()
+	{
+		return xSessionsMemPack_Price;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div/div[2]/div[3]")
+	WebElement xSessionsMemPack_AutoPayInterval;
+	
+	public WebElement xSessionsMemPack_AutoPayInterval()
+	{
+		return xSessionsMemPack_AutoPayInterval;
+	}
+	
 	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div")
 	WebElement unlimitedMemPack;
 	
@@ -293,6 +365,30 @@ public class ClientSignUp extends Abstract_Component {
 		return unlimitedMemPack;
 	}
 	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div/div[2]/div[1]")
+	WebElement unlimitedMemPack_Name;
+	
+	public WebElement unlimitedMemPack_Name()
+	{
+		return unlimitedMemPack_Name;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div/div[2]/div[2]")
+	WebElement unlimitedMemPack_Price;
+	
+	public WebElement unlimitedMemPack_Price()
+	{
+		return unlimitedMemPack_Price;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div/div[2]/div[3]")
+	WebElement unlimitedMemPack_AutoPayInterval;
+	
+	public WebElement unlimitedMemPack_AutoPayInterval()
+	{
+		return unlimitedMemPack_AutoPayInterval;
+	}
+	
 	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div")
 	WebElement freeFirstMonthMemPack;
 	
@@ -300,6 +396,30 @@ public class ClientSignUp extends Abstract_Component {
 	{
 		waitForElementToBeClickable(freeFirstMonthMemPack);
 		return freeFirstMonthMemPack;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div/div[2]/div[1]")
+	WebElement freeFirstMonthMemPack_Name;
+	
+	public WebElement freeFirstMonthMemPack_Name()
+	{
+		return freeFirstMonthMemPack_Name;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div/div[2]/div[2]")
+	WebElement freeFirstMonthMemPack_Price;
+	
+	public WebElement freeFirstMonthMemPack_Price()
+	{
+		return freeFirstMonthMemPack_Price;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div/div[2]/div[3]")
+	WebElement freeFirstMonthMemPack_AutoPayInterval;
+	
+	public WebElement freeFirstMonthMemPack_AutoPayInterval()
+	{
+		return freeFirstMonthMemPack_AutoPayInterval;
 	}
 	
 	@FindBy(css="div[align='center'] a")
@@ -322,80 +442,81 @@ public class ClientSignUp extends Abstract_Component {
 	WebElement skipPackageAlertMessage;
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[1]/label/span[2]")
-	WebElement waiverterm1;
+	WebElement waiverTerm1;
 	
-	public WebElement waiverterm1()
+	public WebElement waiverTerm1()
 	{
-		return waiverterm1;
+		waitForInvisibilityOfWebElement(skipPackageAlertMessage);
+		return waiverTerm1;
 	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[1]/label/span[1]/span[1]")
-	WebElement term1Checkbox;
+	WebElement waiverTerm1Checkbox;
 	
-	public WebElement Term1Checkbox()
+	public WebElement waiverTerm1Checkbox()
 	{
-		waitForElementToBeClickable(term1Checkbox);
-		return term1Checkbox;
+		waitForElementToBeClickable(waiverTerm1Checkbox);
+		return waiverTerm1Checkbox;
 	}
-	public WebElement skipPackage_Term1Checkbox()
+	public WebElement skipPackage_waiverTerm1Checkbox()
 	{
 		waitForInvisibilityOfWebElement(skipPackageAlertMessage);
-		waitForElementToBeClickable(term1Checkbox);
-		return term1Checkbox;
+		waitForElementToBeClickable(waiverTerm1Checkbox);
+		return waiverTerm1Checkbox;
 	}
-	public WebElement skipPackage_NoStudioTermAdded_DefaultWaiverTerm()
+	public WebElement skipPackage_NoStudioTermAdded_DefaultWaiverTermCheckbox()
 	{
 		waitForInvisibilityOfWebElement(skipPackageAlertMessage);
-		waitForElementToBeClickable(term1Checkbox);
-		return term1Checkbox;
+		waitForElementToBeClickable(waiverTerm1Checkbox);
+		return waiverTerm1Checkbox;
 	}
 	
-	public WebElement NoStudioTermAdded_DefaultWaiverTerm()
+	public WebElement NoStudioTermAdded_DefaultWaiverTermCheckbox()
 	{
-		waitForElementToBeClickable(term1Checkbox);
-		return term1Checkbox;
+		waitForElementToBeClickable(waiverTerm1Checkbox);
+		return waiverTerm1Checkbox;
 	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[2]/label/span[2]")
-	WebElement waiverterm2;
+	WebElement waiverTerm2;
 	
-	public WebElement waiverterm2()
+	public WebElement waiverTerm2()
 	{
-		return waiverterm2;
+		return waiverTerm2;
 	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[2]/label/span[1]/span[1]")
-	WebElement term2Checkbox;
+	WebElement waiverTerm2Checkbox;
 	
-	public WebElement Term2Checkbox()
+	public WebElement waiverTerm2Checkbox()
 	{
-		waitForElementToBeClickable(term2Checkbox);
-		return term2Checkbox;
+		waitForElementToBeClickable(waiverTerm2Checkbox);
+		return waiverTerm2Checkbox;
 	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[3]/label/span[2]")
-	WebElement defaultTerm;
+	WebElement defaultWaiverTerm;
 	
-	public WebElement defaultTerm()
+	public WebElement defaultWaiverTerm()
 	{
-		return defaultTerm;
+		return defaultWaiverTerm;
 	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[3]/label/span[1]/span[1]")
-	WebElement defaultCheckbox;
+	WebElement defaultWaiverTermCheckbox;
 	
-	public WebElement DefaultCheckbox()
+	public WebElement defaultWaiverTermCheckbox()
 	{
-		waitForElementToBeClickable(defaultCheckbox);
-		return defaultCheckbox;
+		waitForElementToBeClickable(defaultWaiverTermCheckbox);
+		return defaultWaiverTermCheckbox;
 	}
 	
 	@FindBy(css="input[name='clientFullName']")
-	WebElement typeFullName;
+	WebElement waiverTypeFullName;
 	
-	public WebElement TypeFullName()
+	public WebElement waiverTypeFullName()
 	{
-		return typeFullName;
+		return waiverTypeFullName;
 	}
 	
 	@FindBy(xpath="//span[text()='SAVE AND CONTINUE']")
@@ -405,40 +526,66 @@ public class ClientSignUp extends Abstract_Component {
 	{
 		return saveAndContinue3;
 	}
-
-	@FindBy(xpath="//div/div[1]/label/span[1]/span[1]")
+	
+	@FindBy(xpath="//div/div[8]/div/div/div/div[1]/label/span[2]")
 	WebElement policiesTerm1;
 	
-	public WebElement PoliciesTerm1()
+	public WebElement policiesTerm1()
 	{
 		waitForAttributeOfElementToBe(policiesTypeFullName);
-		waitForElementToBeClickable(policiesTerm1);
+		waitForVisibilityOfElement(policiesTerm1);
 		return policiesTerm1;
 	}
 	
-	public WebElement NoStudioTermAdded_DefaultPoliciesTerm()
+	@FindBy(xpath="//div/div[1]/label/span[1]/span[1]")
+	WebElement policiesTerm1Checkbox;
+	
+	public WebElement PoliciesTerm1Checkbox()
 	{
 		waitForAttributeOfElementToBe(policiesTypeFullName);
-		waitForElementToBeClickable(policiesTerm1);
-		return policiesTerm1;
+		waitForElementToBeClickable(policiesTerm1Checkbox);
+		return policiesTerm1Checkbox;
 	}
 	
-	@FindBy(xpath="//div/div[2]/label/span[1]/span[1]")
+	public WebElement NoStudioTermAdded_DefaultPoliciesTermCheckbox()
+	{
+		waitForAttributeOfElementToBe(policiesTypeFullName);
+		waitForElementToBeClickable(policiesTerm1Checkbox);
+		return policiesTerm1Checkbox;
+	}
+	
+	@FindBy(xpath="//div/div[8]/div/div/div/div[2]/label/span[2]")
 	WebElement policiesTerm2;
 	
-	public WebElement PoliciesTerm2()
+	public WebElement policiesTerm2()
 	{
-		waitForElementToBeClickable(policiesTerm2);
 		return policiesTerm2;
 	}
 	
-	@FindBy(xpath="//div/div[3]/label/span[1]/span[1]")
+	@FindBy(xpath="//div/div[2]/label/span[1]/span[1]")
+	WebElement policiesTerm2Checkbox;
+	
+	public WebElement PoliciesTerm2Checkbox()
+	{
+		waitForElementToBeClickable(policiesTerm2Checkbox);
+		return policiesTerm2Checkbox;
+	}
+	
+	@FindBy(xpath="//div/div[8]/div/div/div/div[3]/label/span[2]")
 	WebElement policiesDefaultTerm;
 	
-	public WebElement PoliciesDefaultCheckbox()
+	public WebElement policiesDefaultTerm()
 	{
-		waitForElementToBeClickable(policiesDefaultTerm);
 		return policiesDefaultTerm;
+	}
+	
+	@FindBy(xpath="//div/div[3]/label/span[1]/span[1]")
+	WebElement policiesDefaultTermCheckbox;
+	
+	public WebElement PoliciesDefaultTermCheckbox()
+	{
+		waitForElementToBeClickable(policiesDefaultTermCheckbox);
+		return policiesDefaultTermCheckbox;
 	}
 	
 	@FindBy(css="input[name='clientContractFullName']")
@@ -554,11 +701,27 @@ public class ClientSignUp extends Abstract_Component {
 	}
 	
 	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[3]/div[1]/div/div/div/div[2]/div[2]")
+	WebElement confirmExpiryOnClassPack;
+	
+	public WebElement confirmExpiryOnClassPack()
+	{
+		return confirmExpiryOnClassPack;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[3]/div[1]/div/div/div/div[2]/div[2]")
 	WebElement confirmPriceOnMemPack;
 	
 	public WebElement confirmPriceOnMemPack()
 	{
 		return confirmPriceOnMemPack;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[3]/div[1]/div/div/div/div[2]/div[3]")
+	WebElement confirmAutoPayIntervalOnMemPack;
+	
+	public WebElement confirmAutoPayIntervalOnMemPack()
+	{
+		return confirmAutoPayIntervalOnMemPack;
 	}
 	
 	@FindBy(xpath="//p/div/div/div[2]/div/div/div[6]/div[3]/div[2]/div/span")
