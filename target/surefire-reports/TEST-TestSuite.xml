@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="490.425" tests="8" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="2,387.564" tests="24" errors="0" skipped="0" failures="22">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Users\jyoti_xfiqe3z\Downloads\eclipse-java-2023-03-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\JYOTI_~1\AppData\Local\Temp\surefire7037336587587091041\surefirebooter17605570228097210354.jar C:\Users\jyoti_xfiqe3z\AppData\Local\Temp\surefire7037336587587091041 2023-09-01T03-36-38_582-jvmRun1 surefire11147782950871057667tmp surefire_09125791582473590071tmp"/>
+    <property name="sun.java.command" value="C:\Users\JYOTI_~1\AppData\Local\Temp\surefire10775848322293524562\surefirebooter11951781179672365286.jar C:\Users\jyoti_xfiqe3z\AppData\Local\Temp\surefire10775848322293524562 2023-09-14T21-56-03_049-jvmRun1 surefire13772649837709611583tmp surefire_012532338655015958628tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\target\test-classes;C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\target\classes;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-java\4.11.0\selenium-java-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-api\4.11.0\selenium-api-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.11.0\selenium-chrome-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.11.0\selenium-chromium-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-json\4.11.0\selenium-json-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.11.0\selenium-manager-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.11.0\selenium-devtools-v113-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.11.0\selenium-devtools-v114-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.11.0\selenium-devtools-v115-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.11.0\selenium-devtools-v85-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.11.0\selenium-edge-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.11.0\selenium-firefox-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-http\4.11.0\selenium-http-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.11.0\selenium-ie-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.11.0\selenium-remote-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.11.0\selenium-safari-driver-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\seleniumhq\selenium\selenium-support\4.11.0\selenium-support-4.11.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\github\bonigarcia\webdrivermanager\5.4.1\webdrivermanager-5.4.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\github\docker-java\docker-java\3.3.2\docker-java-3.3.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\github\docker-java\docker-java-core\3.3.2\docker-java-core-3.3.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\github\docker-java\docker-java-api\3.3.2\docker-java-api-3.3.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.2\docker-java-transport-httpclient5-3.3.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\github\docker-java\docker-java-transport\3.3.2\docker-java-transport-3.3.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\slf4j\slf4j-api\1.5.6\slf4j-api-1.5.6.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\slf4j\slf4j-simple\1.5.6\slf4j-simple-1.5.6.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\jyoti_xfiqe3z\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\JYOTI_~1\AppData\Local\Temp\surefire7037336587587091041\surefirebooter17605570228097210354.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\JYOTI_~1\AppData\Local\Temp\surefire10775848322293524562\surefirebooter11951781179672365286.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.6+10"/>
@@ -58,57 +58,223 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="SignUp_AccountCreationWith_NoPackage" classname="Client.ClientAccountSignUp" time="51.842">
-    <failure message="expected [*You don&apos;t have a package on file for this session.&#10;Would you like to purchase a new package?] but found [You don&apos;t have a package on file for this session.&#10;Would you like to purchase a new package?]" type="java.lang.AssertionError">java.lang.AssertionError: 
-expected [*You don't have a package on file for this session.
-Would you like to purchase a new package?] but found [You don't have a package on file for this session.
-Would you like to purchase a new package?]
-	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage(ClientAccountSignUp.java:67)
-</failure>
-    <system-err><![CDATA[2461 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 116.0.5845.96 (resolved driver for Chrome 116)
-2505 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\116.0.5845.96\chromedriver.exe
-Sep 01, 2023 3:36:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 115
-]]></system-err>
-  </testcase>
-  <testcase name="SignUp_AccountCreationWith_FreeTrailPack" classname="Client.ClientAccountSignUp" time="31.238">
-    <failure message="expected [*You have been registered for this session!] but found [You have been registered for this session!]" type="java.lang.AssertionError">java.lang.AssertionError: expected [*You have been registered for this session!] but found [You have been registered for this session!]
-	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_FreeTrailPack(ClientAccountSignUp.java:117)
-</failure>
-    <system-err><![CDATA[63765 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 116.0.5845.96 (resolved driver for Chrome 116)
-63806 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\116.0.5845.96\chromedriver.exe
-Sep 01, 2023 3:37:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 115
-]]></system-err>
-  </testcase>
-  <testcase name="SignUp_AccountCreationWith_PurchaseClassPack" classname="Client.ClientAccountSignUp" time="28.786">
-    <failure message="expected [*Congratulations! Your account has been created.] but found [Congratulations! Your account has been created.]" type="java.lang.AssertionError">java.lang.AssertionError: expected [*Congratulations! Your account has been created.] but found [Congratulations! Your account has been created.]
-	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassPack(ClientAccountSignUp.java:176)
-</failure>
-    <system-err><![CDATA[101952 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 116.0.5845.96 (resolved driver for Chrome 116)
-102003 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\116.0.5845.96\chromedriver.exe
-Sep 01, 2023 3:38:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 115
-]]></system-err>
-  </testcase>
-  <testcase name="SignUp_AccountCreationWith_PurchaseMemPack" classname="Client.ClientAccountSignUp" time="59.895"/>
-  <testcase name="SignUp_AccountCreationWith_PurchaseUnlimitedMem" classname="Client.ClientAccountSignUp" time="80.655"/>
-  <testcase name="SignUp_AccountCreationWith_FreeFirstMonthMemPack" classname="Client.ClientAccountSignUp" time="81.893"/>
-  <testcase name="SignUp_AccountCreationWith_PurchaseClassAndMemPack" classname="Client.ClientAccountSignUp" time="80.741"/>
-  <testcase name="SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode" classname="Client.ClientAccountSignUp" time="16.318">
-    <failure message="element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1303, 694). Other element would receive the click: &lt;div class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=116.0.5845.141)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9ab6b31d17404917026728a55f4a281e, clickElement {id=CC87F7877E50250F8922B977465C5DEC_element_142}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52235/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (9ab6b31d17404917026728a55f4a281e)] -&gt; xpath: //span[text()=&apos;SAVE AND CONTINUE&apos;]]&#10;Session ID: 9ab6b31d17404917026728a55f4a281e" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (1303, 694). Other element would receive the click: <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6">...</div>
-  (Session info: chrome=116.0.5845.141)
+  <testcase name="AccountCreationWith_NoPackage" classname="Client.ClientAccountCreation" time="77.983"/>
+  <testcase name="AccountCreationWith_FreeTrailPack" classname="Client.ClientAccountCreation" time="94.887">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (0a440391fb06ec802354268284149e76)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63819/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0a440391fb06ec802354268284149e76" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (0a440391fb06ec802354268284149e76)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ab6b31d17404917026728a55f4a281e, clickElement {id=CC87F7877E50250F8922B977465C5DEC_element_142}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52235/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9ab6b31d17404917026728a55f4a281e)] -> xpath: //span[text()='SAVE AND CONTINUE']]
-Session ID: 9ab6b31d17404917026728a55f4a281e
-	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode(ClientAccountSignUp.java:478)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63819/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a440391fb06ec802354268284149e76
+	at Client.ClientAccountCreation.AccountCreationWith_FreeTrailPack(ClientAccountCreation.java:149)
+</failure>
+    <system-err><![CDATA[92899 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+92958 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 9:57:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="101.634">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (9b0f7d490f9cb0d02d04a771984b8137)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63871/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9b0f7d490f9cb0d02d04a771984b8137" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (9b0f7d490f9cb0d02d04a771984b8137)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63871/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b0f7d490f9cb0d02d04a771984b8137
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard(ClientAccountCreation.java:245)
+</failure>
+    <system-err><![CDATA[195606 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+195637 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 9:59:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="98.247">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (15283782fee0bbca2594d289c7265160)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63936}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63936/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 15283782fee0bbca2594d289c7265160" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (15283782fee0bbca2594d289c7265160)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63936}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63936/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15283782fee0bbca2594d289c7265160
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard(ClientAccountCreation.java:334)
+</failure>
+    <system-err><![CDATA[308137 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+308173 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:01:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="120.891">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (20fc83d0e3c0ccad52ed4fedcdeecca4)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63984}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63984/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 20fc83d0e3c0ccad52ed4fedcdeecca4" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (20fc83d0e3c0ccad52ed4fedcdeecca4)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63984}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63984/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20fc83d0e3c0ccad52ed4fedcdeecca4
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard(ClientAccountCreation.java:431)
+</failure>
+    <system-err><![CDATA[413991 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+414036 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:03:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="108.317">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (6ef43656426aa599b81d36f10e1ccec1)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64034}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64034/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6ef43656426aa599b81d36f10e1ccec1" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (6ef43656426aa599b81d36f10e1ccec1)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64034}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64034/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ef43656426aa599b81d36f10e1ccec1
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard(ClientAccountCreation.java:521)
+</failure>
+    <system-err><![CDATA[552052 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+552088 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:05:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="108.929">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (d6150c4a32ab7c64c94be2fb24e2e5b2)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64095/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d6150c4a32ab7c64c94be2fb24e2e5b2" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (d6150c4a32ab7c64c94be2fb24e2e5b2)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64095/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6150c4a32ab7c64c94be2fb24e2e5b2
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard(ClientAccountCreation.java:618)
+</failure>
+    <system-err><![CDATA[675759 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+675826 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:07:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="103.242">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (ad2d70b700d0b043881cca2d86514fef)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64153/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ad2d70b700d0b043881cca2d86514fef" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (ad2d70b700d0b043881cca2d86514fef)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64153}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64153/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad2d70b700d0b043881cca2d86514fef
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard(ClientAccountCreation.java:708)
+</failure>
+    <system-err><![CDATA[798505 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+798543 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:09:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="129.475">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (127a7ea6c90ae2799e6b148e55fe6ac0)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64230}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64230/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 127a7ea6c90ae2799e6b148e55fe6ac0" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (127a7ea6c90ae2799e6b148e55fe6ac0)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64230}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64230/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 127a7ea6c90ae2799e6b148e55fe6ac0
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard(ClientAccountCreation.java:806)
+</failure>
+    <system-err><![CDATA[910739 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+910795 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:11:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="110.877">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (8e08e90fc9421940e22cb092d4f082cf)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64543/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8e08e90fc9421940e22cb092d4f082cf" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (8e08e90fc9421940e22cb092d4f082cf)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64543/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e08e90fc9421940e22cb092d4f082cf
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard(ClientAccountCreation.java:903)
+</failure>
+    <system-err><![CDATA[1053151 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+1053174 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:13:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard" classname="Client.ClientAccountCreation" time="104.964">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (8af312fba4a41166510e8b7917c22d00)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64601/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8af312fba4a41166510e8b7917c22d00" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (8af312fba4a41166510e8b7917c22d00)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64601/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8af312fba4a41166510e8b7917c22d00
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard(ClientAccountCreation.java:993)
+</failure>
+    <system-err><![CDATA[1176553 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+1176592 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:15:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard" classname="Client.ClientAccountCreation" time="30.154">
+    <failure message="element click intercepted: Element &lt;span class=&quot;MuiButton-label&quot;&gt;...&lt;/span&gt; is not clickable at point (1303, 694). Other element would receive the click: &lt;div class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=117.0.5938.62)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [050a6f827e840d3a97d2f6612548da38, clickElement {id=9AB3585F6A78D8916D2F6C9D6963C339_element_189}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64649}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64649/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (050a6f827e840d3a97d2f6612548da38)] -&gt; xpath: //span[text()=&apos;SAVE AND CONTINUE&apos;]]&#10;Session ID: 050a6f827e840d3a97d2f6612548da38" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span class="MuiButton-label">...</span> is not clickable at point (1303, 694). Other element would receive the click: <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6">...</div>
+  (Session info: chrome=117.0.5938.62)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [050a6f827e840d3a97d2f6612548da38, clickElement {id=9AB3585F6A78D8916D2F6C9D6963C339_element_189}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64649}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64649/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (050a6f827e840d3a97d2f6612548da38)] -> xpath: //span[text()='SAVE AND CONTINUE']]
+Session ID: 050a6f827e840d3a97d2f6612548da38
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard(ClientAccountCreation.java:1033)
 ]]></failure>
-    <system-err><![CDATA[466482 [AsyncHttpClient-1-6] WARN org.asynchttpclient.netty.handler.WebSocketHandler - onError
+    <system-err><![CDATA[1293028 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+1293062 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:17:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_FreeFirstMonthMemPack" classname="Client.ClientAccountCreation" time="102.25">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (60c7af52c56e3a5e82fe7b9ea2cd759d)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64679}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64679/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 60c7af52c56e3a5e82fe7b9ea2cd759d" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (60c7af52c56e3a5e82fe7b9ea2cd759d)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64679}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64679/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60c7af52c56e3a5e82fe7b9ea2cd759d
+	at Client.ClientAccountCreation.AccountCreationWith_FreeFirstMonthMemPack(ClientAccountCreation.java:1181)
+</failure>
+    <system-err><![CDATA[1332679 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+1332705 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:18:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode" classname="Client.ClientAccountCreation" time="108.197">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (45f9a1305390882ae331a85a674d4b11)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64766/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 45f9a1305390882ae331a85a674d4b11" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (45f9a1305390882ae331a85a674d4b11)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64766/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 45f9a1305390882ae331a85a674d4b11
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode(ClientAccountCreation.java:1278)
+</failure>
+    <system-err><![CDATA[1441882 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+1441917 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:20:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode" classname="Client.ClientAccountCreation" time="56.333">
+    <failure message="expected [Hathway] but found [Hathaway]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Hathway] but found [Hathaway]
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode(ClientAccountCreation.java:1359)
+</failure>
+    <system-err><![CDATA[1561396 [AsyncHttpClient-1-3] WARN org.asynchttpclient.netty.handler.WebSocketHandler - onError
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -124,7 +290,7 @@ java.net.SocketException: Connection reset
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Sep 01, 2023 3:44:26 AM org.openqa.selenium.remote.http.WebSocket$Listener onError
+Sep 14, 2023 10:22:06 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
 WARNING: Connection reset
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
@@ -142,10 +308,241 @@ java.net.SocketException: Connection reset
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 
-466558 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 116.0.5845.96 (resolved driver for Chrome 116)
-466589 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\116.0.5845.96\chromedriver.exe
-Sep 01, 2023 3:44:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 115
+1561518 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+1561557 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:22:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="AccountCreationWith_PurchaseClassAndMemPackWith_NoPromoCode" classname="Client.ClientAccountCreation" time="101.055">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (43721990b193666a993ade819c0daf23)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64939/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 43721990b193666a993ade819c0daf23" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (43721990b193666a993ade819c0daf23)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64939/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 43721990b193666a993ade819c0daf23
+	at Client.ClientAccountCreation.AccountCreationWith_PurchaseClassAndMemPackWith_NoPromoCode(ClientAccountCreation.java:1453)
+</failure>
+    <system-err><![CDATA[1625155 [AsyncHttpClient-1-6] WARN org.asynchttpclient.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Sep 14, 2023 10:23:10 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+1625269 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+1625313 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:23:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="SignUp_AccountCreationWith_NoPackage" classname="Client.ClientAccountSignUp" time="49.767"/>
+  <testcase name="SignUp_AccountCreationWith_FreeTrailPack" classname="Client.ClientAccountSignUp" time="73.904">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (ebea954d0518c0e20ab6e8902187663b)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65063}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65063/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ebea954d0518c0e20ab6e8902187663b" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (ebea954d0518c0e20ab6e8902187663b)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65063}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65063/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ebea954d0518c0e20ab6e8902187663b
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_FreeTrailPack(ClientAccountSignUp.java:125)
+</failure>
+    <system-err><![CDATA[1790387 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+1790434 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:25:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="SignUp_AccountCreationWith_PurchaseClassPack" classname="Client.ClientAccountSignUp" time="80.488">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (00f2be0b0e4fe3923f3bbbe0d714dc88)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65125}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65125/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 00f2be0b0e4fe3923f3bbbe0d714dc88" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (00f2be0b0e4fe3923f3bbbe0d714dc88)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65125}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65125/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 00f2be0b0e4fe3923f3bbbe0d714dc88
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassPack(ClientAccountSignUp.java:206)
+</failure>
+    <system-err><![CDATA[1873624 [AsyncHttpClient-1-7] WARN org.asynchttpclient.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Sep 14, 2023 10:27:18 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+1873799 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+1873833 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:27:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="SignUp_AccountCreationWith_PurchaseMemPack" classname="Client.ClientAccountSignUp" time="79.189">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (ff6d88b24edc5bc2035fa45f160137ea)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65176}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65176/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ff6d88b24edc5bc2035fa45f160137ea" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (ff6d88b24edc5bc2035fa45f160137ea)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65176}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65176/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff6d88b24edc5bc2035fa45f160137ea
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseMemPack(ClientAccountSignUp.java:288)
+</failure>
+    <system-err><![CDATA[1961792 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+1961848 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:28:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="SignUp_AccountCreationWith_PurchaseUnlimitedMem" classname="Client.ClientAccountSignUp" time="79.208">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (87013b8c08aa7e54bb9b7b496f18303b)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65216/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 87013b8c08aa7e54bb9b7b496f18303b" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (87013b8c08aa7e54bb9b7b496f18303b)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65216/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 87013b8c08aa7e54bb9b7b496f18303b
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseUnlimitedMem(ClientAccountSignUp.java:370)
+</failure>
+    <system-err><![CDATA[2047670 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+2047693 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:30:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="SignUp_AccountCreationWith_FreeFirstMonthMemPack" classname="Client.ClientAccountSignUp" time="76.815">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (6795a5427efae588fe2cf38019d22d3c)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65255}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65255/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6795a5427efae588fe2cf38019d22d3c" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (6795a5427efae588fe2cf38019d22d3c)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65255}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65255/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6795a5427efae588fe2cf38019d22d3c
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_FreeFirstMonthMemPack(ClientAccountSignUp.java:445)
+</failure>
+    <system-err><![CDATA[2134069 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+2134093 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:31:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="SignUp_AccountCreationWith_PurchaseClassAndMemPack" classname="Client.ClientAccountSignUp" time="77.262">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (0b84367898b06ce753d66842752efc46)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65299/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0b84367898b06ce753d66842752efc46" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (0b84367898b06ce753d66842752efc46)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65299/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b84367898b06ce753d66842752efc46
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassAndMemPack(ClientAccountSignUp.java:528)
+</failure>
+    <system-err><![CDATA[2217372 [AsyncHttpClient-1-3] WARN org.asynchttpclient.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Sep 14, 2023 10:33:02 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2217452 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+2217508 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:33:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+]]></system-err>
+  </testcase>
+  <testcase name="SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode" classname="Client.ClientAccountSignUp" time="76.588">
+    <failure message="Expected condition failed: waiting for text (&apos;Congratulations! Your account has been created.&apos;) to be present in element [[ChromeDriver: chrome on windows (cc3ff0c6003bd8f68a0b984a53689e11)] -&gt; xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65342/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cc3ff0c6003bd8f68a0b984a53689e11" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (cc3ff0c6003bd8f68a0b984a53689e11)] -> xpath: //p[1]] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.62, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65342/devtoo..., se:cdpVersion: 117.0.5938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc3ff0c6003bd8f68a0b984a53689e11
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode(ClientAccountSignUp.java:611)
+</failure>
+    <system-err><![CDATA[2301217 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.62 (resolved driver for Chrome 117)
+2301239 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jyoti_xfiqe3z\.cache\selenium\chromedriver\win64\117.0.5938.62\chromedriver.exe
+Sep 14, 2023 10:34:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
 ]]></system-err>
   </testcase>
 </testsuite>

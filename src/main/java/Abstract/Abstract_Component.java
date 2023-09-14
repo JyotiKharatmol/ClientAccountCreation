@@ -63,7 +63,7 @@ public class Abstract_Component
 
 	public void waitForTextInElement(WebElement a) 
 	{
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(50));
 		w.until(ExpectedConditions.textToBePresentInElement(a, "Congratulations! Your account has been created."));
 	}
 	public void waitForInvisibilityOfWebElement(WebElement a)

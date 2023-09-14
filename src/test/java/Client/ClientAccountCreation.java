@@ -1356,7 +1356,7 @@ public class ClientAccountCreation extends Base_File
 		Assert.assertEquals(a.grandTotalAmount_ClassAndMem_AfterDiscount().getText(), "$1.50");
 		a.sameAsClientDetails().click();
 		Assert.assertEquals(a.cardHolderFirstName().getAttribute("value"), "Shirely");
-		Assert.assertEquals(a.cardHolderLastName().getAttribute("value"), "Hathway");
+		Assert.assertEquals(a.cardHolderLastName().getAttribute("value"), "Hathaway");
 		Assert.assertEquals(a.cardHolderEmail().getAttribute("value"), "jyoti.kharatmol+"+randomInt+"@azularc.com");
 		Assert.assertEquals(a.cardHolderAddress().getAttribute("value"), "Highland Street 125");
 		Assert.assertEquals(a.cardHolderCity().getAttribute("value"), "Atlanta");
