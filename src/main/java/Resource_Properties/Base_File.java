@@ -1,10 +1,10 @@
 package Resource_Properties;
+
 import java.time.Duration;
 import java.util.Properties;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

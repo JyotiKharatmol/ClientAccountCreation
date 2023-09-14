@@ -1,4 +1,5 @@
 package Resource_Properties;
+
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -57,7 +58,6 @@ public class Listeners extends Base_File implements ITestListener{
 	test.addScreenCaptureFromPath(path, result.getMethod().getMethodName());
 	
 	}
-	
 
 	@Override
 	public void onTestSkipped(ITestResult result) 
