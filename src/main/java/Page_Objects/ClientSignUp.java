@@ -81,7 +81,7 @@ public class ClientSignUp extends Abstract_Component {
 	
 	public String Email()
 	{
-		String randomInt = RandomStringUtils.randomAlphanumeric(3);
+		String randomInt = RandomStringUtils.randomAlphanumeric(4);
 		email.sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
 		return randomInt;
 	}
