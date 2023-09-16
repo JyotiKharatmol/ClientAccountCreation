@@ -30,6 +30,7 @@ public class Base_File
 	  ChromeOptions options = new ChromeOptions();
 
 	  options.addArguments("--no-sandbox"); 
+	  options.setBinary("/usr/bin/google-chrome");
 	  options.addArguments("--disable-dev-shm-usage");
 	  options.addArguments("--headless");
 	  options.addArguments("--disable-gpu");
