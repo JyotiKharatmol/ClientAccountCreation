@@ -31,7 +31,7 @@ public class Base_File
 	 
 	  options.addArguments("--no-sandbox"); 
 	  options.addArguments("--disable-dev-shm-usage");
-	  options.setBinary("/usr/bin/google-chrome");
+	// options.setBinary("/usr/bin/google-chrome");
 	  options.addArguments("--headless");
 	  options.addArguments("--disable-gpu");
 	  options.addArguments("--disable-infobars");
