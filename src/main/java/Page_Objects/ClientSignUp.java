@@ -4,9 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import Abstract.Abstract_Component;
+import Abstract.AbstractComponent;
 
-public class ClientSignUp extends Abstract_Component {
+public class ClientSignUp extends AbstractComponent 
+{
 
 	WebDriver driver;
 	
@@ -532,7 +533,7 @@ public class ClientSignUp extends Abstract_Component {
 	
 	public WebElement policiesTerm1()
 	{
-		waitForAttributeOfElementToBe(policiesTypeFullName);
+		waitForAttributeOfElementToBe(policiesTypeFullName, "name", "clientContractFullName");
 		waitForVisibilityOfElement(policiesTerm1);
 		return policiesTerm1;
 	}
@@ -542,14 +543,14 @@ public class ClientSignUp extends Abstract_Component {
 	
 	public WebElement PoliciesTerm1Checkbox()
 	{
-		waitForAttributeOfElementToBe(policiesTypeFullName);
+		waitForAttributeOfElementToBe(policiesTypeFullName, "name", "clientContractFullName");
 		waitForElementToBeClickable(policiesTerm1Checkbox);
 		return policiesTerm1Checkbox;
 	}
 	
 	public WebElement NoStudioTermAdded_DefaultPoliciesTermCheckbox()
 	{
-		waitForAttributeOfElementToBe(policiesTypeFullName);
+		waitForAttributeOfElementToBe(policiesTypeFullName, "name", "clientContractFullName");
 		waitForElementToBeClickable(policiesTerm1Checkbox);
 		return policiesTerm1Checkbox;
 	}
@@ -979,7 +980,7 @@ public class ClientSignUp extends Abstract_Component {
 	
 	public WebElement AccountCreationSuccessfulMessage()
 	{
-		waitForTextInElement(accountCreationSuccessfulMessage);
+		waitForTextInElement(accountCreationSuccessfulMessage, "Congratulations! Your account has been created.");
 		return accountCreationSuccessfulMessage;
 	}
 	

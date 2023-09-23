@@ -7,12 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Abstract_Component 
+public class AbstractComponent 
 {
 
 	WebDriver driver;
 
-	public Abstract_Component(WebDriver driver) 
+	public AbstractComponent(WebDriver driver) 
 	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -55,16 +55,17 @@ public class Abstract_Component
 		w.until(ExpectedConditions.elementToBeClickable(a));
 	}
 	
-	public void waitForAttributeOfElementToBe(WebElement a) 
+	public void waitForAttributeOfElementToBe(WebElement a, String b, String c) 
 	{
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(20));
-		w.until(ExpectedConditions.attributeToBe(a, "name", "clientContractFullName"));
+		w.until(ExpectedConditions.attributeToBe(a, b, c));
 	}
 
-	public void waitForTextInElement(WebElement a) 
+	public void waitForTextInElement(WebElement a, String b) 
 	{
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(50));
-		w.until(ExpectedConditions.textToBePresentInElement(a, "Congratulations! Your account has been created."));
+		w.until(ExpectedConditions.textToBePresentInElement(a, b));
+
 	}
 	public void waitForInvisibilityOfWebElement(WebElement a)
 	{ 
