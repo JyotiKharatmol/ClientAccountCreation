@@ -461,7 +461,7 @@ public class ClientSignUp extends AbstractComponent
 	}
 	public WebElement skipPackage_waiverTerm1Checkbox()
 	{
-		waitForInvisibilityOfWebElement(skipPackageAlertMessage);
+		//waitForInvisibilityOfWebElement(skipPackageAlertMessage);
 		waitForElementToBeClickable(waiverTerm1Checkbox);
 		return waiverTerm1Checkbox;
 	}
