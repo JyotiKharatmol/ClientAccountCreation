@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Web Automation Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 25, 2023 02:48:39 am</span></a>
+<a href="#"><span class="badge badge-primary">Nov 6, 2023 11:23:28 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,6 +72,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,39 +80,87 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">AccountCreationWith_NoPackage</p>
             <p class="text-sm">
-              <span>2:48:54 am</span> / <span>00:00:45:867</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:23:36 pm</span> / <span>00:04:46:786</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">AccountCreationWith_NoPackage</h5>
-<span class='badge badge-success'>10.25.2023 2:48:54 am</span>
-<span class='badge badge-danger'>10.25.2023 2:49:40 am</span>
-<span class='badge badge-default'>00:00:45:867</span>
+<h5 class="test-status text-fail">AccountCreationWith_NoPackage</h5>
+<span class='badge badge-success'>11.06.2023 11:23:36 pm</span>
+<span class='badge badge-danger'>11.06.2023 11:28:22 pm</span>
+<span class='badge badge-default'>00:04:46:786</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//AccountCreationWith_NoPackage.png' src="C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//AccountCreationWith_NoPackage.png">
+    <div class="title">AccountCreationWith_NoPackage</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:49:40 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:28:22 pm</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (e9b40085ab5daeadab29b6f56819f0bd)] -> css selector: div[class='MuiAlert-message']] (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.120, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56613}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56613/devtoo..., se:cdpVersion: 118.0.5993.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e9b40085ab5daeadab29b6f56819f0bd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.AbstractComponent.waitForInvisibilityOfWebElement(AbstractComponent.java:73)
+	at Page_Objects.ClientSignUp.waiverTerm1(ClientSignUp.java:528)
+	at Client.ClientAccountCreation.AccountCreationWith_NoPackage(ClientAccountCreation.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -114,39 +168,87 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">AccountCreationWith_FreeTrailPack</p>
             <p class="text-sm">
-              <span>2:49:46 am</span> / <span>00:01:11:323</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:29:05 pm</span> / <span>00:04:40:950</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">AccountCreationWith_FreeTrailPack</h5>
-<span class='badge badge-success'>10.25.2023 2:49:46 am</span>
-<span class='badge badge-danger'>10.25.2023 2:50:58 am</span>
-<span class='badge badge-default'>00:01:11:323</span>
+<h5 class="test-status text-fail">AccountCreationWith_FreeTrailPack</h5>
+<span class='badge badge-success'>11.06.2023 11:29:05 pm</span>
+<span class='badge badge-danger'>11.06.2023 11:33:46 pm</span>
+<span class='badge badge-default'>00:04:40:950</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//AccountCreationWith_FreeTrailPack.png' src="C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//AccountCreationWith_FreeTrailPack.png">
+    <div class="title">AccountCreationWith_FreeTrailPack</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:50:58 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:33:45 pm</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (6144adb5b517aa7edb7bd8bc29d51f12)] -> xpath: //p[1]] (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.120, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56748}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56748/devtoo..., se:cdpVersion: 118.0.5993.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6144adb5b517aa7edb7bd8bc29d51f12
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.AbstractComponent.waitForTextInElement(AbstractComponent.java:67)
+	at Page_Objects.ClientSignUp.AccountCreationSuccessfulMessage(ClientSignUp.java:1144)
+	at Client.ClientAccountCreation.AccountCreationWith_FreeTrailPack(ClientAccountCreation.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -161,7 +263,7 @@
           <div class="test-detail">
             <p class="name">AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard</p>
             <p class="text-sm">
-              <span>2:51:03 am</span> / <span>00:01:36:925</span>
+              <span>11:34:44 pm</span> / <span>00:04:49:300</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -170,9 +272,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard</h5>
-<span class='badge badge-success'>10.25.2023 2:51:03 am</span>
-<span class='badge badge-danger'>10.25.2023 2:52:40 am</span>
-<span class='badge badge-default'>00:01:36:925</span>
+<span class='badge badge-success'>11.06.2023 11:34:44 pm</span>
+<span class='badge badge-danger'>11.06.2023 11:39:34 pm</span>
+<span class='badge badge-default'>00:04:49:300</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -184,7 +286,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:52:40 am</td>
+        <td>11:39:34 pm</td>
         <td>
           Test Passed
         </td>
@@ -201,7 +303,7 @@
           <div class="test-detail">
             <p class="name">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard</p>
             <p class="text-sm">
-              <span>2:52:46 am</span> / <span>00:01:33:999</span>
+              <span>11:40:18 pm</span> / <span>00:04:21:650</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -210,9 +312,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard</h5>
-<span class='badge badge-success'>10.25.2023 2:52:46 am</span>
-<span class='badge badge-danger'>10.25.2023 2:54:20 am</span>
-<span class='badge badge-default'>00:01:33:999</span>
+<span class='badge badge-success'>11.06.2023 11:40:18 pm</span>
+<span class='badge badge-danger'>11.06.2023 11:44:39 pm</span>
+<span class='badge badge-default'>00:04:21:650</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -224,7 +326,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:54:20 am</td>
+        <td>11:44:39 pm</td>
         <td>
           Test Passed
         </td>
@@ -241,7 +343,7 @@
           <div class="test-detail">
             <p class="name">AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard</p>
             <p class="text-sm">
-              <span>2:54:26 am</span> / <span>00:01:36:887</span>
+              <span>11:44:43 pm</span> / <span>00:05:33:495</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -250,9 +352,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard</h5>
-<span class='badge badge-success'>10.25.2023 2:54:26 am</span>
-<span class='badge badge-danger'>10.25.2023 2:56:03 am</span>
-<span class='badge badge-default'>00:01:36:887</span>
+<span class='badge badge-success'>11.06.2023 11:44:43 pm</span>
+<span class='badge badge-danger'>11.06.2023 11:50:16 pm</span>
+<span class='badge badge-default'>00:05:33:495</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -264,7 +366,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:56:03 am</td>
+        <td>11:50:16 pm</td>
         <td>
           Test Passed
         </td>
@@ -281,7 +383,7 @@
           <div class="test-detail">
             <p class="name">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard</p>
             <p class="text-sm">
-              <span>2:56:09 am</span> / <span>00:01:36:624</span>
+              <span>11:51:05 pm</span> / <span>00:04:43:192</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -290,9 +392,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard</h5>
-<span class='badge badge-success'>10.25.2023 2:56:09 am</span>
-<span class='badge badge-danger'>10.25.2023 2:57:45 am</span>
-<span class='badge badge-default'>00:01:36:624</span>
+<span class='badge badge-success'>11.06.2023 11:51:05 pm</span>
+<span class='badge badge-danger'>11.06.2023 11:55:48 pm</span>
+<span class='badge badge-default'>00:04:43:192</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -304,7 +406,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:57:45 am</td>
+        <td>11:55:48 pm</td>
         <td>
           Test Passed
         </td>
@@ -321,7 +423,7 @@
           <div class="test-detail">
             <p class="name">AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard</p>
             <p class="text-sm">
-              <span>2:57:52 am</span> / <span>00:01:38:972</span>
+              <span>11:56:19 pm</span> / <span>00:03:59:782</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -330,9 +432,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard</h5>
-<span class='badge badge-success'>10.25.2023 2:57:52 am</span>
-<span class='badge badge-danger'>10.25.2023 2:59:31 am</span>
-<span class='badge badge-default'>00:01:38:972</span>
+<span class='badge badge-success'>11.06.2023 11:56:19 pm</span>
+<span class='badge badge-danger'>11.07.2023 12:00:18 am</span>
+<span class='badge badge-default'>00:03:59:782</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -344,7 +446,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:59:31 am</td>
+        <td>12:00:18 am</td>
         <td>
           Test Passed
         </td>
@@ -361,7 +463,7 @@
           <div class="test-detail">
             <p class="name">AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard</p>
             <p class="text-sm">
-              <span>2:59:40 am</span> / <span>00:01:42:874</span>
+              <span>12:00:58 am</span> / <span>00:03:34:607</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -370,9 +472,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard</h5>
-<span class='badge badge-success'>10.25.2023 2:59:40 am</span>
-<span class='badge badge-danger'>10.25.2023 3:01:23 am</span>
-<span class='badge badge-default'>00:01:42:874</span>
+<span class='badge badge-success'>11.07.2023 12:00:58 am</span>
+<span class='badge badge-danger'>11.07.2023 12:04:33 am</span>
+<span class='badge badge-default'>00:03:34:607</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -384,7 +486,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:01:23 am</td>
+        <td>12:04:33 am</td>
         <td>
           Test Passed
         </td>
@@ -401,7 +503,7 @@
           <div class="test-detail">
             <p class="name">AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard</p>
             <p class="text-sm">
-              <span>3:01:33 am</span> / <span>00:01:46:541</span>
+              <span>12:05:26 am</span> / <span>00:04:44:063</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -410,9 +512,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard</h5>
-<span class='badge badge-success'>10.25.2023 3:01:33 am</span>
-<span class='badge badge-danger'>10.25.2023 3:03:19 am</span>
-<span class='badge badge-default'>00:01:46:541</span>
+<span class='badge badge-success'>11.07.2023 12:05:26 am</span>
+<span class='badge badge-danger'>11.07.2023 12:10:10 am</span>
+<span class='badge badge-default'>00:04:44:063</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -424,7 +526,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:03:19 am</td>
+        <td>12:10:10 am</td>
         <td>
           Test Passed
         </td>
@@ -441,7 +543,7 @@
           <div class="test-detail">
             <p class="name">AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard</p>
             <p class="text-sm">
-              <span>3:03:27 am</span> / <span>00:01:36:159</span>
+              <span>12:10:31 am</span> / <span>00:04:38:033</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -450,9 +552,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard</h5>
-<span class='badge badge-success'>10.25.2023 3:03:27 am</span>
-<span class='badge badge-danger'>10.25.2023 3:05:03 am</span>
-<span class='badge badge-default'>00:01:36:159</span>
+<span class='badge badge-success'>11.07.2023 12:10:31 am</span>
+<span class='badge badge-danger'>11.07.2023 12:15:09 am</span>
+<span class='badge badge-default'>00:04:38:033</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -464,7 +566,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:05:03 am</td>
+        <td>12:15:09 am</td>
         <td>
           Test Passed
         </td>
@@ -481,7 +583,7 @@
           <div class="test-detail">
             <p class="name">AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard</p>
             <p class="text-sm">
-              <span>3:05:10 am</span> / <span>00:01:38:386</span>
+              <span>12:15:39 am</span> / <span>00:04:06:865</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -490,9 +592,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard</h5>
-<span class='badge badge-success'>10.25.2023 3:05:10 am</span>
-<span class='badge badge-danger'>10.25.2023 3:06:49 am</span>
-<span class='badge badge-default'>00:01:38:386</span>
+<span class='badge badge-success'>11.07.2023 12:15:39 am</span>
+<span class='badge badge-danger'>11.07.2023 12:19:46 am</span>
+<span class='badge badge-default'>00:04:06:865</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -504,7 +606,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:06:49 am</td>
+        <td>12:19:46 am</td>
         <td>
           Test Passed
         </td>
@@ -521,7 +623,7 @@
           <div class="test-detail">
             <p class="name">AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard</p>
             <p class="text-sm">
-              <span>3:06:55 am</span> / <span>00:01:39:106</span>
+              <span>12:20:18 am</span> / <span>00:04:34:926</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -530,9 +632,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard</h5>
-<span class='badge badge-success'>10.25.2023 3:06:55 am</span>
-<span class='badge badge-danger'>10.25.2023 3:08:34 am</span>
-<span class='badge badge-default'>00:01:39:106</span>
+<span class='badge badge-success'>11.07.2023 12:20:18 am</span>
+<span class='badge badge-danger'>11.07.2023 12:24:53 am</span>
+<span class='badge badge-default'>00:04:34:926</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -544,7 +646,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:08:34 am</td>
+        <td>12:24:53 am</td>
         <td>
           Test Passed
         </td>
@@ -559,9 +661,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">AccountCreationWith_FreeFirstMonthMemPack</p>
+            <p class="name">AccountCreationWith_DifferentFirstMonthMemPackWith_PromoCodeAndSelfCard</p>
             <p class="text-sm">
-              <span>3:08:41 am</span> / <span>00:01:35:607</span>
+              <span>12:25:39 am</span> / <span>00:04:34:581</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -569,10 +671,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">AccountCreationWith_FreeFirstMonthMemPack</h5>
-<span class='badge badge-success'>10.25.2023 3:08:41 am</span>
-<span class='badge badge-danger'>10.25.2023 3:10:16 am</span>
-<span class='badge badge-default'>00:01:35:607</span>
+<h5 class="test-status text-pass">AccountCreationWith_DifferentFirstMonthMemPackWith_PromoCodeAndSelfCard</h5>
+<span class='badge badge-success'>11.07.2023 12:25:39 am</span>
+<span class='badge badge-danger'>11.07.2023 12:30:14 am</span>
+<span class='badge badge-default'>00:04:34:581</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -584,7 +686,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:16 am</td>
+        <td>12:30:14 am</td>
         <td>
           Test Passed
         </td>
@@ -599,9 +701,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode</p>
+            <p class="name">AccountCreationWith_DifferentFirstMonthMemPackWithNoPromoCode</p>
             <p class="text-sm">
-              <span>3:10:23 am</span> / <span>00:01:37:334</span>
+              <span>12:30:46 am</span> / <span>00:04:04:235</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -609,10 +711,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode</h5>
-<span class='badge badge-success'>10.25.2023 3:10:23 am</span>
-<span class='badge badge-danger'>10.25.2023 3:12:00 am</span>
-<span class='badge badge-default'>00:01:37:334</span>
+<h5 class="test-status text-pass">AccountCreationWith_DifferentFirstMonthMemPackWithNoPromoCode</h5>
+<span class='badge badge-success'>11.07.2023 12:30:46 am</span>
+<span class='badge badge-danger'>11.07.2023 12:34:51 am</span>
+<span class='badge badge-default'>00:04:04:235</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -624,7 +726,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:12:00 am</td>
+        <td>12:34:51 am</td>
         <td>
           Test Passed
         </td>
@@ -639,9 +741,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode</p>
+            <p class="name">AccountCreationWith_FreeFirstMonthMemPack_WithSelfCard</p>
             <p class="text-sm">
-              <span>3:12:06 am</span> / <span>00:01:36:901</span>
+              <span>12:35:26 am</span> / <span>00:04:05:127</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -649,10 +751,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode</h5>
-<span class='badge badge-success'>10.25.2023 3:12:06 am</span>
-<span class='badge badge-danger'>10.25.2023 3:13:43 am</span>
-<span class='badge badge-default'>00:01:36:901</span>
+<h5 class="test-status text-pass">AccountCreationWith_FreeFirstMonthMemPack_WithSelfCard</h5>
+<span class='badge badge-success'>11.07.2023 12:35:26 am</span>
+<span class='badge badge-danger'>11.07.2023 12:39:31 am</span>
+<span class='badge badge-default'>00:04:05:127</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -664,7 +766,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:13:43 am</td>
+        <td>12:39:31 am</td>
         <td>
           Test Passed
         </td>
@@ -679,9 +781,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">AccountCreationWith_PurchaseClassAndMemPackWith_NoPromoCode</p>
+            <p class="name">AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCodeAndSelfCard</p>
             <p class="text-sm">
-              <span>3:13:52 am</span> / <span>00:01:39:100</span>
+              <span>12:39:34 am</span> / <span>00:04:06:399</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -689,10 +791,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">AccountCreationWith_PurchaseClassAndMemPackWith_NoPromoCode</h5>
-<span class='badge badge-success'>10.25.2023 3:13:52 am</span>
-<span class='badge badge-danger'>10.25.2023 3:15:31 am</span>
-<span class='badge badge-default'>00:01:39:100</span>
+<h5 class="test-status text-pass">AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCodeAndSelfCard</h5>
+<span class='badge badge-success'>11.07.2023 12:39:34 am</span>
+<span class='badge badge-danger'>11.07.2023 12:43:41 am</span>
+<span class='badge badge-default'>00:04:06:399</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -704,7 +806,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:15:31 am</td>
+        <td>12:43:41 am</td>
         <td>
           Test Passed
         </td>
@@ -719,9 +821,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">SignUp_AccountCreationWith_NoPackage</p>
+            <p class="name">AccountCreationWith_PurchaseClassAndMemPackWith_ClassPackPromoCodeAndSelfCard</p>
             <p class="text-sm">
-              <span>3:15:52 am</span> / <span>00:00:43:448</span>
+              <span>12:43:45 am</span> / <span>00:04:16:661</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -729,10 +831,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_NoPackage</h5>
-<span class='badge badge-success'>10.25.2023 3:15:52 am</span>
-<span class='badge badge-danger'>10.25.2023 3:16:36 am</span>
-<span class='badge badge-default'>00:00:43:448</span>
+<h5 class="test-status text-pass">AccountCreationWith_PurchaseClassAndMemPackWith_ClassPackPromoCodeAndSelfCard</h5>
+<span class='badge badge-success'>11.07.2023 12:43:45 am</span>
+<span class='badge badge-danger'>11.07.2023 12:48:01 am</span>
+<span class='badge badge-default'>00:04:16:661</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -744,7 +846,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:16:36 am</td>
+        <td>12:48:01 am</td>
         <td>
           Test Passed
         </td>
@@ -759,9 +861,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">SignUp_AccountCreationWith_FreeTrailPack</p>
+            <p class="name">AccountCreationWith_PurchaseClassAndMemPackWith_NoPromoCode</p>
             <p class="text-sm">
-              <span>3:16:42 am</span> / <span>00:01:10:556</span>
+              <span>12:48:35 am</span> / <span>00:03:34:693</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -769,10 +871,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_FreeTrailPack</h5>
-<span class='badge badge-success'>10.25.2023 3:16:42 am</span>
-<span class='badge badge-danger'>10.25.2023 3:17:53 am</span>
-<span class='badge badge-default'>00:01:10:556</span>
+<h5 class="test-status text-pass">AccountCreationWith_PurchaseClassAndMemPackWith_NoPromoCode</h5>
+<span class='badge badge-success'>11.07.2023 12:48:35 am</span>
+<span class='badge badge-danger'>11.07.2023 12:52:09 am</span>
+<span class='badge badge-default'>00:03:34:693</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -784,7 +886,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:17:53 am</td>
+        <td>12:52:09 am</td>
         <td>
           Test Passed
         </td>
@@ -794,39 +896,87 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="19"
+        <li class="test-item"  status="fail" test-id="19"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">SignUp_AccountCreationWith_PurchaseClassPack</p>
+            <p class="name">SignUp_AccountCreationWith_NoPackage</p>
             <p class="text-sm">
-              <span>3:18:00 am</span> / <span>00:01:37:045</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:52:42 am</span> / <span>00:03:24:044</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseClassPack</h5>
-<span class='badge badge-success'>10.25.2023 3:18:00 am</span>
-<span class='badge badge-danger'>10.25.2023 3:19:37 am</span>
-<span class='badge badge-default'>00:01:37:045</span>
+<h5 class="test-status text-fail">SignUp_AccountCreationWith_NoPackage</h5>
+<span class='badge badge-success'>11.07.2023 12:52:42 am</span>
+<span class='badge badge-danger'>11.07.2023 12:56:06 am</span>
+<span class='badge badge-default'>00:03:24:044</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_NoPackage.png' src="C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_NoPackage.png">
+    <div class="title">SignUp_AccountCreationWith_NoPackage</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:19:37 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:56:05 am</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (f8dc6babcd231fde380b3c851065d681)] -> xpath: //p[1]] (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.120, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57839}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57839/devtoo..., se:cdpVersion: 118.0.5993.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8dc6babcd231fde380b3c851065d681
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.AbstractComponent.waitForTextInElement(AbstractComponent.java:67)
+	at Page_Objects.ClientSignUp.AccountCreationSuccessfulMessage(ClientSignUp.java:1144)
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_NoPackage(ClientAccountSignUp.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -834,39 +984,87 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="20"
+        <li class="test-item"  status="fail" test-id="20"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">SignUp_AccountCreationWith_PurchaseMemPack</p>
+            <p class="name">SignUp_AccountCreationWith_FreeTrailPack</p>
             <p class="text-sm">
-              <span>3:19:44 am</span> / <span>00:01:36:399</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:56:38 am</span> / <span>00:03:09:412</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseMemPack</h5>
-<span class='badge badge-success'>10.25.2023 3:19:44 am</span>
-<span class='badge badge-danger'>10.25.2023 3:21:21 am</span>
-<span class='badge badge-default'>00:01:36:399</span>
+<h5 class="test-status text-fail">SignUp_AccountCreationWith_FreeTrailPack</h5>
+<span class='badge badge-success'>11.07.2023 12:56:38 am</span>
+<span class='badge badge-danger'>11.07.2023 12:59:48 am</span>
+<span class='badge badge-default'>00:03:09:412</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_FreeTrailPack.png' src="C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_FreeTrailPack.png">
+    <div class="title">SignUp_AccountCreationWith_FreeTrailPack</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:21:21 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:59:47 am</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Congratulations! Your account has been created.') to be present in element [[ChromeDriver: chrome on windows (bbb22670f1779ff0e70b2f03b93d1a7e)] -> xpath: //p[1]] (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.120, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\JYOTI_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57901}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57901/devtoo..., se:cdpVersion: 118.0.5993.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bbb22670f1779ff0e70b2f03b93d1a7e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Abstract.AbstractComponent.waitForTextInElement(AbstractComponent.java:67)
+	at Page_Objects.ClientSignUp.AccountCreationSuccessfulMessage(ClientSignUp.java:1144)
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_FreeTrailPack(ClientAccountSignUp.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -879,9 +1077,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">SignUp_AccountCreationWith_PurchaseUnlimitedMem</p>
+            <p class="name">SignUp_AccountCreationWith_PurchaseClassPack</p>
             <p class="text-sm">
-              <span>3:21:28 am</span> / <span>00:01:38:072</span>
+              <span>1:00:13 am</span> / <span>00:03:28:651</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -889,10 +1087,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseUnlimitedMem</h5>
-<span class='badge badge-success'>10.25.2023 3:21:28 am</span>
-<span class='badge badge-danger'>10.25.2023 3:23:06 am</span>
-<span class='badge badge-default'>00:01:38:072</span>
+<h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseClassPack</h5>
+<span class='badge badge-success'>11.07.2023 1:00:13 am</span>
+<span class='badge badge-danger'>11.07.2023 1:03:41 am</span>
+<span class='badge badge-default'>00:03:28:651</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -904,7 +1102,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:23:06 am</td>
+        <td>1:03:41 am</td>
         <td>
           Test Passed
         </td>
@@ -919,9 +1117,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">SignUp_AccountCreationWith_FreeFirstMonthMemPack</p>
+            <p class="name">SignUp_AccountCreationWith_PurchaseMemPack</p>
             <p class="text-sm">
-              <span>3:23:13 am</span> / <span>00:01:35:113</span>
+              <span>1:04:11 am</span> / <span>00:03:44:381</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -929,10 +1127,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_FreeFirstMonthMemPack</h5>
-<span class='badge badge-success'>10.25.2023 3:23:13 am</span>
-<span class='badge badge-danger'>10.25.2023 3:24:48 am</span>
-<span class='badge badge-default'>00:01:35:113</span>
+<h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseMemPack</h5>
+<span class='badge badge-success'>11.07.2023 1:04:11 am</span>
+<span class='badge badge-danger'>11.07.2023 1:07:55 am</span>
+<span class='badge badge-default'>00:03:44:381</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -944,7 +1142,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:24:48 am</td>
+        <td>1:07:55 am</td>
         <td>
           Test Passed
         </td>
@@ -959,9 +1157,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">SignUp_AccountCreationWith_PurchaseClassAndMemPack</p>
+            <p class="name">SignUp_AccountCreationWith_PurchaseUnlimitedMem</p>
             <p class="text-sm">
-              <span>3:24:56 am</span> / <span>00:01:36:160</span>
+              <span>1:08:33 am</span> / <span>00:03:36:137</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -969,10 +1167,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseClassAndMemPack</h5>
-<span class='badge badge-success'>10.25.2023 3:24:56 am</span>
-<span class='badge badge-danger'>10.25.2023 3:26:32 am</span>
-<span class='badge badge-default'>00:01:36:160</span>
+<h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseUnlimitedMem</h5>
+<span class='badge badge-success'>11.07.2023 1:08:33 am</span>
+<span class='badge badge-danger'>11.07.2023 1:12:09 am</span>
+<span class='badge badge-default'>00:03:36:137</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -984,7 +1182,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:26:32 am</td>
+        <td>1:12:09 am</td>
         <td>
           Test Passed
         </td>
@@ -999,9 +1197,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</p>
+            <p class="name">SignUp_AccountCreationWith_FreeFirstMonthMemPack</p>
             <p class="text-sm">
-              <span>3:26:39 am</span> / <span>00:01:35:588</span>
+              <span>1:12:32 am</span> / <span>00:02:43:947</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1009,10 +1207,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</h5>
-<span class='badge badge-success'>10.25.2023 3:26:39 am</span>
-<span class='badge badge-danger'>10.25.2023 3:28:15 am</span>
-<span class='badge badge-default'>00:01:35:588</span>
+<h5 class="test-status text-pass">SignUp_AccountCreationWith_FreeFirstMonthMemPack</h5>
+<span class='badge badge-success'>11.07.2023 1:12:32 am</span>
+<span class='badge badge-danger'>11.07.2023 1:15:16 am</span>
+<span class='badge badge-default'>00:02:43:947</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1024,7 +1222,130 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:28:15 am</td>
+        <td>1:15:16 am</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SignUp_AccountCreationWith_PurchaseClassAndMemPack_WithMemPackPromoCode</p>
+            <p class="text-sm">
+              <span>1:15:28 am</span> / <span>00:02:55:070</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SignUp_AccountCreationWith_PurchaseClassAndMemPack_WithMemPackPromoCode</h5>
+<span class='badge badge-success'>11.07.2023 1:15:28 am</span>
+<span class='badge badge-danger'>11.07.2023 1:18:23 am</span>
+<span class='badge badge-default'>00:02:55:070</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_PurchaseClassAndMemPack_WithMemPackPromoCode.png' src="C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client//reports//SignUp_AccountCreationWith_PurchaseClassAndMemPack_WithMemPackPromoCode.png">
+    <div class="title">SignUp_AccountCreationWith_PurchaseClassAndMemPack_WithMemPackPromoCode</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:18:23 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at Client.ClientAccountSignUp.SignUp_AccountCreationWith_PurchaseClassAndMemPack_WithMemPackPromoCode(ClientAccountSignUp.java:626)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</p>
+            <p class="text-sm">
+              <span>1:18:47 am</span> / <span>00:03:24:130</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode</h5>
+<span class='badge badge-success'>11.07.2023 1:18:47 am</span>
+<span class='badge badge-danger'>11.07.2023 1:22:11 am</span>
+<span class='badge badge-default'>00:03:24:130</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:22:11 am</td>
         <td>
           Test Passed
         </td>
@@ -1043,30 +1364,133 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:15:28 am</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>SignUp_AccountCreationWith_PurchaseClassAndMemPack_WithMemPackPromoCode</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:23:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>AccountCreationWith_NoPackage</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:29:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>AccountCreationWith_FreeTrailPack</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:52:42 am</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>SignUp_AccountCreationWith_NoPackage</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:56:38 am</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>SignUp_AccountCreationWith_FreeTrailPack</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 25, 2023 02:48:39 am</h3>
+<h3>Nov 6, 2023 11:23:28 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 25, 2023 03:28:15 am</h3>
+<h3>Nov 7, 2023 01:22:11 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>24</h3>
+<h3>21</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>5</h3>
 </div></div>
 </div>
 </div>
@@ -1082,12 +1506,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>24</b> tests passed
+<div><small data-tooltip='80%'>
+<b>21</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='19%'><b>5</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1105,9 +1529,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>24</b> events passed</small></div>
+<div><small data-tooltip='80%'><b>21</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
+<small data-tooltip='19%'><b>5</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1124,7 +1548,7 @@
 </div></div>
 <script>
 var timeline = {
-"AccountCreationWith_NoPackage":45.867,"AccountCreationWith_FreeTrailPack":71.323,"AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard":96.925,"AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard":93.999,"AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard":96.887,"AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard":96.624,"AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard":98.972,"AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard":102.874,"AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard":106.541,"AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard":96.159,"AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard":98.386,"AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard":99.106,"AccountCreationWith_FreeFirstMonthMemPack":95.607,"AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode":97.334,"AccountCreationWith_PurchaseClassAndMemPackWith_ClassPromoCode":96.901,"AccountCreationWith_PurchaseClassAndMemPackWith_NoPromoCode":99.1,"SignUp_AccountCreationWith_NoPackage":43.448,"SignUp_AccountCreationWith_FreeTrailPack":70.556,"SignUp_AccountCreationWith_PurchaseClassPack":97.045,"SignUp_AccountCreationWith_PurchaseMemPack":96.399,"SignUp_AccountCreationWith_PurchaseUnlimitedMem":98.072,"SignUp_AccountCreationWith_FreeFirstMonthMemPack":95.113,"SignUp_AccountCreationWith_PurchaseClassAndMemPack":96.16,"SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode":95.588
+"AccountCreationWith_NoPackage":286.786,"AccountCreationWith_FreeTrailPack":280.95,"AccountCreationWith_PurchaseClassPackWith_PromoCodeAndSelfCard":289.3,"AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard":261.65,"AccountCreationWith_PurchaseClassPackWith_PromoCodeAndRelativeCard":333.495,"AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndRelativeCard":283.192,"AccountCreationWith_PurchaseMemPackWith_PromoCodeAndSelfCard":239.782,"AccountCreationWith_PurchaseMemPackWith_NoPromoCodeAndSelfCard":214.607,"AccountCreationWith_PurchaseMemPackWith_PromoCodeAndRelativeCard":284.063,"AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard":278.033,"AccountCreationWith_PurchaseUnlimitedMemWith_NoPromoCodeAndSelfCard":246.865,"AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard":274.926,"AccountCreationWith_DifferentFirstMonthMemPackWith_PromoCodeAndSelfCard":274.581,"AccountCreationWith_DifferentFirstMonthMemPackWithNoPromoCode":244.235,"AccountCreationWith_FreeFirstMonthMemPack_WithSelfCard":245.127,"AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCodeAndSelfCard":246.399,"AccountCreationWith_PurchaseClassAndMemPackWith_ClassPackPromoCodeAndSelfCard":256.661,"AccountCreationWith_PurchaseClassAndMemPackWith_NoPromoCode":214.693,"SignUp_AccountCreationWith_NoPackage":204.044,"SignUp_AccountCreationWith_FreeTrailPack":189.412,"SignUp_AccountCreationWith_PurchaseClassPack":208.651,"SignUp_AccountCreationWith_PurchaseMemPack":224.381,"SignUp_AccountCreationWith_PurchaseUnlimitedMem":216.137,"SignUp_AccountCreationWith_FreeFirstMonthMemPack":163.947,"SignUp_AccountCreationWith_PurchaseClassAndMemPack_WithMemPackPromoCode":175.07,"SignUp_AccountCreationWith_PurchaseClassAndMemPack_ClassPackPromoCode":204.13
 };
 </script>
 <div class="row">
@@ -1147,8 +1571,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 24,
-failParent: 0,
+passParent: 21,
+failParent: 5,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -1164,8 +1588,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 24,
-failEvents: 0,
+passEvents: 21,
+failEvents: 5,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

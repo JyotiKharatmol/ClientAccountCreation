@@ -5,9 +5,8 @@
     <classes>
       <class name="Client.ClientAccountCreation">
         <methods>
-          <include name="AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndSelfCard"/>
+          <include name="AccountCreationWith_PurchaseClassPackWith_NoPromoCodeAndSelfCard"/>
           <include name="tearDown"/>
-          <include name="AccountCreationWith_PurchaseUnlimitedMemWith_PromoCodeAndRelativeCard"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- Client.ClientAccountCreation -->

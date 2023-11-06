@@ -23,6 +23,7 @@ public class ClientSignUp extends AbstractComponent
 	
 	public WebElement DoYouHaveAcustomerAccount()
 	{
+		doYouHaveACustomerAccount.click();
 		return doYouHaveACustomerAccount;
 	}
 	
@@ -31,59 +32,65 @@ public class ClientSignUp extends AbstractComponent
 	
 	public WebElement signUpLink()
 	{
+		signUpLink.click();
 		return signUpLink;
 	}
 		
 	@FindBy(xpath="//p/div/div[7]/div/div[2]/div")
-	WebElement sessionOnCalendar;
+	WebElement selectSessionOnCalendar;
 	
-	public WebElement SessionOnCalendar()
+	public WebElement selectSessionOnCalendar()
 	{
-		waitForElementToBeClickable(sessionOnCalendar);
-		return sessionOnCalendar;
+		waitForElementToBeClickable(selectSessionOnCalendar);
+		selectSessionOnCalendar.click();
+		return selectSessionOnCalendar;
 	}
 	
 	@FindBy(xpath="//span[text()='SIGN UP']")
-	WebElement sessionSignUp;
+	WebElement signUpForSelectedSession;
 	
-	public WebElement sessionSignUp()
+	public WebElement signUpForSelectedSession()
 	{
-		waitForElementToBeClickable(sessionSignUp);
-		return sessionSignUp;
+		waitForElementToBeClickable(signUpForSelectedSession);
+		signUpForSelectedSession.click();
+		return signUpForSelectedSession;
 	}
 	
 	@FindBy(xpath="//form/div/div[3]/div/div/a")
-	WebElement dontHaveAnAccountClientSignUp;
+	WebElement dontHaveAnAccount_signUpHere;
 	
-	public WebElement dontHaveAnAccountClientSignUp()
+	public WebElement dontHaveAnAccount_signUpHere()
 	{
-		return dontHaveAnAccountClientSignUp;
+		dontHaveAnAccount_signUpHere.click();
+		return dontHaveAnAccount_signUpHere;
 	}
 	
 	@FindBy(css="input[name='firstName']")
-	WebElement firstName;
+	WebElement enterFirstName;
 	
-	public WebElement FirstName()
+	public WebElement enterFirstName()
 	{
-	waitForVisibilityOfElement(firstName);
-	return firstName;
+	waitForVisibilityOfElement(enterFirstName);
+	enterFirstName.sendKeys("Rose");
+	return enterFirstName;
 	}
 	
 	@FindBy(css="input[name='lastName']")
-	WebElement lastName;
+	WebElement enterLastName;
 	
-	public WebElement LastName()
+	public WebElement enterLastName()
 	{
-	return lastName;
+	enterLastName.sendKeys("Lavelle");
+	return enterLastName;
 	}
 	
 	@FindBy(css="input[name='emailId']")
-	WebElement email;
+	WebElement enterEmail;
 	
-	public String Email()
+	public String enterEmail()
 	{
 		String randomInt = RandomStringUtils.randomAlphanumeric(4);
-		email.sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
+		enterEmail.sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
 		return randomInt;
 	}
 	
@@ -96,19 +103,21 @@ public class ClientSignUp extends AbstractComponent
 	}
 	
 	@FindBy(xpath="//div/div/div/div[5]/div/div/input")
-	WebElement phoneNo;
+	WebElement enterPhoneNo;
 	
-	public WebElement PhoneNo()
+	public WebElement enterPhoneNo()
 	{
-	return phoneNo;
+	enterPhoneNo.sendKeys("4834484031");
+	return enterPhoneNo;
 	}
 	
 	@FindBy(css="input[name='dob']")
-	WebElement dob;
+	WebElement enterDOB;
 	
-	public WebElement DOB()
+	public WebElement enterDOB()
 	{
-	return dob;
+	enterDOB.sendKeys("03091995");
+	return enterDOB;
 	}
 	
 	@FindBy(css="div[id='mui-component-select-gender']")
@@ -116,155 +125,174 @@ public class ClientSignUp extends AbstractComponent
 	
 	public WebElement selectGender()
 	{
+		selectGender.click();
 		return selectGender;
 	}
 	
 	@FindBy(xpath="//div[@id='menu-gender']/div/ul/li[1]")
-	WebElement male;
+	WebElement selectGender_male;
 	
-	public WebElement Male()
+	public WebElement selectGender_male()
 	{
-		return male;
+		selectGender_male.click();
+		return selectGender_male;
 	}
 	
 	@FindBy(xpath="//div[@id='menu-gender']/div/ul/li[2]")
-	WebElement female;
+	WebElement selectGender_female;
 	
-	public WebElement Female()
+	public WebElement selectGender_female()
 	{
-		return female;
+		selectGender_female.click();
+		return selectGender_female;
 	}
 	
 	@FindBy(xpath="//div[@id='menu-gender']/div/ul/li[3]")
-	WebElement genderVariant;
+	WebElement selectGender_genderVariant;
 	
-	public WebElement GenderVariant()
+	public WebElement selectGender_genderVariant()
 	{
-		return genderVariant;
+		selectGender_genderVariant.click();
+		return selectGender_genderVariant;
 	}
 	
 	@FindBy(xpath="//div[@id='menu-gender']/div/ul/li[4]")
-	WebElement preferNotToDisclose;
+	WebElement selectGender_preferNotToDisclose;
 	
-	public WebElement PreferNotDisclose()
+	public WebElement selectGender_preferNotToDisclose()
 	{
-		return preferNotToDisclose;
+		selectGender_preferNotToDisclose.click();
+		return selectGender_preferNotToDisclose;
 	}
 	
 	@FindBy(css="input[name='address1']")
-	WebElement address1;
+	WebElement enterAddress1;
 	
-	public WebElement Address1()
+	public WebElement enterAddress1()
 	{
-	return address1;
+	enterAddress1.sendKeys("Highland Street 120");
+	return enterAddress1;
 	}
 	
 	@FindBy(css="input[name='city']")
-	WebElement city;
+	WebElement enterCity;
 	
-	public WebElement City()
+	public WebElement enterCity()
 	{
-	return city;
+	enterCity.sendKeys("Atlanta");
+	return enterCity;
 	}
 	
 	@FindBy(css="div[id='mui-component-select-state']")
-	WebElement state;
+	WebElement selectState;
 	
-	public WebElement State()
+	public WebElement selectState()
 	{
-	return state;
+	selectState.click();
+	return selectState;
 	}
 	
 	@FindBy(xpath="//ul/li[11]")
-	WebElement georgia;
+	WebElement selectState_georgia;
 	
-	public WebElement Georgia()
+	public WebElement selectState_georgia()
 	{
-	waitForElementToBeClickable(georgia);
-	return georgia;
+	waitForElementToBeClickable(selectState_georgia);
+	selectState_georgia.click();
+	return selectState_georgia;
 	}
 	
 	@FindBy(css="input[name='zip']")
-	WebElement zip;
+	WebElement enterZip;
 	
-	public WebElement Zip()
+	public WebElement enterZip()
 	{
-	return zip;
+	enterZip.sendKeys("30303");
+	return enterZip;
 	}
 	
 	@FindBy(css="input[name='emergencyContact.firstName']")
-	WebElement eFirstName;
+	WebElement enterEFirstName;
 	
-	public WebElement eFirstName()
+	public WebElement enterEFirstName()
 	{
-	return eFirstName;
+	enterEFirstName.sendKeys("Emily");	
+	return enterEFirstName;
 	}
 	
 	@FindBy(css="input[name='emergencyContact.lastName']")
-	WebElement eLastName;
+	WebElement enterELastName;
 	
-	public WebElement eLastName()
+	public WebElement enterELastName()
 	{
-	return eLastName;
+	enterELastName.sendKeys("Lavelle");
+	return enterELastName;
 	}
 	
 	@FindBy(css="input[name='emergencyContact.emailId']")
-	WebElement eEmail;
+	WebElement enterEEmail;
 	
-	public WebElement eEmail()
+	public WebElement enterEEmail()
 	{
-	return eEmail;
+	enterEEmail.sendKeys("emily.lavelle@gmail.com");
+	return enterEEmail;
 	}
 	
 	@FindBy(xpath="//div/div/div/div[19]/div/div/input")
-	WebElement ePhoneNo;
+	WebElement enterEPhoneNo;
 	
-	public WebElement ePhoneNo()
+	public WebElement enterEPhoneNo()
 	{
-	waitForElementToBeClickable(ePhoneNo);
-	return ePhoneNo;
+	waitForElementToBeClickable(enterEPhoneNo);
+	enterEPhoneNo.sendKeys("4838932917");
+	return enterEPhoneNo;
 	}
 	
 	@FindBy(css="input[name='emergencyContact.relationShip']")
-	WebElement eRelationship;
+	WebElement enterERelationship;
 	
-	public WebElement eRelationship()
+	public WebElement enterERelationship()
 	{
-	return eRelationship;
+	enterERelationship.sendKeys("Sister");
+	return enterERelationship;
 	}
 	
 	@FindBy(css="input[name='password']")
-	WebElement password;
+	WebElement enterPassword;
 	
-	public WebElement Password()
+	public WebElement enterPassword()
 	{
-	return password;
+	enterPassword.sendKeys("Password@3");
+	return enterPassword;
 	}
 	
 	@FindBy(css="input[name='confirmPassword']")
-	WebElement confirmPassword;
+	WebElement enterConfirmPassword;
 	
-	public WebElement ConfirmPassword()
+	public WebElement enterConfirmPassword()
 	{
-	return confirmPassword;
+	enterConfirmPassword.sendKeys("Password@3");
+	return enterConfirmPassword;
 	}
 	
 	@FindBy(xpath="//span[text()='SAVE AND CONTINUE']")
 	WebElement saveAndContinue1;
 	
-	public WebElement SaveAndContinue1()
+	public WebElement saveAndContinue1()
 	{
 		waitForElementToBeClickable(saveAndContinue1);
+		saveAndContinue1.click();
 		return saveAndContinue1;
 	}
 	
 	@FindBy(xpath="//div/div[2]/div/p/div/div/div/div/div[6]/div/div/ul/li[2]/div")
-	WebElement zero$classPack;
+	WebElement selectZero$classPack;
 	
-	public WebElement zero$classPack()
+	public WebElement selectZero$classPack()
 	{
-		waitForElementToBeClickable(zero$classPack);
-		return zero$classPack;	
+		waitForElementToBeClickable(selectZero$classPack);
+		selectZero$classPack.click();
+		return selectZero$classPack;	
 	}
 	
 	@FindBy(xpath="//p/div/div/div[1]/div/div[6]/div/div/ul/li[2]/div/div[2]/div[1]")
@@ -292,12 +320,13 @@ public class ClientSignUp extends AbstractComponent
 	}
 	
 	@FindBy(xpath="//div/div[2]/div/p/div/div/div/div/div[6]/div/div/ul/li[1]/div")
-	WebElement $classPack;
+	WebElement select$classPack;
 	
-	public WebElement $classPack()
+	public WebElement select$classPack()
 	{
-		waitForElementToBeClickable($classPack);
-		return $classPack;	
+		waitForElementToBeClickable(select$classPack);
+		select$classPack.click();
+		return select$classPack;	
 	}
 	
 	@FindBy(xpath="//p/div/div/div[1]/div/div[6]/div/div/ul/li[1]/div/div[2]/div[1]")
@@ -324,24 +353,36 @@ public class ClientSignUp extends AbstractComponent
 		return $classPack_Expiry;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div")
-	WebElement xSessionsMemPack;
+	@FindBy(css="svg[carouselState='[object Object]']")
+	WebElement moveRightArrow;
 	
-	public WebElement xSessionsMemPack()
+	public WebElement moveRightArrow()
 	{
-		waitForElementToBeClickable(xSessionsMemPack);
-		return xSessionsMemPack;
+		waitForElementToBeClickable(moveRightArrow);
+		moveRightArrow.click();
+		return moveRightArrow;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div/div[2]/div[1]")
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[4]/div")
+	WebElement selectXSessionsMemPack;
+	
+	public WebElement selectXSessionsMemPack()
+	{
+		waitForElementToBeClickable(selectXSessionsMemPack);
+		selectXSessionsMemPack.click();
+		return selectXSessionsMemPack;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[4]/div/div[2]/div[1]")
 	WebElement xSessionsMemPack_Name;
 	
 	public WebElement xSessionsMemPack_Name()
 	{
+		waitForVisibilityOfElement(selectXSessionsMemPack);
 		return xSessionsMemPack_Name;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div/div[2]/div[2]")
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[4]/div/div[2]/div[2]")
 	WebElement xSessionsMemPack_Price;
 	
 	public WebElement xSessionsMemPack_Price()
@@ -349,7 +390,7 @@ public class ClientSignUp extends AbstractComponent
 		return xSessionsMemPack_Price;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div/div[2]/div[3]")
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[4]/div/div[2]/div[3]")
 	WebElement xSessionsMemPack_AutoPayInterval;
 	
 	public WebElement xSessionsMemPack_AutoPayInterval()
@@ -357,16 +398,17 @@ public class ClientSignUp extends AbstractComponent
 		return xSessionsMemPack_AutoPayInterval;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div")
-	WebElement unlimitedMemPack;
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div")
+	WebElement selectUnlimitedMemPack;
 	
-	public WebElement unlimitedMemPack()
+	public WebElement selectUnlimitedMemPack()
 	{
-		waitForElementToBeClickable(unlimitedMemPack);
-		return unlimitedMemPack;
+		waitForElementToBeClickable(selectUnlimitedMemPack);
+		selectUnlimitedMemPack.click();
+		return selectUnlimitedMemPack;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div/div[2]/div[1]")
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div/div[2]/div[1]")
 	WebElement unlimitedMemPack_Name;
 	
 	public WebElement unlimitedMemPack_Name()
@@ -374,7 +416,7 @@ public class ClientSignUp extends AbstractComponent
 		return unlimitedMemPack_Name;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div/div[2]/div[2]")
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div/div[2]/div[2]")
 	WebElement unlimitedMemPack_Price;
 	
 	public WebElement unlimitedMemPack_Price()
@@ -382,7 +424,7 @@ public class ClientSignUp extends AbstractComponent
 		return unlimitedMemPack_Price;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div/div[2]/div[3]")
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[3]/div/div[2]/div[3]")
 	WebElement unlimitedMemPack_AutoPayInterval;
 	
 	public WebElement unlimitedMemPack_AutoPayInterval()
@@ -390,16 +432,17 @@ public class ClientSignUp extends AbstractComponent
 		return unlimitedMemPack_AutoPayInterval;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div")
-	WebElement freeFirstMonthMemPack;
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div")
+	WebElement selectFreeFirstMonthMemPack;
 	
-	public WebElement freeFirstMonthMemPack()
+	public WebElement selectFreeFirstMonthMemPack()
 	{
-		waitForElementToBeClickable(freeFirstMonthMemPack);
-		return freeFirstMonthMemPack;
+		waitForElementToBeClickable(selectFreeFirstMonthMemPack);
+		selectFreeFirstMonthMemPack.click();
+		return selectFreeFirstMonthMemPack;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div/div[2]/div[1]")
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div/div[2]/div[1]")
 	WebElement freeFirstMonthMemPack_Name;
 	
 	public WebElement freeFirstMonthMemPack_Name()
@@ -407,7 +450,7 @@ public class ClientSignUp extends AbstractComponent
 		return freeFirstMonthMemPack_Name;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div/div[2]/div[2]")
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div/div[2]/div[2]")
 	WebElement freeFirstMonthMemPack_Price;
 	
 	public WebElement freeFirstMonthMemPack_Price()
@@ -415,7 +458,7 @@ public class ClientSignUp extends AbstractComponent
 		return freeFirstMonthMemPack_Price;
 	}
 	
-	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div/div[2]/div[3]")
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[2]/div/div[2]/div[3]")
 	WebElement freeFirstMonthMemPack_AutoPayInterval;
 	
 	public WebElement freeFirstMonthMemPack_AutoPayInterval()
@@ -423,19 +466,54 @@ public class ClientSignUp extends AbstractComponent
 		return freeFirstMonthMemPack_AutoPayInterval;
 	}
 	
-	@FindBy(css="div[align='center'] a")
-	WebElement skipPurchasePackageLater;
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div")
+	WebElement selectDifferentFirstMonthMemPack;
 	
-	public WebElement skipPurchasePackageLater()
+	public WebElement selectDifferentFirstMonthMemPack()
 	{
-		return skipPurchasePackageLater;
+		selectDifferentFirstMonthMemPack.click();
+		return selectDifferentFirstMonthMemPack;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div/div[2]/div[1]")
+	WebElement differentFirstMonthMemPack_Name;
+	
+	public WebElement differentFirstMonthMemPack_Name()
+	{
+		return differentFirstMonthMemPack_Name;
+	}
+
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div/div[2]/div[2]")
+	WebElement differentFirstMonthMemPack_Price;
+	
+	public WebElement differentFirstMonthMemPack_Price()
+	{
+		return differentFirstMonthMemPack_Price;
+	}
+	
+	@FindBy(xpath="//p/div/div/div[1]/div/div[10]/div/div/ul/li[1]/div/div[2]/div[3]")
+	WebElement differentFirstMonthMemPack_AutoPayInterval;
+	
+	public WebElement differentFirstMonthMemPack_AutoPayInterval()
+	{
+		return differentFirstMonthMemPack_AutoPayInterval;
+	}
+	
+	@FindBy(css="div[align='center'] a")
+	WebElement skipIWillPurchasePackageLater;
+	
+	public WebElement skipIWillPurchasePackageLater()
+	{
+		skipIWillPurchasePackageLater.click();
+		return skipIWillPurchasePackageLater;
 	}
 	
 	@FindBy(xpath="//span[text()='SAVE AND CONTINUE']")
 	WebElement saveAndContinue2;
 	
-	public WebElement SaveAndContinue2()
+	public WebElement saveAndContinue2()
 	{
+		saveAndContinue2.click();
 		return saveAndContinue2;
 	}
 	
@@ -454,27 +532,34 @@ public class ClientSignUp extends AbstractComponent
 	@FindBy(xpath="//div/div[8]/div/div/div/div[1]/label/span[1]/span[1]")
 	WebElement waiverTerm1Checkbox;
 	
-	public WebElement waiverTerm1Checkbox()
+	public WebElement agreeToWaiverTerm1Checkbox()
 	{
 		waitForElementToBeClickable(waiverTerm1Checkbox);
+		waiverTerm1Checkbox.click();
 		return waiverTerm1Checkbox;
 	}
-	public WebElement skipPackage_waiverTerm1Checkbox()
+	
+	public WebElement skipPackage_agreeToWaiverTerm1Checkbox()
 	{
-		//waitForInvisibilityOfWebElement(skipPackageAlertMessage);
+	   //waitForInvisibilityOfWebElement(skipPackageAlertMessage);
+		
 		waitForElementToBeClickable(waiverTerm1Checkbox);
+		waiverTerm1Checkbox.click();
 		return waiverTerm1Checkbox;
 	}
+	
 	public WebElement skipPackage_NoStudioTermAdded_DefaultWaiverTermCheckbox()
 	{
 		waitForInvisibilityOfWebElement(skipPackageAlertMessage);
 		waitForElementToBeClickable(waiverTerm1Checkbox);
+		waiverTerm1Checkbox.click();
 		return waiverTerm1Checkbox;
 	}
 	
 	public WebElement NoStudioTermAdded_DefaultWaiverTermCheckbox()
 	{
 		waitForElementToBeClickable(waiverTerm1Checkbox);
+		waiverTerm1Checkbox.click();;
 		return waiverTerm1Checkbox;
 	}
 	
@@ -487,12 +572,13 @@ public class ClientSignUp extends AbstractComponent
 	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[2]/label/span[1]/span[1]")
-	WebElement waiverTerm2Checkbox;
+	WebElement agreeToWaiverTerm2Checkbox;
 	
-	public WebElement waiverTerm2Checkbox()
+	public WebElement agreeToWaiverTerm2Checkbox()
 	{
-		waitForElementToBeClickable(waiverTerm2Checkbox);
-		return waiverTerm2Checkbox;
+		waitForElementToBeClickable(agreeToWaiverTerm2Checkbox);
+		agreeToWaiverTerm2Checkbox.click();
+		return agreeToWaiverTerm2Checkbox;
 	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[3]/label/span[2]")
@@ -504,12 +590,13 @@ public class ClientSignUp extends AbstractComponent
 	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[3]/label/span[1]/span[1]")
-	WebElement defaultWaiverTermCheckbox;
+	WebElement agreeToDefaultWaiverTermCheckbox;
 	
-	public WebElement defaultWaiverTermCheckbox()
+	public WebElement agreeToDefaultWaiverTermCheckbox()
 	{
-		waitForElementToBeClickable(defaultWaiverTermCheckbox);
-		return defaultWaiverTermCheckbox;
+		waitForElementToBeClickable(agreeToDefaultWaiverTermCheckbox);
+		agreeToDefaultWaiverTermCheckbox.click();
+		return agreeToDefaultWaiverTermCheckbox;
 	}
 	
 	@FindBy(css="input[name='clientFullName']")
@@ -517,14 +604,17 @@ public class ClientSignUp extends AbstractComponent
 	
 	public WebElement waiverTypeFullName()
 	{
+		waiverTypeFullName.sendKeys("Rose Lavelle");
 		return waiverTypeFullName;
 	}
 	
 	@FindBy(xpath="//span[text()='SAVE AND CONTINUE']")
 	WebElement saveAndContinue3;
 	
-	public WebElement SaveAndContinue3()
+	public WebElement saveAndContinue3()
 	{
+		waitForElementToBeClickable(saveAndContinue3);
+		saveAndContinue3.click();
 		return saveAndContinue3;
 	}
 	
@@ -539,20 +629,22 @@ public class ClientSignUp extends AbstractComponent
 	}
 	
 	@FindBy(xpath="//div/div[1]/label/span[1]/span[1]")
-	WebElement policiesTerm1Checkbox;
+	WebElement agreeToPoliciesTerm1Checkbox;
 	
-	public WebElement PoliciesTerm1Checkbox()
+	public WebElement agreeToPoliciesTerm1Checkbox()
 	{
 		waitForAttributeOfElementToBe(policiesTypeFullName, "name", "clientContractFullName");
-		waitForElementToBeClickable(policiesTerm1Checkbox);
-		return policiesTerm1Checkbox;
+		waitForElementToBeClickable(agreeToPoliciesTerm1Checkbox);
+		agreeToPoliciesTerm1Checkbox.click();
+		return agreeToPoliciesTerm1Checkbox;
 	}
 	
 	public WebElement NoStudioTermAdded_DefaultPoliciesTermCheckbox()
 	{
 		waitForAttributeOfElementToBe(policiesTypeFullName, "name", "clientContractFullName");
-		waitForElementToBeClickable(policiesTerm1Checkbox);
-		return policiesTerm1Checkbox;
+		waitForElementToBeClickable(agreeToPoliciesTerm1Checkbox);
+		agreeToPoliciesTerm1Checkbox.click();
+		return agreeToPoliciesTerm1Checkbox;
 	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[2]/label/span[2]")
@@ -564,12 +656,13 @@ public class ClientSignUp extends AbstractComponent
 	}
 	
 	@FindBy(xpath="//div/div[2]/label/span[1]/span[1]")
-	WebElement policiesTerm2Checkbox;
+	WebElement agreeToPoliciesTerm2Checkbox;
 	
-	public WebElement PoliciesTerm2Checkbox()
+	public WebElement agreeToPoliciesTerm2Checkbox()
 	{
-		waitForElementToBeClickable(policiesTerm2Checkbox);
-		return policiesTerm2Checkbox;
+		waitForElementToBeClickable(agreeToPoliciesTerm2Checkbox);
+		agreeToPoliciesTerm2Checkbox.click();
+		return agreeToPoliciesTerm2Checkbox;
 	}
 	
 	@FindBy(xpath="//div/div[8]/div/div/div/div[3]/label/span[2]")
@@ -581,27 +674,31 @@ public class ClientSignUp extends AbstractComponent
 	}
 	
 	@FindBy(xpath="//div/div[3]/label/span[1]/span[1]")
-	WebElement policiesDefaultTermCheckbox;
+	WebElement agreeToPoliciesDefaultTermCheckbox;
 	
-	public WebElement PoliciesDefaultTermCheckbox()
+	public WebElement agreeToPoliciesDefaultTermCheckbox()
 	{
-		waitForElementToBeClickable(policiesDefaultTermCheckbox);
-		return policiesDefaultTermCheckbox;
+		waitForElementToBeClickable(agreeToPoliciesDefaultTermCheckbox);
+		agreeToPoliciesDefaultTermCheckbox.click();
+		return agreeToPoliciesDefaultTermCheckbox;
 	}
 	
 	@FindBy(css="input[name='clientContractFullName']")
 	WebElement policiesTypeFullName;
 	
-	public WebElement PoliciesTypeFullName()
+	public WebElement policiesTypeFullName()
 	{
+		policiesTypeFullName.sendKeys("Rose Lavelle");
 		return policiesTypeFullName;
 	}
 	
 	@FindBy(xpath="//span[text()='SAVE AND CONTINUE']")
 	WebElement saveAndContinue4;
 	
-	public WebElement SaveAndContinue4()
+	public WebElement saveAndContinue4()
 	{
+		waitForElementToBeClickable(saveAndContinue4);
+		saveAndContinue4.click();
 		return saveAndContinue4;
 	}
 	
@@ -766,11 +863,18 @@ public class ClientSignUp extends AbstractComponent
 	}
 	
 	@FindBy(css="input[name='promoCode']")
-	WebElement promoCode;
+	WebElement enterPromoCode;
 	
-	public WebElement promoCode()
+	public WebElement enterSessionPackPromoCode()
 	{
-		return promoCode;
+		enterPromoCode.sendKeys("yog247");
+		return enterPromoCode;
+	}
+	
+	public WebElement enterMemPackPromoCode()
+	{
+		enterPromoCode.sendKeys("mempack23");
+		return enterPromoCode;
 	}
 	
 	@FindBy(css="button[name='promoCodeApply']")
@@ -778,6 +882,7 @@ public class ClientSignUp extends AbstractComponent
 	
 	public WebElement promoCodeApply()
 	{
+		promoCodeApply.click();
 		return promoCodeApply;
 	}
 	
@@ -856,18 +961,26 @@ public class ClientSignUp extends AbstractComponent
 	}
 	
 	@FindBy(xpath="//p/div/div/div[3]/div/div/div[9]/div/div/div[2]/div/label/span[1]/span[1]")
-	WebElement sameAsClientDetails;
+	WebElement sameAsClientDetailsCheck;
 	
-	public WebElement sameAsClientDetails()
+	public WebElement sameAsClientDetailsCheck()
 	{
-		return sameAsClientDetails;
+		sameAsClientDetailsCheck.click();
+		return sameAsClientDetailsCheck;
 	}
+	
 	
 	@FindBy(css="input[name='firstName']")
 	WebElement cardHolderFirstName;
 	
 	public WebElement cardHolderFirstName()
 	{
+		return cardHolderFirstName;
+	}
+	
+	public WebElement enterCardHolderFirstName()
+	{
+		cardHolderFirstName.sendKeys("Emily");
 		return cardHolderFirstName;
 	}
 	
@@ -879,11 +992,23 @@ public class ClientSignUp extends AbstractComponent
 		return cardHolderLastName;
 	}
 	
+	public WebElement enterCardHolderLastName()
+	{
+		cardHolderLastName.sendKeys("Lavelle");
+		return cardHolderLastName;
+	}
+	
 	@FindBy(css="input[name='emailId']")
 	WebElement cardHolderEmail;
 	
 	public WebElement cardHolderEmail()
 	{
+		return cardHolderEmail;
+	}
+	
+	public WebElement enterCardHolderEmail()
+	{
+		cardHolderEmail.sendKeys("emily.lavelle@gmail.com");
 		return cardHolderEmail;
 	}
 	
@@ -895,6 +1020,12 @@ public class ClientSignUp extends AbstractComponent
 		return cardHolderAddress;
 	}
 	
+	public WebElement enterCardHolderAddress()
+	{
+		cardHolderAddress.sendKeys("Highland Street 120");
+		return cardHolderAddress;
+	}
+	
 	@FindBy(css="input[name='city']")
 	WebElement cardHolderCity;
 	
@@ -903,20 +1034,38 @@ public class ClientSignUp extends AbstractComponent
 		return cardHolderCity;
 	}
 	
-	@FindBy(css="div[id='mui-component-select-state']")
-	WebElement cardHolderSelectState;
-	
-	public WebElement cardHolderSelectState()
+	public WebElement enterCardHolderCity()
 	{
-		return cardHolderSelectState;
+		cardHolderCity.sendKeys("Atlanta");
+		return cardHolderCity;
+	}
+	
+	@FindBy(css="div[id='mui-component-select-state']")
+	WebElement cardHolderState;
+	
+	public WebElement cardHolderState()
+	{
+		return cardHolderState;
+	}
+	
+	public WebElement selectCardHolderState()
+	{
+		cardHolderState.click();
+		return cardHolderState;
 	}
 	
 	@FindBy(css="ul[role='listbox'] li:nth-child(11)")
-	WebElement cardHolderGeorgia;
+	WebElement cardHolderState_Georgia;
 	
-	public WebElement cardHolderGeorgia()
+	public WebElement cardHolderState_Georgia()
 	{
-		return cardHolderGeorgia;
+		return cardHolderState_Georgia;
+	}
+	
+	public WebElement selectCardHolderState_Georgia()
+	{
+		cardHolderState_Georgia.click();
+		return cardHolderState_Georgia;
 	}
 	
 	@FindBy(css="input[name='zip']")
@@ -927,27 +1076,36 @@ public class ClientSignUp extends AbstractComponent
 		return cardHolderZip;
 	}
 	
+	public WebElement enterCardHolderZip()
+	{
+		cardHolderZip.sendKeys("30303");
+		return cardHolderZip;
+	}
+	
 	@FindBy(xpath="//div[14]/div/div/input")
 	WebElement enterCreditCardNo;
 	
-	public WebElement EnterCreditCardNo()
+	public WebElement enterCreditCardNo()
 	{
+		enterCreditCardNo.sendKeys("378282246310005");
 		return enterCreditCardNo;
 	}
 	
 	@FindBy(xpath="//div[15]/div/div/input")
 	WebElement enterExpiryDate;
 	
-	public WebElement EnterExpiryDate()
+	public WebElement enterExpiryDate()
 	{
+		enterExpiryDate.sendKeys("0224");
 		return enterExpiryDate;
 	}
 	
 	@FindBy(xpath="//div[16]/div/div/input")
 	WebElement enterCVV;
 	
-	public WebElement EnterCVV()
+	public WebElement enterCVV()
 	{
+		enterCVV.sendKeys("4391");
 		return enterCVV;
 	}
 	
@@ -956,22 +1114,25 @@ public class ClientSignUp extends AbstractComponent
 	
 	public WebElement agreeToChargeMonthlyCheckbox()
 	{
+		agreeToChargeMonthlyCheck.click();
 		return agreeToChargeMonthlyCheck;
 	}
 	
 	@FindBy(xpath="//span[text()='Confirm']")
 	WebElement confirm;
 	
-	public WebElement Confirm()
+	public WebElement confirmAccountCreation()
 	{
+		confirm.click();
 		return confirm;
 	}
 	
 	@FindBy(xpath="//span[text()='CONFIRM & PAY']")
 	WebElement confirm_pay;
 	
-	public WebElement Confirm_pay()
+	public WebElement confirm_pay()
 	{
+		confirm_pay.click();
 		return confirm_pay;
 	}
 	
@@ -987,36 +1148,39 @@ public class ClientSignUp extends AbstractComponent
 	@FindBy(xpath="//span[text()='Login']")
 	WebElement login;
 	
-	public WebElement Login()
+	public WebElement login()
 	{
 		waitForElementToBeClickable(login);
+		login.click();
 		return login;
 	}
 	
 	@FindBy(css="img[alt='Loader']")
 	WebElement loaderIcon;
 	
-	public WebElement Login_afterPay()
+	public WebElement login_afterPay()
 	{
 		waitForInvisibilityOfWebElement(loaderIcon);
 		waitForElementToBeClickable(login);
+		login.click();
 		return login;
 	}
 	
 	@FindBy(css="input[name='emailId']")
-	WebElement clientUsername;
+	WebElement enterClientUsername;
 
-	public WebElement clientUsername()
+	public WebElement enterClientUsername()
 	{
-		return clientUsername;
+		return enterClientUsername;
 	}
 	
 	@FindBy(css="input[name='password']")
-	WebElement clientPassword;
+	WebElement enterClientPassword;
 	
-	public WebElement clientPassword()
+	public WebElement enterClientPassword()
 	{
-		return clientPassword;
+		enterClientPassword.sendKeys("Password@3");
+		return enterClientPassword;
 	}
 	
 	@FindBy(xpath="//span[text()='LOGIN']")
@@ -1024,6 +1188,7 @@ public class ClientSignUp extends AbstractComponent
 	
 	public WebElement clientLogin()
 	{
+		clientLogin.click();
 		return clientLogin;
 	}
 	

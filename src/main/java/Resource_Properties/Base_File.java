@@ -27,7 +27,7 @@ public class Base_File
    if(browserName.equalsIgnoreCase("chrome"))
    {    
 	  ChromeOptions options = new ChromeOptions();
-	  
+	
 	  options.addArguments("--no-sandbox"); 
 	  options.addArguments("--disable-dev-shm-usage");
 	  options.addArguments("--headless");
@@ -35,12 +35,12 @@ public class Base_File
 	  options.addArguments("--disable-infobars");
 	  options.addArguments("--disable-extensions");
 	  options.addArguments("--window-size=1400, 600");
-	  
+	
 	  WebDriverManager.chromedriver().setup(); 
 	  driver = new ChromeDriver(options);
    }
    driver.manage().window().maximize();	
-   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));	
+   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));	
    return driver;	
    }
    

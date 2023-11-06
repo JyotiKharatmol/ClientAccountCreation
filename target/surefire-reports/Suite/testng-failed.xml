@@ -6,10 +6,20 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="Client.ClientAccountCreation">
+      <class name="Client.ClientAccountSignUp">
         <methods>
           <include name="tearDown"/>
-          <include name="AccountCreationWith_PurchaseClassAndMemPackWith_MemPromoCode"/>
+          <include name="SignUp_AccountCreationWith_FreeTrailPack"/>
+          <include name="SignUp_AccountCreationWith_NoPackage"/>
+          <include name="initialize"/>
+          <include name="SignUp_AccountCreationWith_PurchaseClassAndMemPack_WithMemPackPromoCode"/>
+        </methods>
+      </class> <!-- Client.ClientAccountSignUp -->
+      <class name="Client.ClientAccountCreation">
+        <methods>
+          <include name="AccountCreationWith_NoPackage"/>
+          <include name="AccountCreationWith_FreeTrailPack"/>
+          <include name="tearDown"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- Client.ClientAccountCreation -->

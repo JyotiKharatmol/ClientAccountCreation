@@ -45,34 +45,35 @@ public class AbstractComponent
 	
 	public void waitForVisibilityOfElement(WebElement a)
 	{
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(70));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(100));
 		w.until(ExpectedConditions.visibilityOf(a));
 	}
 	
 	public void waitForElementToBeClickable(WebElement a) 
 	{
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(50));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(100));
 		w.until(ExpectedConditions.elementToBeClickable(a));
 	}
 	
 	public void waitForAttributeOfElementToBe(WebElement a, String b, String c) 
 	{
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(100));
 		w.until(ExpectedConditions.attributeToBe(a, b, c));
 	}
 
 	public void waitForTextInElement(WebElement a, String b) 
 	{
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(50));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(100));
 		w.until(ExpectedConditions.textToBePresentInElement(a, b));
 
 	}
 	public void waitForInvisibilityOfWebElement(WebElement a)
 	{ 
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(50));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(100));
 		w.until(ExpectedConditions.invisibilityOf(a));		
 	}
 
+	
 	
 	
 }
