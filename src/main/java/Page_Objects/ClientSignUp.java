@@ -8,7 +8,6 @@ import Abstract.AbstractComponent;
 
 public class ClientSignUp extends AbstractComponent 
 {
-
 	WebDriver driver;
 	
 	public ClientSignUp(WebDriver driver)
@@ -89,7 +88,7 @@ public class ClientSignUp extends AbstractComponent
 	
 	public String enterEmail()
 	{
-		String randomInt = RandomStringUtils.randomAlphanumeric(4);
+		String randomInt = RandomStringUtils.randomAlphanumeric(5);
 		enterEmail.sendKeys("jyoti.kharatmol+"+randomInt+"@azularc.com");
 		return randomInt;
 	}
@@ -202,7 +201,7 @@ public class ClientSignUp extends AbstractComponent
 	return selectState_georgia;
 	}
 	
-	@FindBy(css="input[name='zip']")
+	@FindBy(xpath="//div/div[12]/div/div/input")
 	WebElement enterZip;
 	
 	public WebElement enterZip()
@@ -1068,7 +1067,7 @@ public class ClientSignUp extends AbstractComponent
 		return cardHolderState_Georgia;
 	}
 	
-	@FindBy(css="input[name='zip']")
+	@FindBy(xpath="//div/div[10]/div/div/input")
 	WebElement cardHolderZip;
 	
 	public WebElement cardHolderZip()
