@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
-    <listener class-name="Resource_Properties.Listeners"/>
+    <listener class-name="testComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)" verbose="0">
+  <test thread-count="5" parallel="tests" name="Test(failed)" verbose="0">
     <classes>
-      <class name="Client.ClientAccountSignUp">
+      <class name="tests.ClientAccountCreation">
         <methods>
           <include name="tearDown"/>
-          <include name="SignUp_AccountCreationWith_FreeTrailPack"/>
-          <include name="SignUp_AccountCreationWith_NoPackage"/>
-          <include name="initialize"/>
-          <include name="SignUp_AccountCreationWith_PurchaseClassAndMemPack_WithMemPackPromoCode"/>
-        </methods>
-      </class> <!-- Client.ClientAccountSignUp -->
-      <class name="Client.ClientAccountCreation">
-        <methods>
           <include name="AccountCreationWith_NoPackage"/>
-          <include name="AccountCreationWith_FreeTrailPack"/>
-          <include name="tearDown"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- Client.ClientAccountCreation -->
+      </class> <!-- tests.ClientAccountCreation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

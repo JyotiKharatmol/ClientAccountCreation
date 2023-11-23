@@ -1,5 +1,3 @@
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\src\main\java\Abstract\AbstractComponent.java
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\src\main\java\Resource_Properties\ExtentReporterNG.java
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\src\main\java\Page_Objects\ClientSignUp.java
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\src\main\java\Resource_Properties\Base_File.java
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\src\main\java\Resource_Properties\Listeners.java
+C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\src\main\java\pageObjects\ClientSignUp.java
+C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\src\main\java\abstractComponents\Abstract.java
+C:\Users\jyoti_xfiqe3z\eclipse-workspace\Client\src\main\java\resources\ExtentReporterNG.java
