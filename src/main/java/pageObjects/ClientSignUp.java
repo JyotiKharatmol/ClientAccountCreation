@@ -85,7 +85,7 @@ public class ClientSignUp extends Abstract
 	}
 	
 	@FindBy(css="input[name='emailId']")
-	WebElement enterEmail;
+	public WebElement enterEmail;
 	
 	public String enterEmail()
 	{
